@@ -9,7 +9,8 @@ No UK Biobank individual-level data, participant identifiers, raw hospital episo
 ## Overview
 
 This study integrates UK Biobank observational phenotyping with FinnGen R9 GWAS summary statistics and external molecular resources to distinguish shared susceptibility from disease-specific biology in uterine fibroids and endometriosis.
-<img width="940" height="480" alt="image" src="https://github.com/user-attachments/assets/fc363ae2-9ae0-4454-a7cf-3b9b52942045" />
+<img width="947" height="480" alt="image" src="https://github.com/user-attachments/assets/08450c43-119b-4e3e-8569-644d6b569acd" />
+
 
 
 The analytical framework includes:
