@@ -1,0 +1,51 @@
+# Large GWAS summary statistics (too large for GitHub — deposit on Zenodo)
+*.gz
+*.sumstats.gz
+Cleaned_*.txt
+*_munged.*
+olink_data.csv
+uf_data_0404.csv
+uterine.csv
+analysis_dataset*.csv
+
+# 1000 Genomes LD reference (3.9 GB)
+reference_data/
+*.bed
+*.bim
+*.fam
+
+# MAGMA large input files
+*.snploc
+*.pval
+*.raw
+*.genes.raw
+
+# Raw FinnGen phewas GWAS files
+Finngen_phewas/
+
+# System / macOS
+.DS_Store
+.Rhistory
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# R
+*.Rout
+.Rdata
+
+# Temporary / scratch
+scratch/
+*.tmp
+*.log
+
+# Sensitive — never commit tokens or credentials
+.env
+*.env
+*_token*
+*_key*
+config_private.*

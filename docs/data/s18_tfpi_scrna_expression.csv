@@ -1,0 +1,13 @@
+dataset,condition,cell_type,cells,mean_lognorm_expr,pct_expressing,TFPI_present,method
+GSE162122,Fibroid,Endothelial,7600,0.4523,22.97,TRUE,Seurat log-normalisation (scale.factor=10000)
+GSE162122,Fibroid,Fibroblast_stromal,813,0.5414,30.38,TRUE,Seurat log-normalisation (scale.factor=10000)
+GSE162122,Fibroid,Immune,2079,0.0281,1.54,TRUE,Seurat log-normalisation (scale.factor=10000)
+GSE162122,Fibroid,Smooth_muscle,43889,0.1343,5.09,TRUE,Seurat log-normalisation (scale.factor=10000)
+GSE162122,Myometrium,Endothelial,3345,0.8488,51.81,TRUE,Seurat log-normalisation (scale.factor=10000)
+GSE162122,Myometrium,Fibroblast_stromal,222,0.91,48.65,TRUE,Seurat log-normalisation (scale.factor=10000)
+GSE162122,Myometrium,Immune,2316,0.0125,0.82,TRUE,Seurat log-normalisation (scale.factor=10000)
+GSE162122,Myometrium,Smooth_muscle,3538,0.3122,11.28,TRUE,Seurat log-normalisation (scale.factor=10000)
+GSE203191,Endometriosis,Endothelial,242,0.2725,14.88,TRUE,Seurat log-normalisation (scale.factor=10000)
+GSE203191,Endometriosis,Epithelial,7435,0.0839,4.38,TRUE,Seurat log-normalisation (scale.factor=10000)
+GSE203191,Endometriosis,Fibroblast_stromal,9843,0.327,19.23,TRUE,Seurat log-normalisation (scale.factor=10000)
+GSE203191,Endometriosis,Immune,48720,0.034,2.52,TRUE,Seurat log-normalisation (scale.factor=10000)

@@ -1,0 +1,37 @@
+Trait,Disease,N total,N before,N after,Prop. after Dx,Median lag post (yrs),Direction
+Heavy menstrual bleeding,Fibroids,4952,1605,630,0.13,1.6,Pre
+Endometrial polyp,Fibroids,2663,871,485,0.18,4.6,Pre
+Adenomyosis,Fibroids,1454,49,298,0.20,0.9,Pre
+Endometriosis,Fibroids,1079,212,249,0.23,1.9,Pre
+Endometrial cancer,Fibroids,599,120,168,0.28,3.3,Pre
+PCOS,Fibroids,66,25,22,0.33,7.7,Pre
+Chronic pelvic pain,Fibroids,275,95,103,0.37,2.6,Pre
+Ovarian cancer,Fibroids,299,40,121,0.40,5.1,Mixed/bidirectional
+Cervical cancer,Fibroids,62,15,26,0.42,2.1,Mixed/bidirectional
+Iron deficiency anaemia,Fibroids,1381,395,759,0.55,10.4,Mixed/bidirectional
+IBS,Fibroids,874,184,586,0.67,10.5,Post
+Depression,Fibroids,1672,302,1203,0.72,10.7,Post
+Osteoarthritis,Fibroids,3707,748,2785,0.75,11.3,Post
+Anxiety,Fibroids,1358,201,1029,0.76,12.6,Post
+Osteoporosis,Fibroids,889,138,696,0.78,13.1,Post
+Vitamin D deficiency,Fibroids,353,37,280,0.79,13.2,Post
+NAFLD,Fibroids,377,42,304,0.81,12.7,Post
+Fibromyalgia,Fibroids,295,35,240,0.81,12.8,Post
+PTSD,Fibroids,34,3,30,0.88,11.5,Post
+Fibroids,Endometriosis,1079,249,212,0.20,4.2,Pre
+Heavy menstrual bleeding,Endometriosis,956,417,248,0.26,4.2,Pre
+Endometrial cancer,Endometriosis,83,21,22,0.27,10.4,Pre
+PCOS,Endometriosis,45,14,12,0.27,3.3,Pre
+Endometrial polyp,Endometriosis,346,124,97,0.28,6.2,Pre
+Adenomyosis,Endometriosis,478,60,147,0.31,2.6,Pre
+Ovarian cancer,Endometriosis,81,11,27,0.33,7.8,Pre
+Chronic pelvic pain,Endometriosis,202,73,86,0.43,3.2,Mixed/bidirectional
+Iron deficiency anaemia,Endometriosis,245,70,148,0.60,10.7,Post
+IBS,Endometriosis,266,70,162,0.61,14.0,Post
+Depression,Endometriosis,454,75,344,0.76,11.7,Post
+Osteoarthritis,Endometriosis,713,121,557,0.78,12.6,Post
+Anxiety,Endometriosis,329,40,269,0.82,13.8,Post
+Osteoporosis,Endometriosis,158,22,132,0.84,14.5,Post
+Fibromyalgia,Endometriosis,130,13,112,0.86,15.4,Post
+NAFLD,Endometriosis,92,7,82,0.89,14.1,Post
+Vitamin D deficiency,Endometriosis,61,3,55,0.90,13.3,Post

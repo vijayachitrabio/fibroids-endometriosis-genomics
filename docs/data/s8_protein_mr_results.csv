@@ -1,0 +1,43 @@
+protein,outcome,method,n_snps,OR,CI_lo,CI_hi,beta,se,pval,egger_intercept_p,cochran_Q_p,FDR,logfc_fib,PP.H4,coloc_call,direction_consistent,evidence_tier
+TFPI,Hypertension,IVW,1,0.7497,0.63,0.8921,-0.28809,0.08873,0.001168,NA,NA,0.008176,-0.037,7e-4,No evidence (H4<0.20),Consistent (both negative),Tier 3: FDR-sig + Consistent (no/pending coloc)
+FLT3LG,Hypertension,IVW,1,1.0966,1.0221,1.1766,0.09223,0.03591,0.01022,NA,NA,0.035769999999999996,-0.053,0.0184,No evidence (H4<0.20),Discordant,Tier 4: FDR-sig only (direction discordant or no coloc)
+TNFSF11,Hypertension,IVW,1,0.9331,0.8783,0.9912,-0.06929,0.03083,0.02459,NA,NA,0.05737666666666667,0.082,0.0045,No evidence (H4<0.20),Discordant,Non-significant
+FGF23,Depression,IVW,2,0.9478,0.9106,0.9865,-0.05361,0.02042,0.008649,NA,NA,0.060543,0.118,0.003,No evidence (H4<0.20),Discordant,Non-significant
+TNFSF11,Ovarian cancer,IVW,1,0.5424,0.3399,0.8656,-0.61175,0.23849,0.01032,NA,NA,0.07224,0.082,0.0045,No evidence (H4<0.20),Discordant,Non-significant
+TFPI,Ovarian cancer,IVW,1,0.2538,0.0664,0.9697,-1.37108,0.68385,0.04497,NA,NA,0.157395,-0.037,7e-4,No evidence (H4<0.20),Consistent (both negative),Non-significant
+FLT3LG,Depression,IVW,1,1.0973,1.0016,1.202,0.09282,0.04653,0.04603,NA,NA,0.161105,-0.053,0.0184,No evidence (H4<0.20),Discordant,Non-significant
+CDH3,Breast cancer,IVW,1,1.1521,1.0137,1.3093,0.14158,0.06527,0.03008,NA,NA,0.21056,0.062,0.0067,No evidence (H4<0.20),Consistent (both positive),Non-significant
+LPL,PCOS,IVW,2,1.0395,0.9972,1.0835,0.03871,0.02117,0.06743,NA,NA,0.47201000000000004,-0.057,0.0082,No evidence (H4<0.20),Discordant,Non-significant
+LPL,Depression,IVW,2,0.9751,0.9373,1.0145,-0.02517,0.02019,0.2125,NA,NA,0.48832,-0.057,0.0082,No evidence (H4<0.20),Consistent (both negative),Non-significant
+CDH3,Depression,IVW,1,0.9598,0.8879,1.0375,-0.04104,0.03971,0.3014,NA,NA,0.48832,0.062,0.0067,No evidence (H4<0.20),Discordant,Non-significant
+TFPI,Depression,IVW,1,1.1131,0.8896,1.3928,0.10715,0.11437,0.3488,NA,NA,0.48832,-0.037,7e-4,No evidence (H4<0.20),Discordant,Non-significant
+LPL,Ovarian cancer,IVW,2,0.8933,0.7272,1.0974,-0.11282,0.10497,0.2825,NA,NA,0.5085500000000001,-0.057,0.0082,No evidence (H4<0.20),Consistent (both negative),Non-significant
+PTK7,Ovarian cancer,IVW,1,0.6067,0.2401,1.533,-0.49979,0.47296,0.2906,NA,NA,0.5085500000000001,0.055,0.0199,No evidence (H4<0.20),Discordant,Non-significant
+FGF23,Hypertension,IVW,2,1.0331,0.9672,1.1036,0.0326,0.03366,0.3328,NA,NA,0.5824,0.118,0.003,No evidence (H4<0.20),Consistent (both positive),Non-significant
+FGF23,Breast cancer,IVW,2,1.063,0.9584,1.179,0.06108,0.05285,0.2478,NA,NA,0.6111000000000001,0.118,0.003,No evidence (H4<0.20),Consistent (both positive),Non-significant
+LPL,Breast cancer,IVW,2,0.986,0.962,1.0106,-0.01408,0.01255,0.2619,NA,NA,0.6111000000000001,-0.057,0.0082,No evidence (H4<0.20),Consistent (both negative),Non-significant
+PTK7,Hypertension,IVW,1,1.0323,0.9157,1.1638,0.03184,0.06115,0.6026,NA,NA,0.7400166666666667,0.055,0.0199,No evidence (H4<0.20),Consistent (both positive),Non-significant
+CDH3,Hypertension,IVW,1,0.9856,0.9283,1.0464,-0.01452,0.03053,0.6343,NA,NA,0.7400166666666667,0.062,0.0067,No evidence (H4<0.20),Discordant,Non-significant
+FLT3LG,Ovarian cancer,IVW,1,1.1839,0.6878,2.0379,0.16881,0.2771,0.5424,NA,NA,0.7593599999999999,-0.053,0.0184,No evidence (H4<0.20),Discordant,Non-significant
+CDH3,Ovarian cancer,IVW,1,1.0966,0.6901,1.7426,0.09221,0.23631,0.6964,NA,NA,0.8124666666666668,0.062,0.0067,No evidence (H4<0.20),Consistent (both positive),Non-significant
+CDH3,Ovarian cyst,IVW,1,0.9413,0.841,1.0537,-0.06044,0.05753,0.2934,NA,NA,0.8142,0.062,0.0067,No evidence (H4<0.20),Discordant,Non-significant
+TNFSF11,Ovarian cyst,IVW,1,0.9661,0.8621,1.0825,-0.03453,0.05807,0.552,NA,NA,0.8142,0.082,0.0045,No evidence (H4<0.20),Discordant,Non-significant
+FGF23,Ovarian cyst,IVW,2,1.0512,0.8676,1.2737,0.04996,0.09796,0.6101,NA,NA,0.8142,0.118,0.003,No evidence (H4<0.20),Consistent (both positive),Non-significant
+FLT3LG,Ovarian cyst,IVW,1,0.975,0.8544,1.1127,-0.0253,0.0674,0.7074,NA,NA,0.8142,-0.053,0.0184,No evidence (H4<0.20),Consistent (both negative),Non-significant
+PTK7,Ovarian cyst,IVW,1,1.0377,0.827,1.3021,0.03704,0.11579,0.749,NA,NA,0.8142,0.055,0.0199,No evidence (H4<0.20),Consistent (both positive),Non-significant
+TFPI,Ovarian cyst,IVW,1,1.0491,0.7594,1.4493,0.04794,0.16488,0.7712,NA,NA,0.8142,-0.037,7e-4,No evidence (H4<0.20),Discordant,Non-significant
+LPL,Ovarian cyst,IVW,2,0.9931,0.9372,1.0523,-0.00695,0.02957,0.8142,NA,NA,0.8142,-0.057,0.0082,No evidence (H4<0.20),Consistent (both negative),Non-significant
+PTK7,Breast cancer,IVW,1,1.0625,0.8208,1.3755,0.06065,0.13171,0.6451,NA,NA,0.8383666666666667,0.055,0.0199,No evidence (H4<0.20),Consistent (both positive),Non-significant
+TNFSF11,Breast cancer,IVW,1,0.9707,0.8533,1.1042,-0.029760000000000002,0.06574,0.6508,NA,NA,0.8383666666666667,0.082,0.0045,No evidence (H4<0.20),Discordant,Non-significant
+TFPI,Breast cancer,IVW,1,1.071,0.73740000000000006,1.5555,0.06862,0.1904,0.7186,NA,NA,0.8383666666666667,-0.037,7e-4,No evidence (H4<0.20),Discordant,Non-significant
+FGF23,Ovarian cancer,IVW,2,0.9675,0.6854,1.3656,-0.03309,0.17586,0.8508,NA,NA,0.8508,0.118,0.003,No evidence (H4<0.20),Discordant,Non-significant
+TFPI,PCOS,IVW,1,1.5773,0.5108,4.8704,0.45571,0.57523,0.4282,NA,NA,0.8561,-0.037,7e-4,No evidence (H4<0.20),Discordant,Non-significant
+FGF23,PCOS,IVW,2,0.9295,0.7493,1.153,-0.07309,0.10993,0.5061,NA,NA,0.8561,0.118,0.003,No evidence (H4<0.20),Discordant,Non-significant
+CDH3,PCOS,IVW,1,1.1059,0.7461,1.6393,0.10069,0.20081,0.6161,NA,NA,0.8561,0.062,0.0067,No evidence (H4<0.20),Consistent (both positive),Non-significant
+PTK7,PCOS,IVW,1,1.155,0.5238,2.5466,0.14407,0.40342,0.721,NA,NA,0.8561,0.055,0.0199,No evidence (H4<0.20),Consistent (both positive),Non-significant
+TNFSF11,PCOS,IVW,1,0.9415,0.6325,1.4015,-0.06028,0.20296,0.7665,NA,NA,0.8561,0.082,0.0045,No evidence (H4<0.20),Discordant,Non-significant
+FLT3LG,PCOS,IVW,1,1.0437,0.6571,1.658,0.04282,0.23612,0.8561,NA,NA,0.8561,-0.053,0.0184,No evidence (H4<0.20),Discordant,Non-significant
+TNFSF11,Depression,IVW,1,0.9907,0.9157,1.0717,-0.00939,0.04012,0.815,NA,NA,0.8908,0.082,0.0045,No evidence (H4<0.20),Discordant,Non-significant
+PTK7,Depression,IVW,1,0.9891,0.8461,1.1563,-0.01094,0.07968,0.8908,NA,NA,0.8908,0.055,0.0199,No evidence (H4<0.20),Discordant,Non-significant
+LPL,Hypertension,IVW,2,1.0005,0.8985,1.114,4.6e-4,0.05483,0.9932,NA,NA,0.9932,-0.057,0.0082,No evidence (H4<0.20),Discordant,Non-significant
+FLT3LG,Breast cancer,IVW,1,0.9994,0.8596,1.1618,-6.3e-4,0.07686,0.9934,NA,NA,0.9934,-0.053,0.0184,No evidence (H4<0.20),Consistent (both negative),Non-significant

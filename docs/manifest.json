@@ -1,0 +1,149 @@
+{
+  "updated": "2026-06-18",
+  "title": "Fibroids-Endometriosis Results Browser",
+  "complianceNote": "Static aggregate manuscript outputs only. No UK Biobank individual-level records, no participant browser, no phenotype-by-participant dropdowns, and no restricted raw data are included.",
+  "metrics": [
+    {
+      "label": "Study layers",
+      "value": "8",
+      "detail": "Comorbidity, temporal, LDSC/LAVA, MR, MAGMA, proteomics, scRNA-seq, sensitivity"
+    },
+    {
+      "label": "Shared non-cancer comorbidities",
+      "value": "33",
+      "detail": "Aggregate comorbidity architecture used in the graphical summary"
+    },
+    {
+      "label": "Genome-wide genetic correlation",
+      "value": "rg = 0.511",
+      "detail": "LDSC estimate between uterine fibroids and endometriosis"
+    },
+    {
+      "label": "Shared MAGMA genes",
+      "value": "10",
+      "detail": "SYNE1, GREB1, WNT4, ESR1, EFR3B, VIP, LDLRAD2, DNM3, PLEKHM3, ARL14EP"
+    },
+    {
+      "label": "MR-PRESSO no-cancer pairs",
+      "value": "38",
+      "detail": "Multi-instrument PheWAS-MR sensitivity checks; protein-MR excluded due sparse pQTL instruments"
+    }
+  ],
+  "figures": [
+    {
+      "id": "fig1",
+      "title": "Study Design Framework",
+      "section": "Overview",
+      "src": "assets/figures/figure1_study_design.png",
+      "caption": "Multi-layer framework spanning genetic overlap, cellular context, and causal inference."
+    },
+    {
+      "id": "fig2",
+      "title": "Comorbidity Burden",
+      "section": "Phenotype",
+      "src": "assets/figures/figure2_comorbidity_no_cancer.png",
+      "caption": "No-cancer aggregate odds-ratio landscape for uterine fibroids and endometriosis."
+    },
+    {
+      "id": "fig3",
+      "title": "Temporal Ordering",
+      "section": "Temporal",
+      "src": "assets/figures/figure3_temporal_ordering.png",
+      "caption": "HES date-based temporal architecture for informative non-cancer comorbidities."
+    },
+    {
+      "id": "fig4",
+      "title": "Local Genetic Correlation",
+      "section": "Genetics",
+      "src": "assets/figures/figure4_lava_local_rg.png",
+      "caption": "Formal LAVA local genetic correlation landscape."
+    },
+    {
+      "id": "fig5",
+      "title": "MAGMA Gene Architecture",
+      "section": "Genes",
+      "src": "assets/figures/figure5_magma_gene_architecture.png",
+      "caption": "Disease-specific and shared gene-level association structure."
+    },
+    {
+      "id": "fig7",
+      "title": "PheWAS-MR and TFPI",
+      "section": "MR / Proteomics",
+      "src": "assets/figures/figure7_phewas_tfpi.png",
+      "caption": "No-cancer PheWAS-MR summary and TFPI proteome-MR evidence."
+    },
+    {
+      "id": "figS",
+      "title": "Single-cell Context",
+      "section": "Single-cell",
+      "src": "assets/figures/figureS_scrna_context.png",
+      "caption": "Public scRNA-seq context for prioritized shared genetic signals."
+    }
+  ],
+  "tables": [
+    {
+      "id": "table2",
+      "title": "Comorbidity Associations",
+      "section": "Phenotype",
+      "path": "data/table2_comorbidity_associations.csv",
+      "format": "csv",
+      "description": "Aggregate odds ratios and FDR values for comorbidity comparisons."
+    },
+    {
+      "id": "table3",
+      "title": "Temporal Ordering",
+      "section": "Temporal",
+      "path": "data/table3_temporal_ordering.csv",
+      "format": "csv",
+      "description": "Aggregate temporal ordering results from HES diagnosis dates."
+    },
+    {
+      "id": "s2",
+      "title": "LAVA FDR-significant Blocks",
+      "section": "Genetics",
+      "path": "data/s2_lava_fdr05.csv",
+      "format": "csv",
+      "description": "FDR-significant local genetic correlation blocks."
+    },
+    {
+      "id": "s14c",
+      "title": "Shared MAGMA Genes",
+      "section": "Genes",
+      "path": "data/s14c_magma_shared_genes.tsv",
+      "format": "tsv",
+      "description": "Shared MAGMA gene-level signals."
+    },
+    {
+      "id": "s6",
+      "title": "PheWAS-MR No-cancer",
+      "section": "MR",
+      "path": "data/s6_phewas_mr_no_cancer.csv",
+      "format": "csv",
+      "description": "No-cancer PheWAS-MR results using IVW, weighted median, and MR-Egger."
+    },
+    {
+      "id": "s19",
+      "title": "MR-PRESSO No-cancer Sensitivity",
+      "section": "MR",
+      "path": "data/s19_mr_presso_no_cancer.csv",
+      "format": "csv",
+      "description": "MR-PRESSO outlier and distortion tests for feasible multi-instrument no-cancer MR pairs."
+    },
+    {
+      "id": "s8",
+      "title": "Protein-MR Results",
+      "section": "Proteomics",
+      "path": "data/s8_protein_mr_results.csv",
+      "format": "csv",
+      "description": "Corrected protein-MR result table; sparse pQTL instruments noted."
+    },
+    {
+      "id": "s18",
+      "title": "TFPI scRNA-seq Expression",
+      "section": "Single-cell",
+      "path": "data/s18_tfpi_scrna_expression.csv",
+      "format": "csv",
+      "description": "Public scRNA-seq TFPI cell-type expression summary."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+/* Custom overrides for Bootstrap 5 Theme */
+
+:root {
+  /* Proper Orange & Navy Blue Combo */
+  --custom-navy: #1b3a57;
+  --custom-navy-hover: #11263a;
+  --custom-orange: #d35400;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+/* Ensure figure images are responsive but constrained */
+.figure-img-custom {
+  max-height: 800px;
+  width: 100%;
+  object-fit: contain;
+  background-color: #ffffff; /* keep figures on white background for transparency readability */
+}
+
+/* Make tables visually appealing inside cards */
+.table-responsive {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* Make table header sticky */
+.table-responsive thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #f8f9fa;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.1); /* border bottom effect */
+}
+
+/* Smooth transitions for tabs */
+.nav-tabs .nav-link {
+  transition: all 0.2s ease-in-out;
+  color: #6c757d;
+  font-weight: 500;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--custom-navy);
+  font-weight: 600;
+}
+
+/* Override Bootstrap Primary with Navy Blue */
+.text-primary { color: var(--custom-navy) !important; }
+.bg-primary { background-color: var(--custom-navy) !important; }
+.btn-primary { 
+  background-color: var(--custom-navy); 
+  border-color: var(--custom-navy); 
+}
+.btn-primary:hover { 
+  background-color: var(--custom-navy-hover); 
+  border-color: var(--custom-navy-hover); 
+}
+.btn-outline-primary { 
+  color: var(--custom-navy); 
+  border-color: var(--custom-navy); 
+}
+.btn-outline-primary:hover { 
+  background-color: var(--custom-navy); 
+  color: #ffffff; 
+}
+.badge.bg-info {
+  background-color: var(--custom-orange) !important;
+  color: #ffffff !important;
+}
