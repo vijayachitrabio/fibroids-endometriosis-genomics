@@ -1,5 +1,6 @@
 # Shared Genetic Architecture and Temporal Comorbidity Patterns in Uterine Fibroids and Endometriosis
-<img width="1376" height="768" alt="Study Design Workflow" src="figures/Figure_1_600dpi.png" />
+<img width="952" height="490" alt="image" src="https://github.com/user-attachments/assets/7bc80ac4-5eed-4daf-8a96-aa7e4bda68df" />
+
 
 
 
