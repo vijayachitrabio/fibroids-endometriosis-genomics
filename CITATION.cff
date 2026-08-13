@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript."
+type: software
+title: "Shared Genetic Architecture and Temporal Comorbidity Patterns in Uterine Fibroids and Endometriosis"
+authors:
+  - family-names: Modhukur
+    given-names: Vijayachitra
+    email: vijayachitra.modhukur@celvia.ee
+    affiliation: "Celvia OÜ, Tartu, Estonia; Institute of Biotechnology, University of Tartu, Estonia"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/vijayachitra-m/fibroids-endometriosis-genomics"
+license: MIT
+date-released: "2026"
+keywords:
+  - uterine fibroids
+  - endometriosis
+  - GWAS
+  - genetic correlation
+  - LAVA
+  - Mendelian randomisation
+  - MAGMA
+  - UK Biobank
+  - temporal epidemiology
+  - proteomics

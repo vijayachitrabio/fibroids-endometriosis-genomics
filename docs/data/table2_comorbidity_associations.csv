@@ -1,0 +1,44 @@
+Trait,Classification,Fibroids OR (95% CI),FDR,Endometriosis OR (95% CI),FDR
+Adenomyosis,Shared,21.80 (19.78-24.02),***,14.70 (12.50-17.29),***
+Heavy menstrual bleeding,Shared,8.43 (8.03-8.86),***,3.44 (3.08-3.84),***
+Leiomyosarcoma,Shared,8.10 (7.20-9.10),***,5.86 (4.26-8.07),***
+Endometrial cancer,Shared,8.06 (7.18-9.05),***,5.91 (4.31-8.11),***
+Ovarian cyst,Shared,7.52 (7.06-8.01),***,10.64 (9.50-11.92),***
+Ovarian cancer,Shared,5.39 (4.63-6.29),***,8.34 (6.06-11.48),***
+Endometrial polyp,Shared,5.28 (4.99-5.57),***,1.88 (1.58-2.24),***
+Cervical polyp,Shared,3.54 (3.22-3.89),***,2.05 (1.57-2.68),***
+Cervical cancer,Shared,3.49 (2.53-4.82),***,3.53 (1.79-6.95),***
+Vulvodynia,Shared,3.33 (2.73-4.06),***,10.19 (7.94-13.08),***
+Chronic pelvic pain,Shared,2.85 (2.40-3.38),***,9.52 (7.77-11.65),***
+Interstitial cystitis,Shared,2.43 (1.66-3.57),***,2.86 (1.17-7.01),*
+Urinary incontinence,Shared,2.03 (1.85-2.22),***,2.24 (1.82-2.75),***
+PCOS,Shared,1.87 (1.29-2.70),**,5.05 (3.30-7.74),***
+Obesity,Shared,1.85 (1.75-1.97),***,1.77 (1.53-2.05),***
+Iron deficiency anaemia,Shared,1.74 (1.62-1.87),***,1.51 (1.25-1.83),***
+Overactive bladder,Shared,1.66 (1.47-1.87),***,2.77 (2.16-3.54),***
+Recurrent UTI,Shared,1.65 (1.54-1.77),***,2.10 (1.77-2.50),***
+SLE,Shared,1.58 (1.11-2.25),*,3.06 (1.62-5.78),***
+IBS,Shared,1.57 (1.44-1.70),***,2.54 (2.15-3.00),***
+Hypertension,Shared,1.55 (1.48-1.62),***,1.52 (1.35-1.72),***
+Migraine,Shared,1.51 (1.35-1.69),***,2.07 (1.67-2.58),***
+NAFLD,Shared,1.42 (1.23-1.63),***,1.80 (1.31-2.46),***
+Anxiety,Shared,1.38 (1.29-1.48),***,1.55 (1.32-1.82),***
+Depression,Shared,1.35 (1.27-1.44),***,1.82 (1.58-2.08),***
+GERD/reflux,Shared,1.34 (1.27-1.42),***,1.79 (1.57-2.04),***
+Hyperthyroidism,Shared,1.34 (1.15-1.56),***,1.84 (1.30-2.60),***
+Dyslipidaemia,Shared,1.31 (1.23-1.38),***,1.60 (1.37-1.88),***
+Fibromyalgia,Shared,1.30 (1.12-1.51),***,3.05 (2.40-3.88),***
+Vitamin D deficiency,Shared,1.28 (1.10-1.49),**,1.69 (1.18-2.42),**
+Back pain,Shared,1.28 (1.19-1.37),***,2.07 (1.79-2.39),***
+Hypothyroidism,Shared,1.25 (1.17-1.33),***,1.38 (1.18-1.62),***
+Peptic ulcer disease,Shared,1.21 (1.07-1.36),**,2.21 (1.71-2.85),***
+Osteoarthritis,Shared,1.20 (1.15-1.26),***,1.81 (1.61-2.03),***
+IBD,Shared,1.17 (1.01-1.36),*,1.73 (1.27-2.35),***
+Osteoporosis,Shared,1.10 (1.01-1.20),*,1.59 (1.27-1.99),***
+PTSD,Fibroid-specific,2.00 (1.25-3.21),**,1.99 (0.81-4.89),ns
+Breast cancer,Fibroid-specific,1.36 (1.27-1.45),***,1.08 (0.89-1.31),ns
+Type 2 diabetes,Fibroid-specific,1.31 (1.22-1.42),***,1.16 (0.93-1.46),ns
+Thrombocytopenia,Endometriosis-specific,1.18 (0.96-1.44),ns,1.66 (1.05-2.63),*
+Coeliac disease,Endometriosis-specific,1.11 (0.91-1.37),ns,1.64 (1.07-2.51),*
+Rheumatoid arthritis,Endometriosis-specific,1.09 (0.97-1.23),ns,1.87 (1.44-2.42),***
+Psoriasis,Neither significant,1.17 (0.98-1.39),ns,0.76 (0.45-1.29),ns
