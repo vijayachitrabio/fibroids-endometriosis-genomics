@@ -222,4 +222,4 @@ python scripts/07_single_cell_context/plot_scrna_shared_gene_context.py
 ## Correspondence
 
 Vijayachitra Modhukur — vijayachitra.modhukur@celvia.ee  
-Institute of Biotechnology, University of Tartu, Estonia | Celvia CC, Tartu, Estonia
+Institute of Clinical Medicine, University of Tartu, Estonia | Celvia CC, Tartu, Estonia
