@@ -26,8 +26,10 @@ traits <- data.table(
     gwas_dir,
     c("finngen_R9_N14_ENDOMETRIOSIS.gz", "finngen_R9_CD2_BENIGN_LEIOMYOMA_UTERI.gz")
   ),
-  cases = c(17045L, 35474L),
-  controls = c(239335L - 17045L, 218728L - 35474L),
+  # Reconciled provenance: Using true FinnGen R9 case counts (15,088 and 31,661) 
+  # with the script-supplied total N values (239,335 and 218,728) from the manuscript.
+  cases = c(15088L, 31661L),
+  controls = c(239335L - 15088L, 218728L - 31661L),
   n_total = c(239335L, 218728L)
 )
 
