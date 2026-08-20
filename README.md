@@ -1,8 +1,8 @@
-# Shared genetic architecture and divergent biology of uterine fibroids and endometriosis
+# Shared genetic architecture and divergent clinical and molecular profiles of uterine fibroids and endometriosis
 
 This repository contains analysis code, phenotype definitions, code lists, endpoint identifiers, software information and permitted aggregate/derived outputs for the manuscript:
 
-> Modhukur V, Lingasamy P, Patel N, Salumets A. Shared genetic architecture and divergent biology of uterine fibroids and endometriosis. Manuscript in preparation (2026).
+> Modhukur V, Lingasamy P, Patel N, Salumets A. Shared genetic architecture and divergent clinical and molecular profiles of uterine fibroids and endometriosis. Manuscript in preparation (2026).
 
 No UK Biobank individual-level data, participant identifiers, raw hospital episode records, raw diagnosis dates, raw genotype data, raw Olink matrices or other restricted participant-level files are included in this repository.
 
@@ -141,7 +141,7 @@ Before public release, repository outputs should be checked to ensure that no re
 
 ## Citation
 
-> Modhukur V et al. Shared genetic architecture and divergent biology of uterine fibroids and endometriosis. Manuscript in preparation (2026).
+> Modhukur V et al. Shared genetic architecture and divergent clinical and molecular profiles of uterine fibroids and endometriosis. Manuscript in preparation (2026).
 
 ## Correspondence
 
@@ -230,7 +230,7 @@ python scripts/07_single_cell_context/plot_scrna_shared_gene_context.py
 
 ## Citation
 
-> Modhukur V et al. Shared genetic architecture and divergent biology of uterine fibroids and endometriosis. *Manuscript in preparation* (2026).
+> Modhukur V et al. Shared genetic architecture and divergent clinical and molecular profiles of uterine fibroids and endometriosis. *Manuscript in preparation* (2026).
 
 ## Correspondence
 
