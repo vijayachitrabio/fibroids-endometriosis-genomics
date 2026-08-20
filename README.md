@@ -87,7 +87,13 @@ Rscript scripts/01_comorbidity/run_temporal_analysis.R
 
 # 2. Genome-wide and local genetic correlation
 Rscript scripts/02_genetic_correlation/Run_LDSC_Models.R
-Rscript scripts/02_genetic_correlation/run_lava_primary_overlap_aware.R
+Rscript scripts/02_genetic_correlation/01_prepare_formal_lava_inputs.R
+Rscript scripts/02_genetic_correlation/02_run_formal_lava_blocks.R
+Rscript scripts/02_genetic_correlation/02b_run_formal_lava_blocks_ldsc.R
+Rscript scripts/02_genetic_correlation/02c_run_formal_lava_blocks_ldsc_standardized.R
+Rscript scripts/02_genetic_correlation/process_lava_results.R
+Rscript scripts/02_genetic_correlation/process_lava_results_ldsc_standardized.R
+Rscript scripts/02_genetic_correlation/generate_formal_lava_perspective_clean_rankpanel_ldsc_standardized_600dpi.R
 
 # 3. Gene-level and pathway analyses
 bash scripts/04_gene_level/run_magma_gene_level.sh
@@ -166,9 +172,15 @@ Rscript scripts/01_comorbidity/precompute_results.R
 Rscript scripts/01_comorbidity/run_temporal_analysis.R
 python scripts/01_comorbidity/run_temporal_statistical_tests.py
 
-# 2. Genetic correlation (R & Python)
+# 2. Genetic correlation (R)
 Rscript scripts/02_genetic_correlation/Run_LDSC_Models.R
-python scripts/02_genetic_correlation/lava_coloc_robust.py
+Rscript scripts/02_genetic_correlation/01_prepare_formal_lava_inputs.R
+Rscript scripts/02_genetic_correlation/02_run_formal_lava_blocks.R
+Rscript scripts/02_genetic_correlation/02b_run_formal_lava_blocks_ldsc.R
+Rscript scripts/02_genetic_correlation/02c_run_formal_lava_blocks_ldsc_standardized.R
+Rscript scripts/02_genetic_correlation/process_lava_results.R
+Rscript scripts/02_genetic_correlation/process_lava_results_ldsc_standardized.R
+Rscript scripts/02_genetic_correlation/generate_formal_lava_perspective_clean_rankpanel_ldsc_standardized_600dpi.R
 
 # 3. Mendelian randomisation (R & Python)
 Rscript scripts/03_mendelian_randomisation/PheWAS_MR_46traits.R
@@ -218,7 +230,7 @@ python scripts/07_single_cell_context/plot_scrna_shared_gene_context.py
 
 ## Citation
 
-> Modhukur V et al. Shared Genetic Architecture and Temporal Comorbidity Patterns in Uterine Fibroids and Endometriosis. *Manuscript in preparation* (2026).
+> Modhukur V et al. Shared genetic architecture and divergent biology of uterine fibroids and endometriosis. *Manuscript in preparation* (2026).
 
 ## Correspondence
 
