@@ -1,150 +1,196 @@
-# Shared genetic architecture and divergent clinical and molecular profiles of uterine fibroids and endometriosis
+# Integrative genomic analyses reveal regional and cellular convergence between uterine fibroids and endometriosis
 
-This repository contains analysis code, phenotype definitions, code lists, endpoint identifiers, software information and permitted aggregate/derived outputs for the manuscript:
+This repository contains analysis code, endpoint information, software details and permitted aggregate outputs supporting the manuscript:
 
-> Modhukur V, Lingasamy P, Patel N, Salumets A. Shared genetic architecture and divergent clinical and molecular profiles of uterine fibroids and endometriosis. Manuscript in preparation (2026).
-
-No UK Biobank individual-level data, participant identifiers, raw hospital episode records, raw diagnosis dates, raw genotype data, raw Olink matrices or other restricted participant-level files are included in this repository.
+> Modhukur V, Lingasamy P, Patel N, Salumets A. *Integrative genomic analyses reveal regional and cellular convergence between uterine fibroids and endometriosis.* Manuscript in preparation (2026).
 
 ## Overview
 
-This study integrates UK Biobank observational phenotyping with FinnGen R9 GWAS summary statistics and external molecular resources to distinguish shared susceptibility from disease-specific biology in uterine fibroids and endometriosis.
-<img width="947" height="480" alt="image" src="https://github.com/user-attachments/assets/08450c43-119b-4e3e-8569-644d6b569acd" />
+Uterine fibroids and endometriosis are common, oestrogen-responsive gynaecological disorders with partly overlapping biological features. This study uses publicly available FinnGen Release 9 genome-wide association study (GWAS) summary statistics and public reference resources to characterise their shared and disorder-specific common-variant genetic architecture.
 
-
+The study is based entirely on summary-level and publicly available data. It does not use UK Biobank data, individual-level participant data or controlled-access biobank data.
 
 The analytical framework includes:
 
-1. UK Biobank case-control and comorbidity analysis
-2. Temporal ordering of recorded comorbidities relative to the index gynaecological diagnosis
-3. Genome-wide genetic correlation using LDSC
-4. Local genetic correlation using LAVA
-5. MAGMA gene-level and exploratory pathway analysis
-6. Summary-level Mendelian randomisation and exploratory PheWAS-MR
-7. Bayesian colocalisation, SuSiE fine-mapping, Olink proteomics and targeted cis-pQTL protein Mendelian randomisation
-8. Single-cell RNA-seq contextualisation and cell-type heritability enrichment using S-LDSC
+1. Genome-wide genetic correlation using LD Score Regression (LDSC)
+2. Local genetic correlation using LAVA
+3. MAGMA gene-level association analysis
+4. Exploratory pathway and gene-set annotation
+5. SuSiE fine-mapping of selected shared regions
+6. Single-cell RNA-seq contextualisation using published datasets
+7. Cell-type heritability enrichment using stratified LDSC (S-LDSC)
 
 ## Key findings
 
-- **Comorbidity:** Among 38 prespecified primary comorbidity traits, 34 were FDR-significant for uterine fibroids, 35 for endometriosis and 32 for both disorders.
-- **Temporal ordering:** Among temporally evaluable traits, 9 of 16 fibroid-associated traits and 9 of 15 endometriosis-associated traits were predominantly recorded after the index diagnosis. These analyses reflect healthcare-record timing, not biological onset or causality.
-- **Genome-wide genetic correlation:** LDSC estimated moderate positive genome-wide genetic correlation between uterine fibroids and endometriosis (rg = 0.511, SE = 0.069, P = 1.37 x 10^-13).
-- **Local genetic correlation:** The primary LDSC-standardised overlap-aware LAVA analysis yielded 92 valid bivariate tests and 16 FDR-significant local-correlation blocks.
-- **Gene-level analysis:** MAGMA identified 147 Bonferroni-significant genes for fibroids, 38 for endometriosis and 10 genes significant in both trait-specific MAGMA analyses. Seven of the ten shared MAGMA genes mapped within significant primary LAVA regions.
-- **Cellular context:** Single-cell contextualisation and S-LDSC converged on stromal biology in both disorders, while supporting disease-weighted cellular heterogeneity.
-- **Proteomics:** Nineteen Olink proteins were FDR-significant for fibroids and two for endometriosis, with no shared FDR-significant protein.
-- **TFPI prioritisation:** TFPI is retained only as an exploratory fibroid-weighted vascular protein-prioritisation signal. Genetically higher TFPI was associated with lower hypertension risk, but pQTL-GWAS colocalisation was non-confirmatory and mediation was not established.
+- **Genome-wide genetic sharing:** LDSC estimated a moderate positive genetic correlation between uterine fibroids and endometriosis (rg = 0.511, SE = 0.069, P = 1.37 × 10^-13), supporting shared but incomplete common-variant architecture.
+- **Regional convergence:** The primary overlap-aware LAVA analysis produced 92 valid bivariate tests and identified 16 local-correlation regions meeting the Benjamini–Hochberg false-discovery-rate threshold.
+- **Gene-level architecture:** MAGMA identified 147 Bonferroni-significant genes for uterine fibroids and 38 for endometriosis. Ten genes were significant in both trait-specific analyses, while 137 were classified as fibroid-specific and 28 as endometriosis-specific under the study definition.
+- **Cross-layer agreement:** Seven of the ten shared MAGMA-significant genes mapped within regions showing significant local genetic correlation.
+- **Fine-mapping:** SuSiE analyses of the ESR1/SYNE1, WNT4, GREB1, WT1 and DNM3 regions supported allelic complexity at several loci, particularly ESR1/SYNE1. Fine-mapping results are interpreted as variant prioritisation rather than proof of causality.
+- **Cellular context:** Single-cell contextualisation and S-LDSC provided convergent evidence for stromal involvement in both disorders, alongside disease-weighted cellular heterogeneity. These analyses do not establish a causal cell type.
+- **Pathway context:** Exploratory annotations highlighted hormonal/reproductive, WNT/developmental, extracellular-matrix/fibrosis, adhesion/migration and related biological categories. These findings are hypothesis-generating.
 
-## Data availability
+## Data sources
 
-This study used the following resources:
+### FinnGen GWAS summary statistics
 
-- **UK Biobank** — analyses conducted under UK Biobank Application 1224312. Individual-level UK Biobank data are not included in this repository and remain available only to approved researchers through UK Biobank access procedures.
-- **FinnGen R9 GWAS summary statistics** — available from https://r9.finngen.fi.
-- **1000 Genomes Phase 3 European reference panels** — used for linkage-disequilibrium-based analyses where appropriate.
-- **Single-cell RNA-seq datasets** — fibroid/myometrium and endometriosis resources described in the manuscript and Supplementary Methods.
-- **Published plasma pQTL resources** — used for targeted cis-pQTL protein Mendelian randomisation.
+- Uterine fibroids: `CD2_BENIGN_LEIOMYOMA_UTERI`
+- Endometriosis: `N14_ENDOMETRIOSIS`
+- Release: FinnGen R9
+- Access: <https://r9.finngen.fi>
 
-Only permitted aggregate, non-disclosive, publication-facing outputs are included. No participant-level UK Biobank records, participant identifiers, individual diagnosis dates, raw hospital episode data, raw genotype data or raw Olink participant-level data are redistributed.
+Endpoint metadata used in the manuscript report:
+
+| Endpoint | Cases | Controls |
+|---|---:|---:|
+| Uterine fibroids | 31,661 | 179,209 |
+| Endometriosis | 15,088 | 107,564 |
+
+Analysis-specific sample-size parameters retained in archived scripts are documented separately from endpoint catalogue denominators and should not be treated as interchangeable.
+
+### Linkage-disequilibrium reference
+
+The 1000 Genomes Project Phase 3 European reference panel was used for linkage-disequilibrium-based analyses where specified in the manuscript.
+
+### Single-cell resources
+
+Published single-cell RNA-seq resources were used for expression contextualisation and annotation construction, including:
+
+- GSE162122: uterine fibroid and myometrial tissue
+- GSE203191: endometriosis-related tissue
+
+The published datasets were not re-clustered or reannotated. Original cell labels, processed expression information and ranked-marker evidence were used as described in the manuscript.
+
+## Data availability and access restrictions
+
+This repository is intended to contain only:
+
+- analysis code;
+- software and environment information;
+- public endpoint identifiers and data-source information;
+- non-disclosive aggregate results;
+- manuscript tables and figures where redistribution is permitted.
+
+No individual-level participant records, participant identifiers, controlled-access biobank files or restricted genotype data are included or required for this Paper 1 workflow.
+
+External datasets remain subject to the terms imposed by their original providers. Users should obtain all required source files through the original repositories and comply with the applicable data-use and citation requirements.
 
 ## Repository structure
 
 ```text
 scripts/
-  01_comorbidity/              UK Biobank phenotype definitions, logistic regression and temporal analysis scripts
-  02_genetic_correlation/      LDSC and LAVA scripts
-  03_mendelian_randomisation/  Exploratory MR and PheWAS-MR scripts
-  04_gene_level/               MAGMA gene-level and exploratory pathway scripts
-  05_proteomics/               Olink association, cis-pQTL protein MR and pQTL-GWAS colocalisation scripts
-  06_figure_generation/        Publication figure scripts
-  07_single_cell_context/      Single-cell contextualisation and S-LDSC annotation scripts
-  08_finemapping_coloc/        Colocalisation and SuSiE fine-mapping scripts
-
-figures/
-  Publication and supplementary figures where permitted
+  01_genetic_correlation/      LDSC and LAVA analyses
+  02_gene_level/               MAGMA gene-level analysis
+  03_pathway_annotation/       Exploratory pathway and gene-set annotation
+  04_finemapping/              SuSiE fine-mapping
+  05_single_cell_context/      Single-cell contextualisation and S-LDSC
+  06_figure_generation/        Main and supplementary figure scripts
 
 results/
-  Permitted aggregate summary outputs only
+  aggregate_results/           Permitted aggregate analysis outputs
+  supplementary_tables/       Supplementary Tables S1-S5
+
+figures/
+  main/                        Main manuscript figures
+  supplementary/              Supplementary Figures S1-S2
 
 environment/
-  Python and R package information
+  R_packages.txt               R package and version information
+  requirements.txt             Python package information, if applicable
 ```
 
-## Reproducibility
 
-The scripts are provided for transparency and reproducibility. Full reproduction of UK Biobank analyses requires approved UK Biobank access under the relevant application and access to the same controlled or restricted resources. Restricted UK Biobank participant-level data are not included and cannot be redistributed.
+## Suggested analysis workflow
 
-Before running the workflow, users must obtain the required external resources through their original access routes and comply with all relevant data-use terms.
-
-## Suggested workflow
-
-Run order may vary depending on local data access and file paths. A typical analysis order is:
+Exact script names should match the final publication archive. A typical order is:
 
 ```bash
-# 1. Comorbidity and temporal analyses
-Rscript scripts/01_comorbidity/precompute_results.R
-Rscript scripts/01_comorbidity/run_temporal_analysis.R
+# 1. Genome-wide genetic correlation
+Rscript scripts/01_genetic_correlation/run_ldsc_models.R
 
-# 2. Genome-wide and local genetic correlation
-Rscript scripts/02_genetic_correlation/Run_LDSC_Models.R
-Rscript scripts/02_genetic_correlation/01_prepare_formal_lava_inputs.R
-Rscript scripts/02_genetic_correlation/02_run_formal_lava_blocks.R
-Rscript scripts/02_genetic_correlation/02b_run_formal_lava_blocks_ldsc.R
-Rscript scripts/02_genetic_correlation/02c_run_formal_lava_blocks_ldsc_standardized.R
-Rscript scripts/02_genetic_correlation/process_lava_results.R
-Rscript scripts/02_genetic_correlation/process_lava_results_ldsc_standardized.R
-Rscript scripts/02_genetic_correlation/generate_formal_lava_perspective_clean_rankpanel_ldsc_standardized_600dpi.R
+# 2. Local genetic correlation
+Rscript scripts/01_genetic_correlation/prepare_lava_inputs.R
+Rscript scripts/01_genetic_correlation/run_lava_blocks.R
+Rscript scripts/01_genetic_correlation/process_lava_results.R
 
-# 3. Gene-level and pathway analyses
-bash scripts/04_gene_level/run_magma_gene_level.sh
-Rscript scripts/04_gene_level/annotate_shared_and_specific_genes.R
+# 3. MAGMA gene-level analysis
+bash scripts/02_gene_level/run_magma_gene_level.sh
+# (Note: Scripts for downstream MAGMA plotting and tissue enrichment are also provided in this directory)
 
-# 4. Exploratory Mendelian randomisation
-Rscript scripts/03_mendelian_randomisation/run_exploratory_phewas_mr.R
+# 4. Exploratory pathway annotation
+# (Note: Pathway annotation scripts are pending deposit in scripts/03_pathway_annotation/)
 
-# 5. Colocalisation and fine-mapping
-Rscript scripts/08_finemapping_coloc/run_coloc_abf.R
-Rscript scripts/08_finemapping_coloc/run_susie_finemapping.R
+# 5. SuSiE fine-mapping
+# (Note: Fine-mapping scripts are pending deposit in scripts/04_finemapping/)
 
-# 6. Proteomics and protein MR
-Rscript scripts/05_proteomics/run_olink_association.R
-Rscript scripts/05_proteomics/run_targeted_cis_pqtl_protein_mr.R
+# 6. Single-cell contextualisation and S-LDSC
+Rscript scripts/05_single_cell_context/gse162122_fibroid_scrna_shared_gene_context.R
+python scripts/05_single_cell_context/plot_scrna_shared_gene_context.py
+python scripts/05_single_cell_context/combine_scrna_shared_gene_context.py
 
-# 7. Single-cell context and S-LDSC
-Rscript scripts/07_single_cell_context/run_scrna_contextualisation.R
-Rscript scripts/07_single_cell_context/run_sldsc_celltype_enrichment.R
-
-# 8. Figure generation
-Rscript scripts/06_figure_generation/generate_publication_figures.R
+# 7. Figure generation
+python scripts/06_figure_generation/generate_publication_plots.py
 ```
 
-Script names may differ slightly from local development branches; the publication archive should preserve the final manuscript-specific scripts and parameters.
+
+## Main manuscript outputs
+
+### Main figures
+
+1. Figure 1: Integrated analytical framework
+2. Figure 2: Formal LAVA local genetic-correlation analysis
+3. Figure 3: Gene-level architecture of uterine fibroids and endometriosis
+4. Figure 4: Cell-type heritability enrichment and exploratory pathway annotation
+
+### Main table
+
+1. Table 1: Public data sources used in the study
+
+### Supplementary figures
+
+1. Supplementary Figure S1: Single-cell contextualisation of genes significant in both trait-specific MAGMA analyses
+2. Supplementary Figure S2: SuSiE fine-mapping of shared genomic loci
+
+### Supplementary tables
+
+1. Supplementary Table S1: LDSC and LAVA analyses
+2. Supplementary Table S2: Complete MAGMA gene-level results
+3. Supplementary Table S3: Exploratory pathway and gene-set annotations
+4. Supplementary Table S4: SuSiE fine-mapping results
+5. Supplementary Table S5: Single-cell contextualisation and S-LDSC enrichment results
 
 ## Software
 
-| Tool | Version / implementation | Reference |
+| Tool | Version or implementation | Primary reference |
 |---|---|---|
-| MAGMA | v1.10 | de Leeuw et al., PLoS Computational Biology 2015 |
-| LDSC | LDSC / GenomicSEM workflow | Bulik-Sullivan et al., Nature Genetics 2015 |
-| LAVA | v0.1.5 | Werme et al., Nature Genetics 2022 |
-| coloc | coloc.abf | Giambartolomei et al., PLoS Genetics 2014 |
-| susieR | SuSiE fine-mapping | Wang et al., JRSS-B 2020 |
-| TwoSampleMR | MR workflow | Hemani et al., eLife 2018 |
-| R | see environment/R_packages.txt |  |
-| Python | see environment/requirements.txt |  |
+| LDSC | LDSC/GenomicSEM workflow | Bulik-Sullivan et al., *Nature Genetics* (2015) |
+| LAVA | v0.1.5 | Werme et al., *Nature Genetics* (2022) |
+| MAGMA | v1.10 | de Leeuw et al., *PLoS Computational Biology* (2015) |
+| susieR | Sum of Single Effects fine-mapping | Wang et al., *Journal of the Royal Statistical Society: Series B* (2020) |
+| S-LDSC | Stratified LD Score Regression | Finucane et al., *Nature Genetics* (2015) |
+| R | See `environment/R_packages.txt` | — |
+| Python | See `environment/requirements.txt`, if used | — |
 
-## UK Biobank data-use note
+Package versions, parameters, reference files and analysis-specific sample-size values should be preserved in the final publication archive.
 
-This repository does not redistribute UK Biobank individual-level data. Any researcher wishing to reproduce UK Biobank-based analyses must apply directly to UK Biobank and comply with UK Biobank access, security, reporting and publication requirements.
+## Reproducibility notes
 
-Before public release, repository outputs should be checked to ensure that no restricted participant-level data, raw phenotype extracts, raw diagnosis dates, individual-level Olink values or small-cell count outputs are included.
+- The analyses use public GWAS summary statistics and public reference resources; no controlled-access data are required.
+- Harmonisation, quality-control thresholds, sample-size parameters and sampling-correlation specifications should match the final manuscript and Supplementary Table S1.
+- LAVA results should be reproduced using the primary LDSC-standardised overlap-aware specification. Alternative count-derived and no-overlap implementations are sensitivity analyses.
+- Fine-mapping was performed separately for each disorder using ±500 kb windows, 1000 Genomes European linkage disequilibrium, a maximum of ten effects per locus and 95% credible sets.
+- Pathway, fine-mapping and cellular analyses are prioritisation or contextualisation layers and should not be presented as definitive causal evidence.
 
 ## Citation
 
-> Modhukur V et al. Shared genetic architecture and divergent clinical and molecular profiles of uterine fibroids and endometriosis. Manuscript in preparation (2026).
+Until publication:
+
+> Modhukur V, Lingasamy P, Patel N, Salumets A. *Integrative genomic analyses reveal regional and cellular convergence between uterine fibroids and endometriosis.* Manuscript in preparation (2026).
+
 
 ## Correspondence
 
-Vijayachitra Modhukur — vijayachitra.modhukur@ut.ee  
-Department of Obstetrics and Gynaecology, Institute of Clinical Medicine, University of Tartu, Estonia
-
+**Vijayachitra Modhukur**  
+Department of Obstetrics and Gynaecology  
+Institute of Clinical Medicine, University of Tartu, Estonia  
+Email: vijayachitra.modhukur@ut.ee
