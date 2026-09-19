@@ -21,3 +21,17 @@ keywords:
   - UK Biobank
   - temporal epidemiology
   - proteomics
+
+preferred-citation:
+  type: article
+  title: "Integrative genomic analyses reveal regional and cellular convergence between uterine fibroids and endometriosis"
+  authors:
+    - family-names: Modhukur
+      given-names: Vijayachitra
+    - family-names: Lingasamy
+      given-names: Priyashree
+    - family-names: Patel
+      given-names: N.
+    - family-names: Salumets
+      given-names: Andres
+  year: 2026
