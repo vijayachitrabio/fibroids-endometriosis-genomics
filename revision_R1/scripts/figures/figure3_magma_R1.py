@@ -19,6 +19,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+plt.rcParams.update({"text.color": "black", "axes.labelcolor": "black", "xtick.color": "black", "ytick.color": "black", "axes.titlecolor": "black", "legend.labelcolor": "black"})
 import numpy as np
 import pandas as pd
 from matplotlib.lines import Line2D
@@ -75,7 +76,7 @@ def panel_rank(ax, d, shared, colour, title, letter, n_top=6):
                 color="#B9BFC7", lw=0.5, zorder=2)
         ax.annotate(r["SYMBOL"], (xl, row), rotation=90, fontsize=7.4,
                     ha="center", va="bottom",
-                    color=C_SHARED if sh else "#22262A",
+                    color="black",
                     fontweight="bold" if sh else "normal", fontstyle="italic", zorder=6)
 
     ax.axhline(-np.log10(THR), color="#7A828A", ls="--", lw=0.8)
@@ -118,7 +119,7 @@ def panel_cross(ax, f, e, shared):
         dx, dy = OFF.get(r["SYMBOL"], (8, 4))
         ax.annotate(r["SYMBOL"], (r["nlp_fib"], r["nlp_endo"]),
                     xytext=(dx, dy), textcoords="offset points",
-                    fontsize=8.2, weight="bold", fontstyle="italic", color="#3A1145", zorder=5,
+                    fontsize=8.2, weight="bold", fontstyle="italic", color="black", zorder=5,
                     arrowprops=dict(arrowstyle="-", color="#9A8AA3", lw=0.5,
                                     shrinkA=0, shrinkB=3))
 

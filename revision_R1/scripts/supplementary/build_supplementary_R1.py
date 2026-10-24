@@ -283,7 +283,7 @@ names = {k: f"Table {k} " + {"S1": "Sample size LDSC LAVA", "S2": "MAGMA", "S3":
 with pd.ExcelWriter(OUT, engine="openpyxl") as xw:
     idx = pd.DataFrame([[f"Supplementary Table {k}", names[k], titles[k]] for k in titles],
                        columns=["Supplementary table", "Worksheet", "Title"])
-    pd.DataFrame([["Supplementary Tables: Integrative genomic analyses of uterine fibroids and endometriosis (revised, R1)"]]).to_excel(
+    pd.DataFrame([["Supplementary Tables: Integrative genomic analyses of uterine fibroids and endometriosis"]]).to_excel(
         xw, sheet_name="Index", header=False, index=False)
     idx.to_excel(xw, sheet_name="Index", startrow=2, index=False)
     for k, panels in sheets.items():
@@ -292,19 +292,37 @@ with pd.ExcelWriter(OUT, engine="openpyxl") as xw:
             pd.DataFrame([[title]]).to_excel(xw, sheet_name=names[k], startrow=r, header=False, index=False)
             df.to_excel(xw, sheet_name=names[k], startrow=r + 1, index=False)
             r += len(df) + 4
-import sys, openpyxl
-sys.path.insert(0, str(UF / "scripts"))
-from format_natcomms_excel_bw import process
-tmp = OUT.with_name(OUT.stem + "_unformatted.xlsx")
-OUT.rename(tmp)
-assert process(tmp, OUT)
-tmp.unlink()
+import openpyxl
+from openpyxl.styles import Alignment, Border, Font, PatternFill
+from openpyxl.utils import get_column_letter
+
+# Plain formatting matching the originally submitted workbook: Calibri 11, no fills,
+# no borders, no frozen panes; only panel titles and column-header rows are bold.
+PLAIN, BOLD = Font(name="Calibri", size=11), Font(name="Calibri", size=11, bold=True)
 wb = openpyxl.load_workbook(OUT)
 for ws in wb.worksheets:
+    ws.freeze_panes = None
+    bold_rows = set()
+    for row in ws.iter_rows(min_col=1, max_col=1):
+        c = row[0]
+        if isinstance(c.value, str) and (c.value.startswith("Panel") or c.value.startswith("Supplementary Tables:")):
+            bold_rows.update({c.row, c.row + 1})
+    if ws.title == "Index":
+        bold_rows.update({1, 3})
+    widths = {}
     for row in ws.iter_rows():
         for c in row:
+            c.font = BOLD if c.row in bold_rows else PLAIN
+            c.border = Border()
+            c.fill = PatternFill(fill_type=None)
+            c.alignment = Alignment()
             if isinstance(c.value, float) and c.value != 0 and abs(c.value) < 1e-3:
                 c.number_format = "0.00E+00"
+            is_title = isinstance(c.value, str) and c.value.startswith(("Panel", "Supplementary Tables:"))
+            if c.value is not None and not is_title and c.row < 300:
+                widths[c.column] = max(widths.get(c.column, 0), len(str(c.value)))
+    for col, w in widths.items():
+        ws.column_dimensions[get_column_letter(col)].width = min(max(w + 2, 10), 45)
 wb.save(OUT)
 print("wrote", OUT)
 for k, panels in sheets.items():
