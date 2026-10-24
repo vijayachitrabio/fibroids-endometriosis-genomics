@@ -1,0 +1,8 @@
+cell_type,n_original,n_confident,shared,jaccard
+B cell,419,489,365,0.672
+Endothelial,500,500,445,0.802
+Epithelial,500,500,461,0.855
+Macrophage,500,500,458,0.845
+Smooth muscle,500,500,338,0.511
+Stromal,500,500,390,0.639
+T cell (CD8),496,428,419,0.83

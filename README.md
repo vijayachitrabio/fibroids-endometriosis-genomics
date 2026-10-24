@@ -1,12 +1,12 @@
-# Integrative genomic analyses reveal regional and cellular convergence between uterine fibroids and endometriosis
+# Integrative genomic analyses reveal regional genetic sharing and stromal context between uterine fibroids and endometriosis
 
 This repository contains analysis code, endpoint information, software details and permitted aggregate outputs supporting the manuscript:
 
-> Modhukur V, Lingasamy P, Patel N, Salumets A. *Integrative genomic analyses reveal regional and cellular convergence between uterine fibroids and endometriosis.* Manuscript in preparation (2026).
+> Modhukur V, Lingasamy P, Patel N, Salumets A. *Integrative genomic analyses reveal regional genetic sharing and stromal context between uterine fibroids and endometriosis.* Functional & Integrative Genomics (under revision, 2026).
 
 ## Overview
 
-Uterine fibroids and endometriosis are common, oestrogen-responsive gynaecological disorders with partly overlapping biological features. This study uses publicly available FinnGen Release 9 genome-wide association study (GWAS) summary statistics and public reference resources to characterise their shared and disorder-specific common-variant genetic architecture.
+Uterine fibroids and endometriosis are common, oestrogen-responsive gynaecological disorders with partly overlapping biological features. This study uses publicly available FinnGen Release 9 genome-wide association study (GWAS) summary statistics and public reference resources to characterise their shared and distinct common-variant genetic architecture.
 
 The study is based entirely on summary-level and publicly available data. It does not use UK Biobank data, individual-level participant data or controlled-access biobank data.
 
@@ -15,20 +15,21 @@ The analytical framework includes:
 1. Genome-wide genetic correlation using LD Score Regression (LDSC)
 2. Local genetic correlation using LAVA
 3. MAGMA gene-level association analysis
-4. Exploratory pathway and gene-set annotation
 5. SuSiE fine-mapping of selected shared regions
 6. Single-cell RNA-seq contextualisation using published datasets
 7. Cell-type heritability enrichment using stratified LDSC (S-LDSC)
 
-## Key findings
+## Key findings (revised, R1)
 
-- **Genome-wide genetic sharing:** LDSC estimated a moderate positive genetic correlation between uterine fibroids and endometriosis (rg = 0.511, SE = 0.069, P = 1.37 × 10^-13), supporting shared but incomplete common-variant architecture.
-- **Regional convergence:** The primary overlap-aware LAVA analysis produced 92 valid bivariate tests and identified 16 local-correlation regions meeting the Benjamini–Hochberg false-discovery-rate threshold.
-- **Gene-level architecture:** MAGMA identified 147 Bonferroni-significant genes for uterine fibroids and 38 for endometriosis. Ten genes were significant in both trait-specific analyses, while 137 were classified as fibroid-specific and 28 as endometriosis-specific under the study definition.
-- **Cross-layer agreement:** Seven of the ten shared MAGMA-significant genes mapped within regions showing significant local genetic correlation.
-- **Fine-mapping:** SuSiE analyses of the ESR1/SYNE1, WNT4, GREB1, WT1 and DNM3 regions supported allelic complexity at several loci, particularly ESR1/SYNE1. Fine-mapping results are interpreted as variant prioritisation rather than proof of causality.
-- **Cellular context:** Single-cell contextualisation and S-LDSC provided convergent evidence for stromal involvement in both disorders, alongside disease-weighted cellular heterogeneity. These analyses do not establish a causal cell type.
-- **Pathway context:** Exploratory annotations highlighted hormonal/reproductive, WNT/developmental, extracellular-matrix/fibrosis, adhesion/migration and related biological categories. These findings are hypothesis-generating.
+- **Genome-wide genetic sharing:** moderate positive genetic correlation (rg = 0.511, SE = 0.069, P = 1.37 × 10^-13), unchanged under alternative sample-size inputs.
+- **Regional sharing:** with FinnGen R9 case and control counts, LAVA identified 16 FDR-significant blocks among 88 valid bivariate tests. Nine blocks in five regions (ESR1/SYNE1, WNT4, GREB1, chr4 at 70.5 Mb and chr11) remained significant across alternative sample-overlap assumptions; the other seven are sensitivity-dependent.
+- **Gene-level architecture:** MAGMA identified 147 Bonferroni-significant genes for uterine fibroids and 38 for endometriosis; ten were significant in both analyses, 137 only in the fibroid analysis and 28 only in the endometriosis analysis. These groups are threshold-defined and do not by themselves indicate disorder-specific architecture.
+- **Cross-layer agreement:** seven of the ten shared genes lie within FDR-significant LAVA blocks. Because both layers derive from the same GWAS signals, this is prioritisation, not independent replication.
+- **Fine-mapping:** FinnGen's in-sample SuSiE identifies the same credible variant in both disorders at ESR1/SYNE1 (rs58415480) and at chr11, and non-overlapping credible sets at GREB1 and WNT4. SuSiE with the 1000 Genomes LD reference is a sensitivity analysis only.
+- **Cellular context:** S-LDSC shows enrichment of a stromal marker annotation in both disorders, robust to cell-label uncertainty; the conditional coefficient evidence is modest. Marker annotations come from adenomyosis uterine tissue (GSE218044), not endometriosis tissue. These analyses do not establish a causal cell type.
+- **Pathway annotation** from the original submission was removed in revision.
+
+The revision analyses, derived results and an output-to-script map are in [`revision_R1/`](revision_R1/README.md).
 
 ## Data sources
 
@@ -37,7 +38,7 @@ The analytical framework includes:
 - Uterine fibroids: `CD2_BENIGN_LEIOMYOMA_UTERI`
 - Endometriosis: `N14_ENDOMETRIOSIS`
 - Release: FinnGen R9
-- Access: <https://r9.finngen.fi>
+- Access: <https://finngen.gitbook.io/documentation/r9/data-download>
 
 Endpoint metadata used in the manuscript report:
 
@@ -57,7 +58,7 @@ The 1000 Genomes Project Phase 3 European reference panel was used for linkage-d
 Published single-cell RNA-seq resources were used for expression contextualisation and annotation construction, including:
 
 - GSE162122: uterine fibroid and myometrial tissue
-- GSE203191: endometriosis-related tissue
+- GSE218044: uterine tissue from individuals with adenomyosis (source of the S-LDSC marker annotations; processed in scEndoExplorer)
 
 The published datasets were not re-clustered or reannotated. Original cell labels, processed expression information and ranked-marker evidence were used as described in the manuscript.
 
@@ -185,7 +186,7 @@ Package versions, parameters, reference files and analysis-specific sample-size 
 
 Until publication:
 
-> Modhukur V, Lingasamy P, Patel N, Salumets A. *Integrative genomic analyses reveal regional and cellular convergence between uterine fibroids and endometriosis.* Manuscript in preparation (2026).
+> Modhukur V, Lingasamy P, Patel N, Salumets A. *Integrative genomic analyses reveal regional genetic sharing and stromal context between uterine fibroids and endometriosis.* Functional & Integrative Genomics (under revision, 2026).
 
 
 ## Correspondence

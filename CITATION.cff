@@ -1,7 +1,8 @@
 cff-version: 1.2.0
-message: "If you use this code, please cite the associated manuscript."
+message: "If you use this code, please cite the associated article."
 type: software
-title: "Shared genetic architecture and divergent clinical and molecular profiles of uterine fibroids and endometriosis"
+title: "Integrative genomic analyses reveal regional genetic sharing and stromal context between uterine fibroids and endometriosis"
+version: "v1.0-R1"
 authors:
   - family-names: Modhukur
     given-names: Vijayachitra
@@ -9,29 +10,28 @@ authors:
     affiliation: "Department of Obstetrics and Gynaecology, Institute of Clinical Medicine, University of Tartu, Estonia"
 repository-code: "https://github.com/vijayachitrabio/fibroids-endometriosis-genomics"
 license: MIT
-date-released: "2026"
+date-released: "2026-10-24"
 keywords:
   - uterine fibroids
   - endometriosis
-  - GWAS
+  - FinnGen
   - genetic correlation
   - LAVA
-  - Mendelian randomisation
   - MAGMA
-  - UK Biobank
-  - temporal epidemiology
-  - proteomics
+  - SuSiE
+  - stratified LD score regression
 
 preferred-citation:
   type: article
-  title: "Integrative genomic analyses reveal regional and cellular convergence between uterine fibroids and endometriosis"
+  title: "Integrative genomic analyses reveal regional genetic sharing and stromal context between uterine fibroids and endometriosis"
   authors:
     - family-names: Modhukur
       given-names: Vijayachitra
     - family-names: Lingasamy
-      given-names: Priyashree
+      given-names: Prakash
     - family-names: Patel
-      given-names: N.
+      given-names: Naisarg
     - family-names: Salumets
       given-names: Andres
+  journal: "Functional & Integrative Genomics"
   year: 2026
