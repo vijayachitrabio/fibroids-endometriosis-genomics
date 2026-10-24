@@ -11,6 +11,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+plt.rcParams.update({"text.color": "black", "axes.labelcolor": "black", "xtick.color": "black", "ytick.color": "black", "axes.titlecolor": "black", "legend.labelcolor": "black"})
 import numpy as np
 import pandas as pd
 from matplotlib.lines import Line2D
@@ -42,7 +43,7 @@ for ax, data, val, err, fdr, title, xlab, ref in (
         for yi, (_, r) in zip(y, t.iterrows()):
             if r[fdr] < 0.05:
                 x = r[val] + (r[err] if err else 0) + 0.12
-                ax.text(max(x, 0.12), yi + sh, "*", va="center", fontsize=13, weight="bold", color=C[tr])
+                ax.text(max(x, 0.12), yi + sh, "*", va="center", fontsize=13, weight="bold", color="black")
     ax.axvline(ref, color="#4A5058", ls="--", lw=0.9, zorder=2)
     ax.set_title(title, loc="left", fontsize=11.5, weight="bold")
     ax.set_xlabel(xlab, fontsize=10)
@@ -57,9 +58,9 @@ axes[1].set_yticks(y)
 axes[1].set_yticklabels([])
 axes[0].set_xlim(0, None)
 axes[1].text(0.99, 0.02, "* FDR < 0.05 (one-sided coefficient test)", transform=axes[1].transAxes,
-             ha="right", fontsize=8.4, color="#55606B")
+             ha="right", fontsize=8.4, color="black")
 axes[0].text(0.99, 0.02, "* FDR < 0.05 (enrichment test); bars ± SE", transform=axes[0].transAxes,
-             ha="right", fontsize=8.4, color="#55606B")
+             ha="right", fontsize=8.4, color="black")
 fig.legend(handles=[Line2D([0], [0], color=C[t], lw=7, label=t) for t in C], loc="lower center",
            ncol=2, frameon=False, fontsize=10, bbox_to_anchor=(0.5, 0.0))
 fig.subplots_adjust(left=0.1, right=0.985, top=0.92, bottom=0.17)

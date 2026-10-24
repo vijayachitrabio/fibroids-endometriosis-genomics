@@ -12,6 +12,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+plt.rcParams.update({"text.color": "black", "axes.labelcolor": "black", "xtick.color": "black", "ytick.color": "black", "axes.titlecolor": "black", "legend.labelcolor": "black"})
 import numpy as np
 import pandas as pd
 from matplotlib.lines import Line2D
@@ -92,8 +93,8 @@ for yi, (_, r) in zip(y, s16.iterrows()):
             ax.scatter(g, yi, s=22, marker=mk, facecolor="white", edgecolor="#333", linewidth=0.7, zorder=5)
 ax.axvline(0, color="#7A828A", lw=0.7)
 ax.axhline(y[s16.core.sum() - 1] - 0.5, color="#9AA1A9", lw=0.6, ls=":")
-ax.text(-1.05, y[0] + 0.45, "Stable core", fontsize=9, weight="bold", color=C_CORE)
-ax.text(-1.05, y[s16.core.sum()] + 0.25, "Sensitivity-dependent", fontsize=9, weight="bold", color="#4F7FAF")
+ax.text(-1.05, y[0] + 0.45, "Stable core", fontsize=9, weight="bold", color="black")
+ax.text(-1.05, y[s16.core.sum()] + 0.25, "Sensitivity-dependent", fontsize=9, weight="bold", color="black")
 ax.set_yticks(y)
 ax.set_yticklabels([region(r) for _, r in s16.iterrows()], fontsize=8.6)
 ax.set_xlim(-1.08, 1.08)
@@ -118,7 +119,7 @@ for c in ("ns", "sens", "core"):
     ax.scatter(d.rho, d.nlp, s=size[c] + 6, c=fill[c], edgecolor="black", linewidth=0.4, zorder=3)
 fdr_line = v[v.p_fdr < 0.05].p.max()
 ax.axhline(-np.log10(fdr_line), color="#7A828A", ls="--", lw=0.8)
-ax.text(-1.0, -np.log10(fdr_line) + 1.2, "FDR = 0.05", fontsize=8, color="#555")
+ax.text(-1.0, -np.log10(fdr_line) + 1.2, "FDR = 0.05", fontsize=8, color="black")
 labs = {"block_1075": "chr6: 152.4–153.1 Mb", "block_0024": "chr1: 22.1–22.7 Mb", "block_1076": "chr6: 153.1–153.8 Mb",
         "block_1074": "chr6: 151.6–152.4 Mb", "block_0216": "chr2: 11.2–12.0 Mb", "block_1642": "chr11: 29.5–30.6 Mb"}
 offs = {"block_1075": (-115, -4), "block_0024": (-100, 10), "block_1076": (-125, 20), "block_1074": (-150, 3),
