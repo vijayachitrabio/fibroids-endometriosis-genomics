@@ -1,0 +1,11 @@
+locus,trait,our_original_cs_L10,finngen_cs_in_window,finngen_good_cs,finngen_cs_sizes,finngen_lead_variants,finngen_lead_gene,finngen_lead_p,our_leads_inside_finngen_cs
+ESR1_SYNE1,Uterine fibroids,10,2,2,"1,5","6:152241136:C:G,6:152236976:T:TA","SYNE1,SYNE1","4.3e-88,4.1e-35",1
+WNT4,Uterine fibroids,2,2,1,"3,17687","1:22139327:T:C,1:22143958:G:C","WNT4,WNT4","1.4e-44,3.9e-42",1
+GREB1,Uterine fibroids,2,4,4,"2,2,18,143","2:11544358:A:G,2:11585192:A:G,2:11631824:G:A,2:11169518:A:G","GREB1,GREB1,GREB1,PQLC3","3.0e-11,2.7e-09,6.4e-05,6.3e-07",1
+WT1,Uterine fibroids,1,1,1,19,11:30204809:T:C,NA,1.4e-11,1
+DNM3,Uterine fibroids,2,0,0,,,,,0
+ESR1_SYNE1,Endometriosis,9,3,3,"17,11,1","6:152149912:T:C,6:152249139:A:G,6:152241136:C:G","SYNE1,SYNE1,SYNE1","1.1e-10,2.4e-13,1.1e-41",2
+WNT4,Endometriosis,2,1,1,13,1:22096228:G:A,AL031281.2,5.1e-22,1
+GREB1,Endometriosis,2,3,2,"5,29,21","2:11618891:G:A,2:11530179:A:T,2:11593419:A:AACTC","GREB1,GREB1,GREB1","3.6e-07,8.1e-12,2.8e-16",1
+WT1,Endometriosis,2,1,1,2,11:30204809:T:C,NA,4.7e-34,1
+DNM3,Endometriosis,1,0,0,,,,,0

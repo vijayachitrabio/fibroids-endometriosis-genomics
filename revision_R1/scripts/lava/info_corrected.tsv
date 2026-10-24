@@ -1,0 +1,3 @@
+phenotype	cases	controls	filename
+Endometriosis	15088	107564	Endometriosis_lava_sumstats.tsv.gz
+Uterine_Fibroids	31661	179209	Uterine_Fibroids_lava_sumstats.tsv.gz

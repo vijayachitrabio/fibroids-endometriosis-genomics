@@ -1,0 +1,22 @@
+cell_type_a,cell_type_b,n_a,n_b,shared_genes,jaccard
+B cell,T cell (CD8),419,496,192,0.266
+B cell,Macrophage,419,500,179,0.242
+Macrophage,T cell (CD8),500,496,141,0.165
+Smooth muscle,Stromal,500,500,35,0.036
+Epithelial,Macrophage,500,500,29,0.03
+Endothelial,Macrophage,500,500,29,0.03
+B cell,Endothelial,419,500,15,0.017
+Endothelial,Epithelial,500,500,15,0.015
+Epithelial,T cell (CD8),500,496,12,0.012
+Macrophage,Stromal,500,500,10,0.01
+Endothelial,T cell (CD8),500,496,10,0.01
+B cell,Epithelial,419,500,8,0.009
+Epithelial,Stromal,500,500,8,0.008
+Epithelial,Smooth muscle,500,500,7,0.007
+Macrophage,Smooth muscle,500,500,7,0.007
+Smooth muscle,T cell (CD8),500,496,5,0.005
+B cell,Smooth muscle,419,500,4,0.004
+Endothelial,Smooth muscle,500,500,3,0.003
+B cell,Stromal,419,500,3,0.003
+Stromal,T cell (CD8),500,496,1,0.001
+Endothelial,Stromal,500,500,0,0.0
