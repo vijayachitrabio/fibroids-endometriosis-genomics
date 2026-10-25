@@ -250,13 +250,14 @@ def main() -> None:
     plot_native_bar(ax_c1, context[context["dataset"] == "Endometriosis"], "Adenomyosis uterine tissue\n(GSE218044) markers", ENDO, "Marker log2FC")
     plot_native_bar(ax_c2, context[context["dataset"] == "Uterine fibroid"], "Uterine fibroid tissue\n(GSE162122)", FIB, "Cells expressing (%)")
     panel_label(ax_c1, "C", x=-0.12)
+    panel_label(ax_c2, "D", x=-0.12)
     # Panel D (conceptual hub network) removed in R1: several nodes had no documented source.
 
     fig.subplots_adjust(left=0.07, right=0.985, top=0.965, bottom=0.08)
     OUTDIR.mkdir(parents=True, exist_ok=True)
     metadata = {
-        "Title": "Supplementary Figure S1. Single-cell context of shared MAGMA genes (R1)",
-        "Creator": "Generated from audited Nature Communications V6 Source Data",
+        "Title": "Supplementary Figure S1. Single-cell context of selected genes significant in both MAGMA analyses",
+        "Creator": "matplotlib",
     }
     fig.savefig(PNG, dpi=600, facecolor="white", bbox_inches="tight", pad_inches=0.04, metadata=metadata)
     fig.savefig(PDF, facecolor="white", bbox_inches="tight", pad_inches=0.04, metadata=metadata)
