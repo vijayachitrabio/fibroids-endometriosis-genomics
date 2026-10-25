@@ -100,7 +100,7 @@ m = pd.concat([m, extra], ignore_index=True)
 cols = {"GENE": "Entrez ID", "SYMBOL_f": "Gene", "CHR_f": "CHR", "START_f": "Start (NCBI37)", "STOP_f": "Stop (NCBI37)",
         "NSNPS_f": "SNPs (fibroids)", "ZSTAT_f": "Z (fibroids)", "P_f": "P (fibroids)",
         "NSNPS_e": "SNPs (endometriosis)", "ZSTAT_e": "Z (endometriosis)", "P_e": "P (endometriosis)",
-        "dz": "Z difference /sqrt(2)", "p_diff": "P (Z difference, approximate)", "group": "Significance group"}
+        "group": "Significance group"}
 mg = m[list(cols)].rename(columns=cols)
 for tr, f in (("fibroids", "fibroids_neff"), ("endometriosis", "endo_neff")):
     p = RR / f"magma/{f}.genes.out"
@@ -109,7 +109,7 @@ for tr, f in (("fibroids", "fibroids_neff"), ("endometriosis", "endo_neff")):
             columns={"GENE": "Entrez ID", "ZSTAT": f"Z (effective N, {tr})", "P": f"P (effective N, {tr})"})
         mg = mg.merge(e, on="Entrez ID", how="left")
 mg = mg.sort_values("P (fibroids)")
-panel("S2", "Panel A. MAGMA gene-level results (SNP-wise mean, NCBI Build 37.3, 1000 Genomes EUR). Bonferroni P < 2.5e-6. Groups are defined by threshold crossing and do not establish disorder specificity; the Z-difference test is approximate because Z scales with sample size.", mg)
+panel("S2", "Panel A. MAGMA gene-level results (SNP-wise mean, NCBI Build 37.3, 1000 Genomes EUR). Bonferroni P < 2.5e-6. Groups are defined by threshold crossing and do not establish disorder specificity. No formal cross-trait heterogeneity test was performed.", mg)
 
 loci = pd.read_csv(RR / "lava/lava_loci_2495_blocks.tsv", sep="\t")
 valid = lv.set_index("Block")
@@ -274,7 +274,7 @@ rep = pd.read_csv(RR / "lava/res_repro_legacy.csv")
 rv = rep[rep.p.notna()].copy(); rv["fdr"] = multipletests(rv.p, method="fdr_bh")[1]
 summ.append(["0.1724, case/control counts of the munged input files", len(rep), len(rv), int((rv.fdr < 0.05).sum()), 16,
              int((rv[rv.LOC.isin(orig16)].fdr < 0.05).sum()), 16, "none"])
-panel("S5", "Panel A. LAVA results by sampling correlation, R9 case/control counts, same 150 candidate blocks. The final row uses the case/control counts carried in the munged input files (35,474/183,254 and 17,045/222,290).",
+panel("S5", "Panel A. LAVA results by sampling correlation, R9 case/control counts, same 150 candidate blocks (two fail locus processing, giving 148 bivariate rows per run). The final row uses the case/control counts carried in the munged input files (35,474/183,254 and 17,045/222,290).",
       pd.DataFrame(summ, columns=["Sampling correlation", "Bivariate rows", "Valid tests", "FDR-significant blocks",
                                   "Primary 16: estimable", "Primary 16: FDR-significant", "Primary 16: positive rho",
                                   "Significant blocks outside the primary 16"]))

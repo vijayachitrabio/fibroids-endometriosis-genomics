@@ -13,22 +13,12 @@ The study is based entirely on summary-level and publicly available data. It doe
 The analytical framework includes:
 
 1. Genome-wide genetic correlation using LD Score Regression (LDSC)
-2. Local genetic correlation using LAVA
+2. Local genetic correlation using LAVA, with sensitivity analyses for the assumed sample overlap
 3. MAGMA gene-level association analysis
-5. SuSiE fine-mapping of selected shared regions
-6. Single-cell RNA-seq contextualisation using published datasets
-7. Cell-type heritability enrichment using stratified LDSC (S-LDSC)
+4. Fine-mapping: FinnGen's published Release 9 SuSiE results (in-sample LD) as primary, with SuSiE using the 1000 Genomes reference as a sensitivity analysis
+5. Single-cell contextualisation using published datasets and stratified LDSC (S-LDSC) with single-cell marker annotations
 
-## Key findings
-
-- **Genome-wide genetic sharing:** moderate positive genetic correlation (rg = 0.511, SE = 0.069, P = 1.37 × 10^-13), unchanged under alternative sample-size inputs.
-- **Regional sharing:** with FinnGen R9 case and control counts, LAVA identified 16 FDR-significant blocks among 88 valid bivariate tests. Eight blocks in five regions (ESR1/SYNE1, WNT4, GREB1, chr4 at 70.5 Mb and chr11 at 32.1 Mb) remained significant under every tested sample-overlap assumption; the other eight are sensitivity-dependent.
-- **Gene-level architecture:** MAGMA identified 147 Bonferroni-significant genes for uterine fibroids and 38 for endometriosis; ten were significant in both analyses, 137 only in the fibroid analysis and 28 only in the endometriosis analysis. These groups are threshold-defined and do not by themselves indicate disorder-specific architecture.
-- **Cross-layer agreement:** seven of the ten shared genes lie within FDR-significant LAVA blocks. Because both layers derive from the same GWAS signals, this is prioritisation, not independent replication.
-- **Fine-mapping:** FinnGen's in-sample SuSiE gives a single-variant credible set shared by both disorders at ESR1/SYNE1 (rs58415480). On chr11 (30.2 Mb) the endometriosis credible set lies within the fibroid set but carries only 15% of its posterior probability. At GREB1 and WNT4 the credible sets share no variants; whether these are distinct signals needs formal colocalisation. SuSiE with the 1000 Genomes LD reference is a sensitivity analysis only.
-- **Cellular context:** S-LDSC shows enrichment of a stromal marker annotation in both disorders, robust to cell-label uncertainty and to an all-genes control annotation; the conditional coefficient evidence is modest. Marker annotations come from adenomyosis uterine tissue (GSE218044), not endometriosis tissue. These analyses do not establish a causal cell type.
-
-The revision analyses, derived results and an output-to-script map are in [`revision_R1/`](revision_R1/README.md).
+The exploratory pathway annotation in the original submission was removed in revision.
 
 ## Data sources
 
@@ -59,7 +49,7 @@ Published single-cell RNA-seq resources were used for expression contextualisati
 - GSE162122: uterine fibroid and myometrial tissue
 - GSE218044: uterine tissue from individuals with adenomyosis (source of the S-LDSC marker annotations; processed in scEndoExplorer)
 
-The published datasets were not re-clustered or reannotated. Original cell labels, processed expression information and ranked-marker evidence were used as described in the manuscript.
+Published cell labels were used for the primary analysis. In revision, GSE218044 cells were also reannotated per cell (SingleR) as a sensitivity analysis; see `revision_R1/`.
 
 ## Data availability and access restrictions
 
@@ -78,69 +68,26 @@ External datasets remain subject to the terms imposed by their original provider
 ## Repository structure
 
 ```text
-scripts/
-  01_genetic_correlation/      LDSC and LAVA analyses
-  02_gene_level/               MAGMA gene-level analysis
-  03_pathway_annotation/       Exploratory pathway and gene-set annotation
-  04_finemapping/              SuSiE fine-mapping
-  05_single_cell_context/      Single-cell contextualisation and S-LDSC
-  06_figure_generation/        Main and supplementary figure scripts
+revision_R1/                   Code and derived results for the revised manuscript (start here)
+  README.md                    Inputs, output-to-script map and key revised results
+  scripts/                     LDSC, LAVA, MAGMA, fine-mapping, S-LDSC, reannotation, figures, supplementary tables
+  results/                     Derived results underlying Supplementary Tables S1–S6 and the figures
 
-results/
-  aggregate_results/           Permitted aggregate analysis outputs
-  supplementary_tables/       Supplementary Tables S1-S5
-
-figures/
-  main/                        Main manuscript figures
-  supplementary/              Supplementary Figures S1-S2
-
-environment/
-  R_packages.txt               R package and version information
-  requirements.txt             Python package information, if applicable
+scripts/                       Scripts from the original submission (LDSC, LAVA, MAGMA, single-cell context, figures)
+figures/                       Figures as originally submitted
+environment/                   R and Python package information
 ```
 
+The revised analyses, figures and Supplementary Tables S1–S6 are produced by the scripts in [`revision_R1/`](revision_R1/README.md), which also lists the script behind each output.
 
-## Suggested analysis workflow
-
-Exact script names should match the final publication archive. A typical order is:
-
-```bash
-# 1. Genome-wide genetic correlation
-Rscript scripts/01_genetic_correlation/run_ldsc_models.R
-
-# 2. Local genetic correlation
-Rscript scripts/01_genetic_correlation/prepare_lava_inputs.R
-Rscript scripts/01_genetic_correlation/run_lava_blocks.R
-Rscript scripts/01_genetic_correlation/process_lava_results.R
-
-# 3. MAGMA gene-level analysis
-bash scripts/02_gene_level/run_magma_gene_level.sh
-# (Note: Scripts for downstream MAGMA plotting and tissue enrichment are also provided in this directory)
-
-# 4. Exploratory pathway annotation
-# (Note: Pathway annotation scripts are pending deposit in scripts/03_pathway_annotation/)
-
-# 5. SuSiE fine-mapping
-# (Note: Fine-mapping scripts are pending deposit in scripts/04_finemapping/)
-
-# 6. Single-cell contextualisation and S-LDSC
-Rscript scripts/05_single_cell_context/gse162122_fibroid_scrna_shared_gene_context.R
-python scripts/05_single_cell_context/plot_scrna_shared_gene_context.py
-python scripts/05_single_cell_context/combine_scrna_shared_gene_context.py
-
-# 7. Figure generation
-python scripts/06_figure_generation/generate_publication_plots.py
-```
-
-
-## Main manuscript outputs
+## Main manuscript outputs (revised)
 
 ### Main figures
 
 1. Figure 1: Integrated analytical framework
-2. Figure 2: Formal LAVA local genetic-correlation analysis
+2. Figure 2: LAVA local genetic correlation and sensitivity to sample overlap
 3. Figure 3: Gene-level architecture of uterine fibroids and endometriosis
-4. Figure 4: Cell-type heritability enrichment and exploratory pathway annotation
+4. Figure 4: Cell-type heritability enrichment (S-LDSC)
 
 ### Main table
 
@@ -148,16 +95,17 @@ python scripts/06_figure_generation/generate_publication_plots.py
 
 ### Supplementary figures
 
-1. Supplementary Figure S1: Single-cell contextualisation of genes significant in both trait-specific MAGMA analyses
-2. Supplementary Figure S2: SuSiE fine-mapping of shared genomic loci
+1. Supplementary Figure S1: Single-cell context of genes significant in both MAGMA analyses
+2. Supplementary Figure S2: SuSiE fine-mapping with the 1000 Genomes LD reference (sensitivity analysis)
 
 ### Supplementary tables
 
-1. Supplementary Table S1: LDSC and LAVA analyses
-2. Supplementary Table S2: Complete MAGMA gene-level results
-3. Supplementary Table S3: Exploratory pathway and gene-set annotations
-4. Supplementary Table S4: SuSiE fine-mapping results
-5. Supplementary Table S5: Single-cell contextualisation and S-LDSC enrichment results
+1. Supplementary Table S1: Sample sizes, LDSC and LAVA
+2. Supplementary Table S2: MAGMA gene-level results
+3. Supplementary Table S3: Fine-mapping (FinnGen in-sample SuSiE and 1000 Genomes-LD sensitivity analysis)
+4. Supplementary Table S4: S-LDSC and single-cell context
+5. Supplementary Table S5: LAVA sensitivity to the sampling correlation
+6. Supplementary Table S6: Genome builds
 
 ## Software
 
@@ -176,10 +124,10 @@ Package versions, parameters, reference files and analysis-specific sample-size 
 ## Reproducibility notes
 
 - The analyses use public GWAS summary statistics and public reference resources; no controlled-access data are required.
-- Harmonisation, quality-control thresholds, sample-size parameters and sampling-correlation specifications should match the final manuscript and Supplementary Table S1.
-- LAVA results should be reproduced using the primary LDSC-standardised overlap-aware specification. Alternative count-derived and no-overlap implementations are sensitivity analyses.
-- Fine-mapping was performed separately for each disorder using ±500 kb windows, 1000 Genomes European linkage disequilibrium, a maximum of ten effects per locus and 95% credible sets.
-- Pathway, fine-mapping and cellular analyses are prioritisation or contextualisation layers and should not be presented as definitive causal evidence.
+- Sample sizes, harmonisation and sampling-correlation specifications are listed in Supplementary Table S1 and `revision_R1/README.md`.
+- LAVA results are reproduced with the primary LDSC-standardised sampling correlation (0.1724); the values 0, 0.259, 0.35 and 0.369 are sensitivity analyses.
+- Primary fine-mapping uses FinnGen's published Release 9 SuSiE credible sets (high-purity sets within ±500 kb of the regional lead variant). SuSiE with 1000 Genomes European LD was inconsistent with the summary statistics and is a sensitivity analysis only.
+- Fine-mapping and cellular analyses are prioritisation or contextualisation layers and do not establish causal variants, genes or cell types.
 
 ## Citation
 
