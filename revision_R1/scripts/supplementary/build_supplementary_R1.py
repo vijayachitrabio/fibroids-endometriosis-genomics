@@ -127,12 +127,24 @@ panel("S2", "Panel B. The ten genes significant in both MAGMA analyses and the L
 
 # ======================================================================= S3
 fm = pd.read_csv(RR / "finngen_finemap/FinnGen_insample_vs_our_SuSiE_by_locus.csv")
+# 1000 Genomes-LD columns come from the repeat run at L = 10 (Panels D and F), so Panels A, D, F and Supplementary Figure S2 agree
+_rr = pd.read_csv(RR / "susie/SuSiE_L_sensitivity_rerun.csv")
+_rr = _rr[_rr.L == 10].assign(trait=lambda x: x.trait.replace({"Uterine_Fibroids": "Uterine fibroids"}))
+_rm = pd.read_csv(RR / "susie/SuSiE_credible_set_membership_L10.csv").assign(trait=lambda x: x.trait.replace({"Uterine_Fibroids": "Uterine fibroids"}))
+_rlead = _rm.sort_values("PIP", ascending=False).groupby(["locus", "trait", "credible_set"]).head(1)
+_fmem = pd.read_csv(RR / "finngen_finemap/FinnGen_insample_credible_set_members_5loci.csv")
+_inside = {k: int(g.BP.isin(set(_fmem[(_fmem.locus == k[0]) & (_fmem.trait == k[1])].position)).sum()) for k, g in _rlead.groupby(["locus", "trait"])}
+fm["our_original_cs_L10"] = [int(_rr[(_rr.locus == l) & (_rr.trait == tr)].n_credible_sets.iloc[0]) for l, tr in zip(fm.locus, fm.trait)]
+fm["converged_L10"] = ["yes" if bool(_rr[(_rr.locus == l) & (_rr.trait == tr)].converged.iloc[0]) else "no" for l, tr in zip(fm.locus, fm.trait)]
+fm["our_leads_inside_finngen_cs"] = [_inside.get((l, tr), 0) for l, tr in zip(fm.locus, fm.trait)]
+fm = fm[["locus", "trait", "finngen_cs_in_window", "finngen_good_cs", "finngen_cs_sizes", "finngen_lead_variants", "finngen_lead_gene",
+         "finngen_lead_p", "our_original_cs_L10", "converged_L10", "our_leads_inside_finngen_cs"]]
 fm["locus"] = fm["locus"].replace({"WT1": "chr11 (30.2 Mb)"})
-panel("S3", "Panel A. Credible sets per locus: FinnGen R9 published SuSiE (in-sample LD; primary) versus SuSiE with the 1000 Genomes LD reference (L = 10; sensitivity analysis). Only high-purity sets (good_cs) are counted in the text; sets were extracted when their lead variant lay within +/-500 kb of the regional GWAS lead variant. GRCh38.", fm.rename(columns={
+panel("S3", "Panel A. Credible sets per locus: FinnGen R9 published SuSiE (in-sample LD; primary) versus SuSiE with the 1000 Genomes LD reference (L = 10; sensitivity analysis, same run as Panels D and F and Supplementary Figure S2). Only high-purity sets (good_cs) are counted in the text; sets were extracted when their lead variant lay within +/-500 kb of the regional GWAS lead variant. GRCh38.", fm.rename(columns={
     "locus": "Locus", "trait": "Trait", "our_original_cs_L10": "Credible sets, 1000G LD (L = 10)",
     "finngen_cs_in_window": "Credible sets, FinnGen in-sample", "finngen_good_cs": "High-purity sets (FinnGen good_cs)",
     "finngen_cs_sizes": "Set sizes", "finngen_lead_variants": "Lead variants", "finngen_lead_gene": "Gene of most severe consequence",
-    "finngen_lead_p": "Lead P", "our_leads_inside_finngen_cs": "1000G-LD lead variants inside FinnGen sets"}))
+    "finngen_lead_p": "Lead P", "our_leads_inside_finngen_cs": "1000G-LD lead variants inside FinnGen sets", "converged_L10": "1000G LD run converged"}))
 mem = pd.read_csv(RR / "finngen_finemap/FinnGen_insample_credible_set_members_5loci.csv")
 mem["locus"] = mem["locus"].replace({"WT1": "chr11 (30.2 Mb)"})
 mem = mem[["locus", "trait", "region", "cs", "v", "chromosome", "position", "allele1", "allele2", "maf", "beta", "se", "p",
@@ -246,10 +258,12 @@ runs = {"0 (no overlap)": "res_grid_corr_0.0.csv", "0.1724 (primary)": "LAVA_cor
         "0.369 (overlap count, Release 9 totals)": "res_grid_corr_0.3685.csv"}
 summ, wide = [], o[o.LOC.isin(orig16)][["LOC", "CHR", "START", "STOP", "rho", "p_fdr"]].rename(
     columns={"LOC": "Block", "START": "Start (GRCh37)", "STOP": "Stop (GRCh37)", "rho": "rho (munged-file counts)", "p_fdr": "FDR (munged-file counts)"})
+allv = {}
 for lab, f in runs.items():
     d = pd.read_csv(RR / "lava" / f)
     v = d[d.p.notna()].copy()
     v["fdr"] = multipletests(v.p, method="fdr_bh")[1]
+    allv[lab] = (d, v)
     x = d[d.LOC.isin(orig16)].merge(v[["LOC", "fdr"]], on="LOC", how="left")
     summ.append([lab, len(d), len(v), int((v.fdr < 0.05).sum()), int(x.p.notna().sum()), int((x.fdr < 0.05).sum()),
                  int((x.rho > 0).sum()), ", ".join(sorted(set(v[v.fdr < 0.05].LOC) - set(orig16))) or "none"])
@@ -271,6 +285,17 @@ wide.insert(2, "Region", wide.Block.map({"block_1074": "chr6 ESR1/SYNE1", "block
                                           "block_0666": "chr4 70.5 Mb", "block_1642": "chr11 29.5 Mb", "block_1644": "chr11 32.1 Mb"}).fillna(""))
 panel("S5", "Panel B. The 16 primary blocks across sampling correlations: rho, 95% CI and FDR (FDR within each run). Blank = not estimable. Stable core = FDR < 0.05 at 0.1724, 0.259, 0.35 and 0.369, and whenever estimable at 0; adjacent blocks form one region.",
       wide.sort_values(["Classification", "CHR", "Start (GRCh37)"], ascending=[False, True, True]))
+
+d0, v0 = allv["0 (no overlap)"]
+_, vp = allv["0.1724 (primary)"]
+dp = allv["0.1724 (primary)"][0]
+extra = v0[(v0.fdr < 0.05) & ~v0.LOC.isin(orig16)][["LOC", "CHR", "START", "STOP", "rho", "rho.lower", "rho.upper", "p", "fdr"]]
+extra = extra.merge(dp[["LOC", "rho", "p"]].rename(columns={"rho": "rho [0.1724 (primary)]", "p": "P [0.1724 (primary)]"}), on="LOC", how="left")
+extra = extra.merge(vp[["LOC", "fdr"]].rename(columns={"fdr": "FDR [0.1724 (primary)]"}), on="LOC", how="left")
+panel("S5", "Panel C. Blocks significant only without overlap modelling (sampling correlation 0): rho, 95% CI, P and FDR in that run, with the estimate from the primary analysis for comparison. A rho of 1 is the parameter bound.",
+      extra.rename(columns={"LOC": "Block", "START": "Start (GRCh37)", "STOP": "Stop (GRCh37)", "rho": "rho [0 (no overlap)]",
+                            "rho.lower": "CI lower [0 (no overlap)]", "rho.upper": "CI upper [0 (no overlap)]",
+                            "p": "P [0 (no overlap)]", "fdr": "FDR [0 (no overlap)]"}).sort_values(["CHR", "Start (GRCh37)"]))
 
 # ======================================================================= S6
 panel("S6", "Panel A. Genome build of each input", pd.DataFrame([
