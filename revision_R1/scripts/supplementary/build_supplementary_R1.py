@@ -40,26 +40,26 @@ def panel(sheet, title, df):
 prov = pd.DataFrame([
     ["Uterine fibroids", "CD2_BENIGN_LEIOMYOMA_UTERI", "finngen_R9_CD2_BENIGN_LEIOMYOMA_UTERI.gz",
      UF_CASES, UF_CTRL, UF_CASES + UF_CTRL, round(neff(UF_CASES, UF_CTRL), 1),
-     "35,474 / 183,254 (total 218,728)", "LDSC munging, MAGMA input, LAVA input",
-     "Effective N (LDSC, MAGMA, SuSiE); cases/controls (LAVA)"],
+     "35,474 / 183,254 (total 218,728)", "LDSC and MAGMA (constant N in munged files)",
+     "LAVA: R9 cases/controls; SuSiE: R9 effective N; LDSC and MAGMA: munged-file N (identical results with R9 effective N, Panel B and Table S2)"],
     ["Endometriosis", "N14_ENDOMETRIOSIS", "finngen_R9_N14_ENDOMETRIOSIS.gz",
      EN_CASES, EN_CTRL, EN_CASES + EN_CTRL, round(neff(EN_CASES, EN_CTRL), 1),
-     "17,045 / 222,290 (total 239,335)", "LDSC munging, MAGMA input, LAVA input, former Table S1",
-     "Effective N (LDSC, MAGMA, SuSiE); cases/controls (LAVA)"],
+     "17,045 / 222,290 (total 239,335)", "LDSC and MAGMA (constant N in munged files)",
+     "LAVA: R9 cases/controls; SuSiE: R9 effective N; LDSC and MAGMA: munged-file N (identical results with R9 effective N, Panel B and Table S2)"],
 ], columns=["Trait", "FinnGen R9 endpoint", "Summary-statistic file", "Cases (R9 endpoint)",
             "Controls (R9 endpoint)", "Total N", "Effective N = 4/(1/cases+1/controls)",
-            "Superseded counts in submitted analysis", "Where superseded counts were used",
-            "Values used in revised analyses"])
+            "Counts carried in the munged input files", "Where used",
+            "Sample sizes used in this study"])
 panel("S1", "Panel A. Data sources and sample-size provenance. FinnGen R9 files do not report per-variant N; counts are from the R9 endpoint metadata.", prov)
 
 rg = []
-for tag, lab in (("submitted", "Submitted constant N"), ("total", "R9 total N"), ("neff", "R9 effective N")):
+for tag, lab in (("submitted", "Munged-file constant N"), ("total", "R9 total N"), ("neff", "R9 effective N")):
     t = open(RR / f"ldsc/rg_{tag}.log").read().splitlines()
     i = [k for k, l in enumerate(t) if l.startswith("Summary of Genetic Correlation")][0]
     v = t[i + 2].split()
     rg.append([lab, "standard LDSC (eur_w_ld_chr)", float(v[2]), float(v[3]), float(v[4]), float(v[5]),
                float(v[6]), float(v[10])])
-rg.append(["Submitted constant N (published estimate)", "GenomicSEM multivariable LDSC", 0.511, 0.0691,
+rg.append(["Munged-file constant N (estimate reported in the main text)", "GenomicSEM multivariable LDSC", 0.511, 0.0691,
            np.nan, 1.37e-13, np.nan, 0.1917])
 panel("S1", "Panel B. Genome-wide genetic correlation (LDSC) under alternative sample sizes. rg does not depend on a constant rescaling of N; observed-scale h2 does.",
       pd.DataFrame(rg, columns=["Sample-size input", "Software", "rg", "SE", "Z", "P",
@@ -73,7 +73,7 @@ elig = pd.DataFrame([
     ["Estimate outside parameter bound (|rho| > 1.25), P set to missing", 58, 60],
     ["Valid bivariate tests", 92, 88],
     ["FDR-significant blocks (Benjamini-Hochberg over valid tests)", 16, 16],
-], columns=["Step", "Submitted analysis (superseded counts)", "Revised analysis (R9 counts)"])
+], columns=["Step", "Munged-file case/control counts", "R9 case/control counts (primary)"])
 panel("S1", "Panel C. LAVA eligibility (2,495 LD blocks, 1000 Genomes EUR reference, sampling correlation 0.1724, univ.thresh = 1)", elig)
 
 lv = pd.read_csv(RR / "lava/LAVA_corrected_N_ov01724_all_valid.csv")
@@ -118,21 +118,21 @@ for _, g in m[m.group == "significant in both"].iterrows():
     b = loci[(loci.CHR == g.CHR_f) & (loci.STOP >= g.START_f) & (loci.START <= g.STOP_f)]
     for blk in b.LOC:
         if blk in valid.index:
-            rows.append([g.SYMBOL_f, blk, valid.loc[blk, "rho"], valid.loc[blk, "FDR"],
+            rows.append([g.SYMBOL_f, int(g.CHR_f), int(g.START_f), int(g.STOP_f), blk, valid.loc[blk, "rho"], valid.loc[blk, "FDR"],
                          "yes" if valid.loc[blk, "FDR"] < 0.05 else "no"])
         else:
-            rows.append([g.SYMBOL_f, blk, np.nan, np.nan, "no valid test"])
+            rows.append([g.SYMBOL_f, int(g.CHR_f), int(g.START_f), int(g.STOP_f), blk, np.nan, np.nan, "no valid test"])
 panel("S2", "Panel B. The ten genes significant in both MAGMA analyses and the LAVA blocks overlapping them (primary analysis, R9 counts). Overlap reflects the same GWAS signal and is prioritisation, not replication.",
-      pd.DataFrame(rows, columns=["Gene", "LAVA block", "rho", "FDR", "FDR-significant block"]))
+      pd.DataFrame(rows, columns=["Gene", "CHR", "Gene start (NCBI37.3)", "Gene stop (NCBI37.3)", "LAVA block", "rho", "FDR", "FDR-significant block"]))
 
 # ======================================================================= S3
 fm = pd.read_csv(RR / "finngen_finemap/FinnGen_insample_vs_our_SuSiE_by_locus.csv")
 fm["locus"] = fm["locus"].replace({"WT1": "chr11 (30.2 Mb)"})
-panel("S3", "Panel A. Credible sets per locus: FinnGen R9 published SuSiE (in-sample LD; primary) versus the 1000 Genomes-LD SuSiE of the submitted manuscript (L = 10). GRCh38.", fm.rename(columns={
-    "locus": "Locus", "trait": "Trait", "our_original_cs_L10": "Credible sets, 1000G LD (submitted)",
+panel("S3", "Panel A. Credible sets per locus: FinnGen R9 published SuSiE (in-sample LD; primary) versus SuSiE with the 1000 Genomes LD reference (L = 10; sensitivity analysis). Only high-purity sets (good_cs) are counted in the text; sets were extracted when their lead variant lay within +/-500 kb of the regional GWAS lead variant. GRCh38.", fm.rename(columns={
+    "locus": "Locus", "trait": "Trait", "our_original_cs_L10": "Credible sets, 1000G LD (L = 10)",
     "finngen_cs_in_window": "Credible sets, FinnGen in-sample", "finngen_good_cs": "High-purity sets (FinnGen good_cs)",
     "finngen_cs_sizes": "Set sizes", "finngen_lead_variants": "Lead variants", "finngen_lead_gene": "Gene of most severe consequence",
-    "finngen_lead_p": "Lead P", "our_leads_inside_finngen_cs": "Submitted lead variants inside FinnGen sets"}))
+    "finngen_lead_p": "Lead P", "our_leads_inside_finngen_cs": "1000G-LD lead variants inside FinnGen sets"}))
 mem = pd.read_csv(RR / "finngen_finemap/FinnGen_insample_credible_set_members_5loci.csv")
 mem["locus"] = mem["locus"].replace({"WT1": "chr11 (30.2 Mb)"})
 mem = mem[["locus", "trait", "region", "cs", "v", "chromosome", "position", "allele1", "allele2", "maf", "beta", "se", "p",
@@ -151,12 +151,12 @@ for lc in mem.locus.unique():
 panel("S3", "Panel C. Credible sets shared between the two disorders (FinnGen in-sample). No shared variants at GREB1 or WNT4.",
       pd.DataFrame(shared, columns=["Locus", "Fibroid credible set", "Endometriosis credible set", "Shared variants",
                                     "Shared variant IDs", "Fibroid PIP in shared variants", "Endometriosis PIP in shared variants"]))
-ls = pd.read_csv(RR / "susie/SuSiE_L_sensitivity_rerun.csv")
-panel("S3", "Panel D. Sensitivity: 1000 Genomes-LD SuSiE (susie_rss, susieR 0.14.2; coverage 0.95, min_abs_corr 0.5; effective N) for L = 10, 5, 3, 1", ls)
-dg = pd.read_csv(RR / "susie/SuSiE_LD_concordance_diagnostics.csv")
+ls = pd.read_csv(RR / "susie/SuSiE_L_sensitivity_rerun.csv"); ls["locus"] = ls["locus"].replace({"WT1": "chr11 (30.2 Mb)"})
+panel("S3", "Panel D. Sensitivity: 1000 Genomes-LD SuSiE (susie_rss, susieR 0.14.2; coverage 0.95, min_abs_corr 0.5; effective N) for L = 10, 5, 3, 1. Runs with converged = False did not reach convergence within 500 iterations.", ls)
+dg = pd.read_csv(RR / "susie/SuSiE_LD_concordance_diagnostics.csv"); dg["locus"] = dg["locus"].replace({"WT1": "chr11 (30.2 Mb)"})
 panel("S3", "Panel E. LD-concordance diagnostics for the 1000 Genomes-LD SuSiE: estimate_s_rss (0 = consistent) and number of variants flagged by kriging_rss (|z_std_diff| > 3 and logLR > 2)",
       dg.rename(columns={"estimated_s": "estimate_s_rss", "n_suspicious_variants_kriging": "Variants flagged (kriging_rss)"}))
-cm = pd.read_csv(RR / "susie/SuSiE_credible_set_membership_L10.csv")
+cm = pd.read_csv(RR / "susie/SuSiE_credible_set_membership_L10.csv"); cm["locus"] = cm["locus"].replace({"WT1": "chr11 (30.2 Mb)"})
 panel("S3", "Panel F. Sensitivity: credible-set membership of the 1000 Genomes-LD SuSiE, L = 10 (GRCh38 positions)", cm)
 
 # ======================================================================= S4
@@ -185,7 +185,7 @@ panel("S4", "Panel B. S-LDSC for seven marker annotations under both baseline mo
 panel("S4", "Panel C. Annotation construction", pd.DataFrame([
     ["Marker genes", "Seurat cluster markers with average log2 fold change > 0.25 and adjusted P < 0.05, ranked by adjusted P then fold change; top 500 per cell type (B cell 419, CD8 T cell 496)"],
     ["Source", "GSE218044: uterine tissue from four individuals with adenomyosis (Chen et al. 2022), 39,995 cells after subsampling, processed in scEndoExplorer (cell_type_marker_genes.csv)"],
-    ["Cell labels", "Cluster-level SingleR annotation (Human Primary Cell Atlas and Blueprint references), harmonised to seven uterine cell classes; single labels, no probabilistic reannotation"],
+    ["Cell labels", "Cluster-level SingleR annotation (Human Primary Cell Atlas and Blueprint references), harmonised to seven uterine cell classes. A cell-level reannotation with confidence scores is reported in Panels E-H."],
     ["Gene window", "Gene body +/- 100 kb"],
     ["Reference panel", "1000 Genomes Phase 3 European; HapMap3 regression SNPs"],
     ["Baseline models", "baseline v1.2 (coefficient test) and baseline-LD v2.2 (enrichment)"],
@@ -201,7 +201,7 @@ panel("S4", "Panel F. Cell-level reannotation by donor and cell class", dn.renam
 cf = pd.read_csv(RA / "reannotation_confusion_cluster_vs_cell.csv")
 panel("S4", "Panel G. Cluster-level label (rows) versus per-cell label (columns), number of cells", cf.rename(columns={"cluster_label": "Cluster-level label"}))
 ov2 = pd.read_csv(RA / "marker_overlap_original_vs_confident.csv")
-panel("S4", "Panel H(i). Marker genes re-derived from concordantly labelled cells (23,587 cells) versus the original markers. The procedure reproduced the original marker lists exactly when applied to all cells.", ov2)
+panel("S4", "Panel H(i). Marker genes re-derived from concordantly labelled cells (23,587 cells) versus the original markers. The procedure reproduced the original marker lists exactly when applied to all cells. Re-derived markers for smooth muscle and B cells rest on few concordant cells (231 and 79), so these two sets are less reliable.", ov2)
 sg = pd.read_csv(RA / "shared_gene_marker_status.csv").fillna("")
 panel("S4", "Panel H(ii). Marker status of the ten shared MAGMA genes, original versus re-derived markers", sg)
 cmp = pd.read_csv(RR / "sldsc_reannot/SLDSC_original_vs_confident_markers.csv")
@@ -212,13 +212,40 @@ panel("S4", "Panel H(iii). S-LDSC with original versus re-derived markers, both 
       cmp.rename(columns={"set": "Marker set", "trait": "Trait", "model": "Baseline model", "ct": "Annotation", "prop": "Proportion of SNPs", "enr": "Enrichment", "enr_p": "Enrichment P", "enr_fdr": "Enrichment FDR", "z": "Coefficient Z", "coef_p": "Coefficient P (one-sided)", "coef_fdr": "Coefficient FDR"})[
           ["Marker set", "Trait", "Baseline model", "Annotation", "Proportion of SNPs", "Enrichment", "Enrichment P", "Enrichment FDR", "Coefficient Z", "Coefficient P (one-sided)", "Coefficient FDR"]])
 
+import glob as _glob, os as _os
+from scipy.stats import norm as _norm
+_rows = []
+for _set in ("original", "confident"):
+    for _tr in ("fibroids", "endometriosis"):
+        for _m in ("v12", "ld22"):
+            _d = RR / f"sldsc_reannot/results_control_{_set}_{_tr}_{_m}"
+            _t = []
+            for _f in sorted(_glob.glob(str(_d / "*.results"))):
+                _r = pd.read_csv(_f, sep="\t").iloc[-1]
+                _t.append([_os.path.basename(_f)[:-8], _r["Prop._SNPs"], _r.Enrichment, _r.Enrichment_p, _r["Coefficient_z-score"]])
+            if not _t:
+                continue
+            _t = pd.DataFrame(_t, columns=["Annotation", "Proportion of SNPs", "Enrichment", "Enrichment P", "Coefficient Z"])
+            _t["Coefficient P (one-sided)"] = _norm.sf(_t["Coefficient Z"])
+            _t["Enrichment FDR"] = multipletests(_t["Enrichment P"], method="fdr_bh")[1]
+            _t["Coefficient FDR"] = multipletests(_t["Coefficient P (one-sided)"], method="fdr_bh")[1]
+            _t.insert(0, "Baseline model", {"v12": "baseline v1.2", "ld22": "baseline-LD v2.2"}[_m])
+            _t.insert(0, "Trait", _tr)
+            _t.insert(0, "Marker set", {"original": "original markers", "confident": "re-derived markers (concordant cells)"}[_set])
+            _rows.append(_t)
+if _rows:
+    _ctl = pd.concat(_rows, ignore_index=True)
+    _ctl["Annotation"] = _ctl["Annotation"].str.replace("T_cell__CD8_", "CD8 T cell", regex=False).str.replace("_", " ")
+    panel("S4", "Panel I. S-LDSC with an all-genes control annotation (all GSE218044 genes with coordinates, +/-100 kb) fitted jointly with the baseline model and each cell-type annotation. FDR over seven annotations within trait, model and marker set.", _ctl)
+
 # ======================================================================= S5
 o = pd.read_csv(UF / "outputs_v2/formal_ld_audit/lava/Table_LAVA_Full_2495Blocks_AllResults_overlap_ldsc_standardized_withFDR.csv")
 orig16 = list(o[o.p_fdr < 0.05].sort_values("p").LOC)
 runs = {"0 (no overlap)": "res_grid_corr_0.0.csv", "0.1724 (primary)": "LAVA_corrected_N_ov01724_all_bivariate_rows.csv",
-        "0.259 (count-derived)": "res_grid_corr_0.2590.csv", "0.35 (stress test)": "res_grid_corr_0.35.csv"}
+        "0.259 (overlap count, munged-file totals)": "res_grid_corr_0.2590.csv", "0.35": "res_grid_corr_0.35.csv",
+        "0.369 (overlap count, Release 9 totals)": "res_grid_corr_0.3685.csv"}
 summ, wide = [], o[o.LOC.isin(orig16)][["LOC", "CHR", "START", "STOP", "rho", "p_fdr"]].rename(
-    columns={"LOC": "Block", "START": "Start (GRCh37)", "STOP": "Stop (GRCh37)", "rho": "rho (submitted)", "p_fdr": "FDR (submitted)"})
+    columns={"LOC": "Block", "START": "Start (GRCh37)", "STOP": "Stop (GRCh37)", "rho": "rho (munged-file counts)", "p_fdr": "FDR (munged-file counts)"})
 for lab, f in runs.items():
     d = pd.read_csv(RR / "lava" / f)
     v = d[d.p.notna()].copy()
@@ -231,18 +258,18 @@ for lab, f in runs.items():
     wide = wide.merge(x, on="Block", how="left")
 rep = pd.read_csv(RR / "lava/res_repro_legacy.csv")
 rv = rep[rep.p.notna()].copy(); rv["fdr"] = multipletests(rv.p, method="fdr_bh")[1]
-summ.append(["0.1724, superseded counts (reproduction)", len(rep), len(rv), int((rv.fdr < 0.05).sum()), 16,
+summ.append(["0.1724, case/control counts of the munged input files", len(rep), len(rv), int((rv.fdr < 0.05).sum()), 16,
              int((rv[rv.LOC.isin(orig16)].fdr < 0.05).sum()), 16, "none"])
-panel("S5", "Panel A. LAVA results by sampling correlation, R9 case/control counts, same 150 candidate blocks. The final row reproduces the submitted analysis.",
+panel("S5", "Panel A. LAVA results by sampling correlation, R9 case/control counts, same 150 candidate blocks. The final row uses the case/control counts carried in the munged input files (35,474/183,254 and 17,045/222,290).",
       pd.DataFrame(summ, columns=["Sampling correlation", "Bivariate rows", "Valid tests", "FDR-significant blocks",
                                   "Primary 16: estimable", "Primary 16: FDR-significant", "Primary 16: positive rho",
                                   "Significant blocks outside the primary 16"]))
-stable = {"block_1074", "block_1075", "block_1076", "block_1077", "block_0024", "block_0216", "block_0666", "block_1642", "block_1644"}
+stable = {"block_1074", "block_1075", "block_1076", "block_1077", "block_0024", "block_0216", "block_0666", "block_1644"}
 wide.insert(1, "Classification", wide.Block.map(lambda b: "stable core" if b in stable else "sensitivity-dependent"))
 wide.insert(2, "Region", wide.Block.map({"block_1074": "chr6 ESR1/SYNE1", "block_1075": "chr6 ESR1/SYNE1", "block_1076": "chr6 ESR1/SYNE1",
                                           "block_1077": "chr6 ESR1/SYNE1", "block_0024": "chr1 WNT4", "block_0216": "chr2 GREB1",
                                           "block_0666": "chr4 70.5 Mb", "block_1642": "chr11 29.5 Mb", "block_1644": "chr11 32.1 Mb"}).fillna(""))
-panel("S5", "Panel B. The 16 primary blocks across sampling correlations: rho, 95% CI and FDR (FDR within each run). Blank = not estimable. Stable core = FDR < 0.05 at 0.1724, 0.259 and 0.35, and whenever estimable at 0.",
+panel("S5", "Panel B. The 16 primary blocks across sampling correlations: rho, 95% CI and FDR (FDR within each run). Blank = not estimable. Stable core = FDR < 0.05 at 0.1724, 0.259, 0.35 and 0.369, and whenever estimable at 0; adjacent blocks form one region.",
       wide.sort_values(["Classification", "CHR", "Start (GRCh37)"], ascending=[False, True, True]))
 
 # ======================================================================= S6

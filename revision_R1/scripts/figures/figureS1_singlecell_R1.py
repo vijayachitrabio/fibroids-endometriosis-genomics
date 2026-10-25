@@ -16,6 +16,7 @@ import matplotlib
 matplotlib.use("Agg")
 
 import matplotlib.pyplot as plt
+plt.rcParams.update({"text.color": "black", "axes.labelcolor": "black", "xtick.color": "black", "ytick.color": "black", "axes.titlecolor": "black", "legend.labelcolor": "black"})
 import numpy as np
 import pandas as pd
 from matplotlib.lines import Line2D
@@ -27,7 +28,7 @@ OUTDIR = ROOT / "Funciton_int_ge/revision_figures"
 PNG = OUTDIR / "Supplementary_Figure_S1_SingleCell_R1.png"
 PDF = OUTDIR / "Supplementary_Figure_S1_SingleCell_R1.pdf"
 
-TEXT = "#111111"
+TEXT = "black"
 GRID = "#D9D9D9"
 FIB = "#0072B2"
 ENDO = "#C43C4A"
@@ -232,7 +233,7 @@ def main() -> None:
     bubble = load_sheet(payload, "FigS4A")
     context = load_sheet(payload, "FigS4B")
     hub = load_sheet(payload, "FigS4D")
-    if len(bubble) != 20 or len(context) != 8 or (hub["record_type"] == "node").sum() != 15:
+    if len(bubble) != 20 or len(context) != 8:
         raise ValueError("Unexpected S4 source-data dimensions")
 
     plt.rcParams.update({"font.family": "Arial", "text.color": TEXT, "pdf.fonttype": 42, "ps.fonttype": 42})
@@ -240,17 +241,16 @@ def main() -> None:
     outer = fig.add_gridspec(2, 2, width_ratios=[1.06, 0.94], height_ratios=[1.0, 1.02], hspace=0.38, wspace=0.34)
     ax_a = fig.add_subplot(outer[0, 0])
     ax_b = fig.add_subplot(outer[0, 1])
-    cgrid = outer[1, 0].subgridspec(1, 2, wspace=0.35)
+    cgrid = outer[1, :].subgridspec(1, 2, wspace=0.25)
     ax_c1 = fig.add_subplot(cgrid[0, 0])
     ax_c2 = fig.add_subplot(cgrid[0, 1])
-    ax_d = fig.add_subplot(outer[1, 1])
 
     plot_bubble(ax_a, bubble)
     plot_scaled_context(ax_b, context)
     plot_native_bar(ax_c1, context[context["dataset"] == "Endometriosis"], "Adenomyosis uterine tissue\n(GSE218044) markers", ENDO, "Marker log2FC")
     plot_native_bar(ax_c2, context[context["dataset"] == "Uterine fibroid"], "Uterine fibroid tissue\n(GSE162122)", FIB, "Cells expressing (%)")
-    panel_label(ax_c1, "C", x=-0.23)
-    plot_hub(ax_d, hub)
+    panel_label(ax_c1, "C", x=-0.12)
+    # Panel D (conceptual hub network) removed in R1: several nodes had no documented source.
 
     fig.subplots_adjust(left=0.07, right=0.985, top=0.965, bottom=0.08)
     OUTDIR.mkdir(parents=True, exist_ok=True)
