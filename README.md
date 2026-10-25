@@ -19,15 +19,14 @@ The analytical framework includes:
 6. Single-cell RNA-seq contextualisation using published datasets
 7. Cell-type heritability enrichment using stratified LDSC (S-LDSC)
 
-## Key findings (revised, R1)
+## Key findings
 
 - **Genome-wide genetic sharing:** moderate positive genetic correlation (rg = 0.511, SE = 0.069, P = 1.37 × 10^-13), unchanged under alternative sample-size inputs.
-- **Regional sharing:** with FinnGen R9 case and control counts, LAVA identified 16 FDR-significant blocks among 88 valid bivariate tests. Nine blocks in five regions (ESR1/SYNE1, WNT4, GREB1, chr4 at 70.5 Mb and chr11) remained significant across alternative sample-overlap assumptions; the other seven are sensitivity-dependent.
+- **Regional sharing:** with FinnGen R9 case and control counts, LAVA identified 16 FDR-significant blocks among 88 valid bivariate tests. Eight blocks in five regions (ESR1/SYNE1, WNT4, GREB1, chr4 at 70.5 Mb and chr11 at 32.1 Mb) remained significant under every tested sample-overlap assumption; the other eight are sensitivity-dependent.
 - **Gene-level architecture:** MAGMA identified 147 Bonferroni-significant genes for uterine fibroids and 38 for endometriosis; ten were significant in both analyses, 137 only in the fibroid analysis and 28 only in the endometriosis analysis. These groups are threshold-defined and do not by themselves indicate disorder-specific architecture.
 - **Cross-layer agreement:** seven of the ten shared genes lie within FDR-significant LAVA blocks. Because both layers derive from the same GWAS signals, this is prioritisation, not independent replication.
-- **Fine-mapping:** FinnGen's in-sample SuSiE identifies the same credible variant in both disorders at ESR1/SYNE1 (rs58415480) and at chr11, and non-overlapping credible sets at GREB1 and WNT4. SuSiE with the 1000 Genomes LD reference is a sensitivity analysis only.
-- **Cellular context:** S-LDSC shows enrichment of a stromal marker annotation in both disorders, robust to cell-label uncertainty; the conditional coefficient evidence is modest. Marker annotations come from adenomyosis uterine tissue (GSE218044), not endometriosis tissue. These analyses do not establish a causal cell type.
-- **Pathway annotation** from the original submission was removed in revision.
+- **Fine-mapping:** FinnGen's in-sample SuSiE gives a single-variant credible set shared by both disorders at ESR1/SYNE1 (rs58415480). On chr11 (30.2 Mb) the endometriosis credible set lies within the fibroid set but carries only 15% of its posterior probability. At GREB1 and WNT4 the credible sets share no variants; whether these are distinct signals needs formal colocalisation. SuSiE with the 1000 Genomes LD reference is a sensitivity analysis only.
+- **Cellular context:** S-LDSC shows enrichment of a stromal marker annotation in both disorders, robust to cell-label uncertainty and to an all-genes control annotation; the conditional coefficient evidence is modest. Marker annotations come from adenomyosis uterine tissue (GSE218044), not endometriosis tissue. These analyses do not establish a causal cell type.
 
 The revision analyses, derived results and an output-to-script map are in [`revision_R1/`](revision_R1/README.md).
 

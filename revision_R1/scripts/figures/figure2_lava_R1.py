@@ -2,7 +2,7 @@
 
   A  local rho by chromosome (88 valid tests), 95% CI, coloured by robustness
   B  the 16 FDR-significant blocks: rho with 95% CI under the primary
-     sampling correlation (0.1724) and point estimates under 0.259 and 0.35
+     sampling correlation (0.1724) and point estimates under 0.259, 0.35 and 0.369
   C  rho versus -log10 P with regional (position) labels, not gene names
 
 Addresses Reviewer 1 comment 2 and minor comment 3.
@@ -23,7 +23,7 @@ OUT = RR.parent / "revision_figures"
 
 C_CORE, C_SENS, C_NS = "#1F4E79", "#8DB3D9", "white"
 STABLE = {"block_1074", "block_1075", "block_1076", "block_1077", "block_0024",
-          "block_0216", "block_0666", "block_1642", "block_1644"}
+          "block_0216", "block_0666", "block_1644"}
 
 loci = pd.read_csv(RR / "lava/lava_loci_2495_blocks.tsv", sep="\t")
 v = pd.read_csv(RR / "lava/LAVA_corrected_N_ov01724_all_valid.csv")
@@ -75,7 +75,7 @@ style(ax)
 # ---------------------------------------------------------------- B
 ax = fig.add_subplot(gs[1, 0])
 grid = {}
-for k, f in {"0.259": "res_grid_corr_0.2590.csv", "0.35": "res_grid_corr_0.35.csv"}.items():
+for k, f in {"0.259": "res_grid_corr_0.2590.csv", "0.35": "res_grid_corr_0.35.csv", "0.369": "res_grid_corr_0.3685.csv"}.items():
     d = pd.read_csv(RR / "lava" / f)
     grid[k] = d.set_index("LOC").rho
 s16 = v[v.LOC.isin(sig)].copy()
@@ -87,7 +87,7 @@ for yi, (_, r) in zip(y, s16.iterrows()):
     ax.hlines(yi, max(r["rho.lower"], -1), min(r["rho.upper"], 1), color=col, lw=2.2, zorder=2)
     ax.scatter(r.rho, yi, s=52, color=col, edgecolor="black", linewidth=0.5, zorder=4,
                marker=">" if r.rho >= 0.999 else "o")
-    for k, mk in (("0.259", "s"), ("0.35", "D")):
+    for k, mk in (("0.259", "s"), ("0.35", "D"), ("0.369", "v")):
         g = grid[k].get(r.LOC, np.nan)
         if pd.notna(g):
             ax.scatter(g, yi, s=22, marker=mk, facecolor="white", edgecolor="#333", linewidth=0.7, zorder=5)
@@ -109,6 +109,7 @@ ax.legend(handles=[
     Line2D([0], [0], marker=">", color="none", mfc="#BBBBBB", mec="black", ms=7, label="estimate at the bound (ρ = 1)"),
     Line2D([0], [0], marker="s", color="none", mfc="white", mec="#333", ms=5.5, label="ρ, sampling correlation 0.259"),
     Line2D([0], [0], marker="D", color="none", mfc="white", mec="#333", ms=5, label="ρ, sampling correlation 0.35"),
+    Line2D([0], [0], marker="v", color="none", mfc="white", mec="#333", ms=5.5, label="ρ, sampling correlation 0.369"),
 ], loc="lower left", fontsize=8, frameon=True, framealpha=0.95, edgecolor="#DDD")
 
 # ---------------------------------------------------------------- C
@@ -135,8 +136,8 @@ ax.set_title("C  Strength of local association", loc="left", fontsize=11.5, weig
 style(ax)
 
 fig.legend(handles=[
-    Line2D([0], [0], marker="o", color="none", mfc=C_CORE, mec="black", ms=8, label="FDR < 0.05, stable across sampling correlations (9 blocks, 5 regions)"),
-    Line2D([0], [0], marker="o", color="none", mfc=C_SENS, mec="black", ms=8, label="FDR < 0.05, sensitivity-dependent (7 blocks)"),
+    Line2D([0], [0], marker="o", color="none", mfc=C_CORE, mec="black", ms=8, label="FDR < 0.05, stable across sampling correlations (8 blocks, 5 regions)"),
+    Line2D([0], [0], marker="o", color="none", mfc=C_SENS, mec="black", ms=8, label="FDR < 0.05, sensitivity-dependent (8 blocks)"),
     Line2D([0], [0], marker="o", color="none", mfc="white", mec="black", ms=5, label="not significant"),
 ], loc="lower center", ncol=3, frameon=False, fontsize=9.5, bbox_to_anchor=(0.5, 0.005))
 fig.subplots_adjust(left=0.1, right=0.985, top=0.965, bottom=0.085)
