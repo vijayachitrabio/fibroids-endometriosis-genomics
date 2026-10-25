@@ -67,6 +67,6 @@ p <- wrap_plots(plots, ncol = 2) + plot_annotation(tag_levels = "A") & theme(leg
 
 dir.create(out, recursive = TRUE, showWarnings = FALSE)
 ggsave(file.path(out, "Supplementary_Figure_S2_SuSiE_R1.png"), p,
-  width = 11.7, height = 15.4, units = "in", dpi = 600, bg = "white")
+  width = 11.7, height = 12.6, units = "in", dpi = 600, bg = "white")
 ggsave(file.path(out, "Supplementary_Figure_S2_SuSiE_R1.pdf"), p,
-  width = 11.7, height = 15.4, units = "in", bg = "white")
+  width = 11.7, height = 12.6, units = "in", bg = "white")
