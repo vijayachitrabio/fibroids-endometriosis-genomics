@@ -335,7 +335,7 @@ names = {k: f"Table {k} " + {"S1": "Sample size LDSC LAVA", "S2": "MAGMA", "S3":
 with pd.ExcelWriter(OUT, engine="openpyxl") as xw:
     idx = pd.DataFrame([[f"Supplementary Table {k}", names[k], titles[k]] for k in titles],
                        columns=["Supplementary table", "Worksheet", "Title"])
-    pd.DataFrame([["Supplementary Tables: Integrative genomic analyses of uterine fibroids and endometriosis"]]).to_excel(
+    pd.DataFrame([["Supplementary Tables: Integrative genomic analyses reveal regional genetic sharing and stromal context between uterine fibroids and endometriosis"]]).to_excel(
         xw, sheet_name="Index", header=False, index=False)
     idx.to_excel(xw, sheet_name="Index", startrow=2, index=False)
     for k, panels in sheets.items():
