@@ -122,13 +122,14 @@ fdr_line = v[v.p_fdr < 0.05].p.max()
 ax.axhline(-np.log10(fdr_line), color="#7A828A", ls="--", lw=0.8)
 ax.text(-1.0, -np.log10(fdr_line) + 1.2, "FDR = 0.05", fontsize=8, color="black")
 labs = {"block_1075": "chr6: 152.4–153.1 Mb", "block_0024": "chr1: 22.1–22.7 Mb", "block_1076": "chr6: 153.1–153.8 Mb",
-        "block_1074": "chr6: 151.6–152.4 Mb", "block_0216": "chr2: 11.2–12.0 Mb", "block_1642": "chr11: 29.5–30.6 Mb"}
-offs = {"block_1075": (-115, -4), "block_0024": (-100, 10), "block_1076": (-125, 20), "block_1074": (-150, 3),
-        "block_0216": (-165, -6), "block_1642": (-150, -7)}
+        "block_1074": "chr6: 151.6–152.4 Mb", "block_0216": "chr2: 11.2–12.0 Mb", "block_1642": "chr11: 29.5–30.6 Mb",
+        "block_1644": "chr11: 32.1–32.8 Mb", "block_0666": "chr4: 70.5–71.5 Mb"}
+pos = {"block_1075": (0.30, 75.5), "block_0024": (0.20, 33), "block_1076": (0.10, 27), "block_1074": (0.00, 21),
+       "block_0216": (-0.10, 16.5), "block_0666": (-0.20, 12.5), "block_1642": (0.18, 8.6), "block_1644": (-0.40, 4.6)}
 for loc, lab in labs.items():
     r = v[v.LOC == loc].iloc[0]
-    ax.annotate(lab, (r.rho, r.nlp), xytext=offs[loc], textcoords="offset points", fontsize=8.4,
-                arrowprops=dict(arrowstyle="-", color="#888", lw=0.5))
+    ax.annotate(lab, (r.rho, r.nlp), xytext=pos[loc], textcoords="data", fontsize=8.4, va="center",
+                arrowprops=dict(arrowstyle="-", color="#888", lw=0.5, shrinkA=2, shrinkB=3))
 ax.set_xlim(-1.08, 1.08)
 ax.set_xlabel("Local genetic correlation (ρ)", fontsize=10)
 ax.set_ylabel(r"$-\log_{10}(P)$", fontsize=10)
