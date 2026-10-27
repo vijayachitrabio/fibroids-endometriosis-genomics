@@ -17,6 +17,7 @@ mem <- fread(file.path(fig, "revision_reruns/susie/SuSiE_credible_set_membership
 d[, c("credible_set", "cs_label", "pip") := NULL]
 d <- merge(d, mem, by = c("locus", "trait", "SNP"), all.x = TRUE)
 setnames(d, "credible_set_rerun", "credible_set")
+conv <- fread(file.path(fig, "revision_reruns/susie/SuSiE_L_sensitivity_rerun.csv"))[L == 10, .(locus, trait, converged)]
 d <- d[is.finite(P) & P > 0 & is.finite(BP)]
 d[, neglog10p := -log10(P)]
 d[, cs_group := fifelse(is.na(credible_set) | trimws(credible_set) == "", "Not in credible set", as.character(credible_set))]
@@ -47,7 +48,8 @@ for (loc in loc_order) for (tr in trait_order) {
     geom_point(data = dd[cs_group != "Not in credible set"], size = 1.4, alpha = 0.95) +
     scale_colour_manual(values = pal, breaks = cs_levels, limits = cs_levels, drop = FALSE, name = "Credible set (L = 10)") +
     scale_x_continuous(labels = label_number(big.mark = ","), breaks = pretty_breaks(4), expand = expansion(mult = 0.02)) +
-    labs(title = paste0(title_locus, " fine-mapping: ", trait_label),
+    labs(title = paste0(title_locus, " fine-mapping: ", trait_label,
+        if (!isTRUE(conv[locus == loc & trait == tr, converged])) " (did not converge)" else ""),
       x = paste0("Chromosome ", chr, " position (GRCh38)"), y = expression(-log[10](P))) +
     theme_bw(base_size = 8) +
     theme(

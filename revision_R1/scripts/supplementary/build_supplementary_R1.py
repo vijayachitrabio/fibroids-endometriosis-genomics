@@ -41,11 +41,11 @@ prov = pd.DataFrame([
     ["Uterine fibroids", "CD2_BENIGN_LEIOMYOMA_UTERI", "finngen_R9_CD2_BENIGN_LEIOMYOMA_UTERI.gz",
      UF_CASES, UF_CTRL, UF_CASES + UF_CTRL, round(neff(UF_CASES, UF_CTRL), 1),
      "35,474 / 183,254 (total 218,728)", "LDSC and MAGMA (constant N in munged files)",
-     "LAVA: R9 cases/controls; SuSiE: R9 effective N; LDSC and MAGMA: munged-file N (identical results with R9 effective N, Panel B and Table S2)"],
+     "LAVA: R9 cases/controls; SuSiE: R9 effective N; LDSC and MAGMA: munged-file N (essentially identical results with R9 total and effective N, Panel B and Table S2)"],
     ["Endometriosis", "N14_ENDOMETRIOSIS", "finngen_R9_N14_ENDOMETRIOSIS.gz",
      EN_CASES, EN_CTRL, EN_CASES + EN_CTRL, round(neff(EN_CASES, EN_CTRL), 1),
      "17,045 / 222,290 (total 239,335)", "LDSC and MAGMA (constant N in munged files)",
-     "LAVA: R9 cases/controls; SuSiE: R9 effective N; LDSC and MAGMA: munged-file N (identical results with R9 effective N, Panel B and Table S2)"],
+     "LAVA: R9 cases/controls; SuSiE: R9 effective N; LDSC and MAGMA: munged-file N (essentially identical results with R9 total and effective N, Panel B and Table S2)"],
 ], columns=["Trait", "FinnGen R9 endpoint", "Summary-statistic file", "Cases (R9 endpoint)",
             "Controls (R9 endpoint)", "Total N", "Effective N = 4/(1/cases+1/controls)",
             "Counts carried in the munged input files", "Where used",
@@ -59,9 +59,12 @@ for tag, lab in (("submitted", "Munged-file constant N"), ("total", "R9 total N"
     v = t[i + 2].split()
     rg.append([lab, "standard LDSC (eur_w_ld_chr)", float(v[2]), float(v[3]), float(v[4]), float(v[5]),
                float(v[6]), float(v[10])])
-rg.append(["Munged-file constant N (estimate reported in the main text)", "GenomicSEM multivariable LDSC", 0.511, 0.0691,
-           np.nan, 1.37e-13, np.nan, 0.1917])
-panel("S1", "Panel B. Genome-wide genetic correlation (LDSC) under alternative sample sizes. rg does not depend on a constant rescaling of N; observed-scale h2 does.",
+_gs = pd.read_csv(RR / "ldsc/genomicsem_corrected_N/GenomicSEM_rg_by_sample_size.csv").set_index("sample_size")
+for tag, lab in (("submitted", "Munged-file constant N (estimate reported in the main text)"), ("total", "R9 total N"), ("neff", "R9 effective N")):
+    g = _gs.loc[tag]
+    rg.append([lab, "GenomicSEM multivariable LDSC", round(g.rg, 4), round(g.rg_se, 4), round(g.gcov / g.gcov_se, 2),
+               float(f"{g.gcov_p:.3g}"), round(g.h2_uf, 4), round(g.intercept_cross, 4)])
+panel("S1", "Panel B. Genome-wide genetic correlation (LDSC) under alternative sample sizes. rg does not depend on a constant rescaling of N; observed-scale h2 does. For GenomicSEM rows, Z and P refer to the genetic covariance (as reported by GenomicSEM) and h2 and the intercept are from the same fit.",
       pd.DataFrame(rg, columns=["Sample-size input", "Software", "rg", "SE", "Z", "P",
                                 "Observed-scale h2 (fibroids)", "Cross-trait intercept"]))
 
@@ -188,12 +191,15 @@ sc.columns = ["Gene", "MAGMA -log10 P (fibroids)", "MAGMA -log10 P (endometriosi
 panel("S4", "Panel A. Single-cell context of the ten genes significant in both MAGMA analyses. Markers come from GSE218044 (uterine tissue from four individuals with adenomyosis; cell types assigned by cluster-level SingleR annotation in scEndoExplorer); fibroid and myometrium contexts come from GSE162122 (cell contexts assigned from marker signatures). Context only; no enrichment evidence is implied.", sc)
 sl = pd.read_csv(RR / "SLDSC_full_statistics_from_raw_results.csv")
 sl = sl[["trait", "baseline", "annotation", "prop_SNPs", "prop_h2", "enrichment", "enrichment_SE", "enrichment_P",
-         "enrichment_FDR", "coef", "coef_SE", "coef_Z", "coef_P_onesided", "coef_FDR"]]
+         "enrichment_FDR", "coef", "coef_SE", "coef_Z", "coef_P_onesided", "coef_FDR"]].copy()
+from scipy.stats import norm as _norm
+sl["coef_P_twosided"] = 2 * _norm.sf(sl.coef_Z.abs())
+sl["coef_FDR_twosided"] = sl.groupby(["trait", "baseline"]).coef_P_twosided.transform(lambda p: multipletests(p, method="fdr_bh")[1])
 sl["annotation"] = sl["annotation"].str.replace("_", " ").str.replace("T cell  CD8 ", "T cell (CD8)", regex=False).str.strip()
 sl.columns = ["Trait", "Baseline model", "Annotation", "Proportion of SNPs", "Proportion of h2", "Enrichment",
               "Enrichment SE", "Enrichment P", "Enrichment FDR", "Coefficient (tau)", "Coefficient SE",
-              "Coefficient Z", "Coefficient P (one-sided)", "Coefficient FDR"]
-panel("S4", "Panel B. S-LDSC for seven marker annotations under both baseline models. FDR is Benjamini-Hochberg over the seven annotations within trait and model. Figure 4 reports enrichment from baseline-LD v2.2 and the coefficient test from baseline v1.2.", sl)
+              "Coefficient Z", "Coefficient P (one-sided)", "Coefficient FDR (one-sided)", "Coefficient P (two-sided)", "Coefficient FDR (two-sided)"]
+panel("S4", "Panel B. S-LDSC for seven marker annotations under both baseline models. FDR is Benjamini-Hochberg over the seven annotations within trait and model. Figure 4 reports enrichment from baseline-LD v2.2 and the one-sided coefficient test (prespecified positive enrichment) from baseline v1.2; two-sided values are given for comparison.", sl)
 panel("S4", "Panel C. Annotation construction", pd.DataFrame([
     ["Marker genes", "Seurat cluster markers with average log2 fold change > 0.25 and adjusted P < 0.05, ranked by adjusted P then fold change; top 500 per cell type (B cell 419, CD8 T cell 496)"],
     ["Source", "GSE218044: uterine tissue from four individuals with adenomyosis (Chen et al. 2022), 39,995 cells after subsampling, processed in scEndoExplorer (cell_type_marker_genes.csv)"],
@@ -221,8 +227,8 @@ cmp["ct"] = cmp.ct.str.replace("T_cell__CD8_", "CD8 T cell", regex=False).str.re
 cmp["model"] = cmp.model.map({"v12": "baseline v1.2", "ld22": "baseline-LD v2.2"})
 cmp["set"] = cmp.set.map({"original": "original markers", "confident": "re-derived markers (concordant cells)"})
 panel("S4", "Panel H(iii). S-LDSC with original versus re-derived markers, both baseline models. FDR over seven annotations within trait, model and marker set.",
-      cmp.rename(columns={"set": "Marker set", "trait": "Trait", "model": "Baseline model", "ct": "Annotation", "prop": "Proportion of SNPs", "enr": "Enrichment", "enr_p": "Enrichment P", "enr_fdr": "Enrichment FDR", "z": "Coefficient Z", "coef_p": "Coefficient P (one-sided)", "coef_fdr": "Coefficient FDR"})[
-          ["Marker set", "Trait", "Baseline model", "Annotation", "Proportion of SNPs", "Enrichment", "Enrichment P", "Enrichment FDR", "Coefficient Z", "Coefficient P (one-sided)", "Coefficient FDR"]])
+      cmp.rename(columns={"set": "Marker set", "trait": "Trait", "model": "Baseline model", "ct": "Annotation", "prop": "Proportion of SNPs", "enr": "Enrichment", "enr_p": "Enrichment P", "enr_fdr": "Enrichment FDR", "z": "Coefficient Z", "coef_p": "Coefficient P (one-sided)", "coef_fdr": "Coefficient FDR (one-sided)"})[
+          ["Marker set", "Trait", "Baseline model", "Annotation", "Proportion of SNPs", "Enrichment", "Enrichment P", "Enrichment FDR", "Coefficient Z", "Coefficient P (one-sided)", "Coefficient FDR (one-sided)"]])
 
 import glob as _glob, os as _os
 from scipy.stats import norm as _norm
