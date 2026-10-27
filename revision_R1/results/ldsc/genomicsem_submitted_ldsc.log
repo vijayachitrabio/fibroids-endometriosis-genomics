@@ -1,0 +1,44 @@
+Multivariate ld-score regression of 2 traits (/Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/ENDO_submitted.sumstats.gz /Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/UF_submitted.sumstats.gz) began at: 2026-10-27 14:02:23.743358
+Reading in LD scores
+Read in summary statistics [1/2] from: /Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/ENDO_submitted.sumstats.gz
+Out of 1161598 SNPs, 1154140 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 239.335; 1154140 remain
+Read in summary statistics [2/2] from: /Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/UF_submitted.sumstats.gz
+Out of 1161615 SNPs, 1154185 remain after merging with LD-score files
+Removing 3 SNPs with Chi^2 > 218.728; 1154182 remain
+          
+Estimating heritability [1/3] for: /Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/ENDO_submitted.sumstats.gz
+Heritability Results for trait: /Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/ENDO_submitted.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.3035
+Lambda GC: 1.2453
+Intercept: 1.0967 (0.0141)
+Ratio: 0.3188 (0.0464)
+Total Observed Scale h2: 0.0436 (0.004)
+h2 Z: 11
+     
+Calculating genetic covariance [2/3] for traits: /Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/ENDO_submitted.sumstats.gz and /Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/UF_submitted.sumstats.gz
+1154044 SNPs remain after merging /Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/ENDO_submitted.sumstats.gz and /Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/UF_submitted.sumstats.gz summary statistics
+Results for genetic covariance between: /Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/ENDO_submitted.sumstats.gz and /Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/UF_submitted.sumstats.gz
+Mean Z*Z: 0.3018
+Cross trait Intercept: 0.1917 (0.0086)
+Total Observed Scale Genetic Covariance (g_cov): 0.0246 (0.0033)
+g_cov Z: 7.4
+g_cov P-value: 1.3681e-13
+          
+Estimating heritability [3/3] for: /Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/UF_submitted.sumstats.gz
+Heritability Results for trait: /Users/vijayachitramodhukur/Desktop/ECLAI/uterine_fibroids/Funciton_int_ge/revision_reruns/ldsc/UF_submitted.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.3519
+Lambda GC: 1.242
+Intercept: 1.1274 (0.0141)
+Ratio: 0.3619 (0.0401)
+Total Observed Scale h2: 0.0532 (0.0065)
+h2 Z: 8.14
+     
+      
+Genetic Correlation Results
+Genetic Correlation between Endometriosis and Uterine_Fibroids: 0.511 (0.0691)
+     
+     
+LDSC finished running at 2026-10-27 14:02:34.056983
+Running LDSC for all files took 0 minutes and 10 seconds
+     
