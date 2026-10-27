@@ -41,11 +41,11 @@ prov = pd.DataFrame([
     ["Uterine fibroids", "CD2_BENIGN_LEIOMYOMA_UTERI", "finngen_R9_CD2_BENIGN_LEIOMYOMA_UTERI.gz",
      UF_CASES, UF_CTRL, UF_CASES + UF_CTRL, round(neff(UF_CASES, UF_CTRL), 1),
      "35,474 / 183,254 (total 218,728)", "LDSC and MAGMA (constant N in munged files)",
-     "LAVA: R9 cases/controls; SuSiE: R9 effective N; LDSC and MAGMA: munged-file N (essentially identical results with R9 total and effective N, Panel B and Table S2)"],
+     "LDSC (primary, GenomicSEM): R9 effective N; LAVA: R9 cases/controls; SuSiE: R9 effective N; MAGMA: munged-file N (same significant genes with R9 effective N, Table S2)"],
     ["Endometriosis", "N14_ENDOMETRIOSIS", "finngen_R9_N14_ENDOMETRIOSIS.gz",
      EN_CASES, EN_CTRL, EN_CASES + EN_CTRL, round(neff(EN_CASES, EN_CTRL), 1),
      "17,045 / 222,290 (total 239,335)", "LDSC and MAGMA (constant N in munged files)",
-     "LAVA: R9 cases/controls; SuSiE: R9 effective N; LDSC and MAGMA: munged-file N (essentially identical results with R9 total and effective N, Panel B and Table S2)"],
+     "LDSC (primary, GenomicSEM): R9 effective N; LAVA: R9 cases/controls; SuSiE: R9 effective N; MAGMA: munged-file N (same significant genes with R9 effective N, Table S2)"],
 ], columns=["Trait", "FinnGen R9 endpoint", "Summary-statistic file", "Cases (R9 endpoint)",
             "Controls (R9 endpoint)", "Total N", "Effective N = 4/(1/cases+1/controls)",
             "Counts carried in the munged input files", "Where used",
@@ -60,11 +60,15 @@ for tag, lab in (("submitted", "Munged-file constant N"), ("total", "R9 total N"
     rg.append([lab, "standard LDSC (eur_w_ld_chr)", float(v[2]), float(v[3]), float(v[4]), float(v[5]),
                float(v[6]), float(v[10])])
 _gs = pd.read_csv(RR / "ldsc/genomicsem_corrected_N/GenomicSEM_rg_by_sample_size.csv").set_index("sample_size")
-for tag, lab in (("submitted", "Munged-file constant N (estimate reported in the main text)"), ("total", "R9 total N"), ("neff", "R9 effective N")):
+for tag, lab in (("neff", "R9 effective N (primary estimate reported in the main text)"), ("total", "R9 total N (sensitivity)"), ("submitted", "Munged-file constant N from the earlier configuration (sensitivity; previously reported)")):
     g = _gs.loc[tag]
     rg.append([lab, "GenomicSEM multivariable LDSC", round(g.rg, 4), round(g.rg_se, 4), round(g.gcov / g.gcov_se, 2),
                float(f"{g.gcov_p:.3g}"), round(g.h2_uf, 4), round(g.intercept_cross, 4)])
-panel("S1", "Panel B. Genome-wide genetic correlation (LDSC) under alternative sample sizes. rg does not depend on a constant rescaling of N; observed-scale h2 does. For GenomicSEM rows, Z and P refer to the genetic covariance (as reported by GenomicSEM) and h2 and the intercept are from the same fit.",
+_lc = pd.read_csv(RR / "ldsc/genomicsem_corrected_N/GenomicSEM_neff_liability_scale_check.csv")
+for _, g in _lc.iterrows():
+    rg.append([f"R9 effective N, liability scale (sample prevalence 0.5; population prevalence {g.pop_prev_endo:g}/{g.pop_prev_uf:g}, endometriosis/fibroids)",
+               "GenomicSEM multivariable LDSC", round(g.rg, 4), round(g.rg_se, 4), np.nan, np.nan, round(g.h2_liab_uf, 4), np.nan])
+panel("S1", "Panel B. Genome-wide genetic correlation (LDSC) under alternative sample sizes. rg does not depend on a constant rescaling of N; observed-scale h2 does. For GenomicSEM rows, Z and P refer to the genetic covariance (as reported by GenomicSEM; Z is identical for rg) and h2 and the intercept are from the same fit. The liability-scale rows show that rg does not depend on the prevalence settings (h2 in those rows is on the liability scale).",
       pd.DataFrame(rg, columns=["Sample-size input", "Software", "rg", "SE", "Z", "P",
                                 "Observed-scale h2 (fibroids)", "Cross-trait intercept"]))
 

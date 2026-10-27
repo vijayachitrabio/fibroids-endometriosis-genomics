@@ -28,6 +28,7 @@ Scripts contain the absolute paths of the analysis machine; adjust them to your 
 |---|---|---|
 | `ldsc/rg_{submitted,total,neff}.log` | `ldsc/ldsc_rg_sample_size_sensitivity.sh` | Table S1 Panel B |
 | `ldsc/GenomicSEM_rg_by_sample_size.csv`, `ldsc/genomicsem_*_ldsc.log` | `ldsc/genomicsem_corrected_n.R` | Table S1 Panel B (GenomicSEM rows) |
+| `ldsc/GenomicSEM_neff_liability_scale_check.csv` | `ldsc/genomicsem_liability_check.R` | Table S1 Panel B (liability-scale rows) |
 | `lava/LAVA_corrected_N_ov01724_all_*.csv`, `lava/res_p1_c*.csv`, `lava/qc_p1_c*.csv` | `lava/run_lava.R` (2,495 blocks, 4 chunks; `chain_c3.sh`) with `info_corrected.tsv`, `ov_0.1724.tsv` | Table S1 Panels C–D; Figure 2 |
 | `lava/res_grid_corr_{0.0,0.2590,0.35,0.3685}.csv`, `lava/LAVA_16_blocks_*.csv` | `lava/run_lava_subset.R` with `ov_*.tsv` | Table S5; Figure 2B |
 | `lava/res_repro_legacy.csv` | `lava/run_lava_subset.R` with `info_legacy.tsv`, `ov_original_0.17240.tsv` | Table S5 Panel A (reproduction row) |
@@ -44,7 +45,7 @@ Scripts contain the absolute paths of the analysis machine; adjust them to your 
 
 ## Key revised results
 
-- **Genome-wide correlation:** rg = 0.511 (SE 0.069; GenomicSEM). Standard LDSC gives rg = 0.510 under submitted, total and effective sample sizes. GenomicSEM re-run with the R9 total and effective sample sizes gives rg = 0.508 (SE 0.067 and 0.065), with unchanged intercepts.
+- **Genome-wide correlation (primary):** rg = 0.508 (SE 0.065, P = 7.5 × 10⁻¹⁵; GenomicSEM with R9 effective sample sizes). Sensitivity: R9 total N rg = 0.508 (SE 0.067); earlier munged-file N configuration rg = 0.511 (SE 0.069, previously reported); liability scale (sample prevalence 0.5) identical; standard LDSC rg = 0.510 (SE 0.046) under every sample-size input.
 - **Local correlation (LAVA), with R9 case and control counts:**
   - 148 of 2,495 blocks reached the bivariate test, 88 of them with valid P values; 16 were FDR-significant.
   - These are the same 16 blocks as in the submitted analysis.
