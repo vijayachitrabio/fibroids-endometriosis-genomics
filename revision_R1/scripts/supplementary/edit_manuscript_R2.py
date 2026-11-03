@@ -79,7 +79,7 @@ edit("Local genetic correlation was estimated with LAVA",
      "FDR was calculated within each run. Blocks significant at FDR < 0.05 under every overlap-aware value, and also without overlap where a valid test was returned, were classified as stable, so the classification refers to the tests that could be performed. Because the number of valid tests changed with the specification (26, 88, 93, 61 and 59), the comparison was repeated with two fixed correction families (Benjamini–Hochberg over the 88 primary tests, and over all 148 candidate rows with rows lacking a valid P value assigned P = 1, the most conservative option) and within the 14 blocks that were estimable under all five specifications. Other significant blocks were classified as sensitivity-dependent, and adjacent significant blocks were interpreted as a single region.")
 edit("Local genetic correlation was estimated with LAVA",
      "Complete results are provided in Supplementary Tables S1 and S5.",
-     "Complete results, including the raw P values, estimates and reasons for missing P values for all 148 rows in each specification, are provided in Supplementary Tables S1 and S5.")
+     "Complete results, including the raw P values, estimates and missing-result flags for all 148 rows in each specification, are provided in Supplementary Tables S1 and S5.")
 edit("Gene-level association analysis was performed",
      "MAGMA was also run with the Release 9 effective sample sizes.",
      "The primary analysis, which supplies the gene statistics in Figure 3 and Supplementary Table S2, used the Release 9 effective sample sizes. An earlier run with the constant sample sizes of the munged files gave the same significant genes and is reported as a sensitivity analysis.")
@@ -118,13 +118,13 @@ edit("Figure 3. Gene-level association", "Results are in Supplementary Table S2.
 # ---------------------------------------------------------------- Results: S-LDSC
 edit("Cell-type heritability enrichment analysis using S-LDSC",
      "(Figure 4; Supplementary Table S4). With two-sided tests",
-     "(Figure 4; Supplementary Table S4). Figure 4B shows the one-sided coefficient tests with the original marker set. Two-sided FDRs can be smaller than one-sided ones, because the two-sided family also counts annotations with strongly negative coefficients as rejections (with the re-derived markers, the endometriosis stromal coefficient FDR was 0.041 two-sided and 0.062 one-sided; the fibroid values were 0.21 and 0.11). With two-sided tests")
+     "(Figure 4; Supplementary Table S4). Figure 4B shows the one-sided coefficient tests with the original marker set. With two-sided tests")
 edit("Cell-type heritability enrichment analysis using S-LDSC",
      "The stromal enrichment is therefore robust to label uncertainty, but the evidence that the stromal annotation contributes heritability beyond the baseline annotations is modest.",
      "Stromal enrichment therefore persisted under label uncertainty, whereas the conditional coefficient (baseline v1.2) depended on both the marker assignment and the test direction: with the original markers it was significant one-sided but not two-sided in either disorder, and with the re-derived markers it was not significant one-sided in either disorder (Supplementary Table S4, Panels H(iii) and H(iv)). Enrichment (the proportion of heritability relative to the proportion of SNPs) and the conditional coefficient (the contribution beyond the baseline annotations) address different questions and should not be read as interchangeable. Because most cells in the smooth-muscle cluster were relabelled as stromal, the stromal and smooth-muscle signals cannot be cleanly separated in this dataset, and the evidence that the stromal annotation contributes heritability beyond the baseline annotations is modest.")
 edit("Figure 4. Cell-type heritability enrichment",
      "(B) Conditional coefficient Z score under the baseline v1.2 model; asterisks mark one-sided coefficient FDR < 0.05.",
-     "(B) Conditional coefficient Z score under the baseline v1.2 model for the original marker set; asterisks mark one-sided coefficient FDR < 0.05. The coefficient result depends on the marker assignment and the test direction (stromal coefficient FDR with the original markers, two-sided: 0.090 for fibroids and 0.054 for endometriosis; with the re-derived markers, one-sided: 0.11 and 0.062), and enrichment (A) and the coefficient (B) test different quantities; see Supplementary Table S4, Panels H(iii) and H(iv).")
+     "(B) Conditional coefficient Z score under the baseline v1.2 model for the original marker set; asterisks mark one-sided coefficient FDR < 0.05. The coefficient result depends on the marker assignment and the test direction (stromal coefficient FDR with the original markers, two-sided: 0.089 for fibroids and 0.054 for endometriosis; with the re-derived markers, one-sided: 0.11 and 0.062), and enrichment (A) and the coefficient (B) test different quantities; see Supplementary Table S4, Panels H(iii) and H(iv).")
 
 # ---------------------------------------------------------------- Results: fine-mapping and integration
 edit("Fine-mapping distinguishes shared and distinct signals", "Fine-mapping distinguishes shared and distinct signals at selected regions",
@@ -137,8 +137,8 @@ edit("Across the genetic analyses, uterine fibroids and endometriosis showed",
      "in-sample fine-mapping identified a shared single-variant credible set at ESR1/SYNE1, a descriptive observation without formal colocalisation.")
 
 # ---------------------------------------------------------------- Discussion and Conclusions
-edit("Across the genetic analyses, uterine fibroids and endometriosis showed", "eight of which formed a robust core across five genomic regions", "eight of which, across five genomic regions, remained significant under all overlap-aware sampling correlations")
-edit("This study characterised the genetic relationship", "were robust to assumptions about sample overlap", "remained significant under all overlap-aware sampling correlations")
+edit("Across the genetic analyses, uterine fibroids and endometriosis showed", "eight of which formed a robust core across five genomic regions", "eight of which, across five genomic regions, remained significant under all overlap-aware sampling correlations when FDR was calculated within each run (six or seven blocks in four regions under fixed correction families)")
+edit("This study characterised the genetic relationship", "were robust to assumptions about sample overlap", "remained significant under all overlap-aware sampling correlations with FDR calculated within each run")
 edit("The genome-wide result is consistent with previous evidence",
      "Only eight, in five regions, remained significant across all the sampling correlations tested, and the other eight depended on the assumed sample overlap. The evidence therefore supports a core of shared regions, notably ESR1/SYNE1, WNT4 and GREB1, rather than 16 independent loci.",
      "Eight, in five regions, remained significant across all the overlap-aware sampling correlations, and the other eight depended on the assumed sample overlap. Three of the eight, including the GREB1 block, could not be tested without overlap modelling, chromosome 11 at 32.1 Mb lost significance under fixed correction families, and the fourth ESR1/SYNE1 block did so under the most conservative one. The evidence therefore supports a core of shared regions, most securely ESR1/SYNE1 and WNT4, with GREB1 supported only under the overlap-aware specifications, rather than 16 independent loci.")
@@ -170,11 +170,32 @@ edit("Supplementary Table S4 Single-cell context",
      "S-LDSC with an all-genes control annotation, the dependence of the conditional coefficient on marker set and test direction, and the marker gene lists.")
 edit("Supplementary Table S5 LAVA results",
      "and the blocks significant only without overlap modelling.",
-     "the blocks significant only without overlap modelling, all 148 bivariate rows in each specification with raw P values and reasons for missing values, the comparison under a fixed correction family and a common estimable set, and the derivation of the sampling correlations.")
+     "the blocks significant only without overlap modelling, all 148 bivariate rows in each specification with raw P values and missing-result flags, the comparison under a fixed correction family and a common estimable set, and the derivation of the sampling correlations.")
+
+
+# ---------------------------------------------------------------- audit fixes
+edit("Cell-type heritability enrichment analysis using S-LDSC", "endometriosis z = 2.53, FDR = 0.041; baseline v1.2", "endometriosis z = 2.53, FDR = 0.040; baseline v1.2")
+edit("Cell-type heritability enrichment analysis using S-LDSC", "would be 0.090 for fibroids", "would be 0.089 for fibroids")
+edit("Cell-type heritability enrichment analysis using S-LDSC", "endometriosis z = 2.37, FDR = 0.062).",
+     "endometriosis z = 2.37, FDR = 0.062). Two-sided FDRs can be smaller than one-sided ones, because the two-sided family also counts annotations with strongly negative coefficients as rejections (with the re-derived markers, the endometriosis stromal coefficient FDR was 0.041 two-sided and 0.062 one-sided; the fibroid values were 0.21 and 0.11).")
+edit("Cell-type heritability enrichment analysis using S-LDSC", "may not fully capture. Likewise, the absence of smooth-muscle enrichment does not contradict the smooth-muscle histology of fibroids [6, 16].",
+     "may not fully capture [6, 16]. Likewise, the absence of smooth-muscle enrichment does not contradict the smooth-muscle histology of fibroids [2].")
+edit("Local genetic correlation was estimated with LAVA", "and estimates outside the parameter bound (|ρ| > 1.25) were set to missing.",
+     "and no estimate was returned when it lay outside the parameter bound (|ρ| > 1.25) or could not be estimated.")
+edit("Local genetic correlation was estimated with LAVA", "was derived from the LDSC intercept covariance matrix: diagonal",
+     "was derived from the LDSC intercept covariance matrix of the fit with the munged-file sample sizes of the earlier configuration: diagonal")
+edit("The values 0.259 and 0.369 were calculated", "both values were used only in sensitivity analyses.",
+     "both values were used only in sensitivity analyses. The value 0.35 was included as an intermediate value between them.")
+edit("Publicly available single-cell RNA-seq data were used", "so two-sided values are also reported (Supplementary Table S4).",
+     "so two-sided values are also reported (Supplementary Table S4). Coefficient tests were also computed under baseline-LD v2.2 (Supplementary Table S4, Panel B).")
+edit("The genome-wide result is consistent with previous evidence", "sensitive to assumptions about sample overlap and the LD reference.", "sensitive to the assumed sample overlap and the multiple-testing family.")
+edit("Supplementary Figure S1 Single-cell contextualisation", "Single-cell contextualisation of genes significant in both trait-specific MAGMA analyses", "Single-cell context of selected genes significant in both MAGMA analyses.")
+edit("MAGMA gene-level analysis identified 147", "MAGMA genes—LDLRAD2, WNT4, GREB1, ESR1, SYNE1, VIP and ARL14EP—mapped", "MAGMA genes (LDLRAD2, WNT4, GREB1, ESR1, SYNE1, VIP and ARL14EP) mapped")
+edit("Summary statistics were harmonised by rsID", "are reported above and in Supplementary Table S1.", "are reported in Table 1 and Supplementary Table S1.")
 
 # ---------------------------------------------------------------- figures 3 and 4
 Image.MAX_IMAGE_PIXELS = None
-NEW = {"3": FIG + "revision_figures/Figure_3_MAGMA_R2.png", "4": FIG + "revision_figures/Figure_4_SLDSC_R2.png"}
+NEW = {"2": FIG + "revision_figures/Figure_2_LAVA_R2.png", "3": FIG + "revision_figures/Figure_3_MAGMA_R2.png", "4": FIG + "revision_figures/Figure_4_SLDSC_R2.png"}
 imgs = [p for p in doc.paragraphs if p._p.xpath(".//a:blip")]
 assert len(imgs) == 4
 for key, para in zip(("1", "2", "3", "4"), imgs):
@@ -188,6 +209,14 @@ for key, para in zip(("1", "2", "3", "4"), imgs):
         for ext in para._p.iter(qn("wp:extent"), qn("a:ext")):
             ext.set("cx", "5727700"); ext.set("cy", str(int(5727700 * h / w)))
 
+for h in ["Gene-level association", "MAGMA identifies genes significant in both disorders", "Single-cell expression and heritability enrichment point", "Fine-mapping compares signals between the disorders at selected regions", "Integrated genetic analyses identify regional signals"]:
+    for p in doc.paragraphs:
+        if p.text.strip().startswith(h) and len(p.text) < 130:
+            for r_ in p.runs:
+                r_.bold = True
+for p in list(doc.paragraphs):
+    if p.text and not p.text.strip() and "\t" in p.text:
+        p._p.getparent().remove(p._p)
 # ---------------------------------------------------------------- gene symbols in italics
 GENES = ["ESR1", "SYNE1", "WNT4", "GREB1", "WT1", "DNM3", "EFR3B", "VIP", "LDLRAD2", "PLEKHM3", "ARL14EP"]
 GENE_RE = re.compile(r"(?<![A-Za-z0-9_])(" + "|".join(GENES) + r")(?![A-Za-z0-9_])")
@@ -222,10 +251,17 @@ doc.save(DST)
 norm = lambda t: re.sub(r"\s+", " ", t).strip()
 base = docx.Document(SRC)
 old = {norm(p.text) for p in base.paragraphs}
+r1 = docx.Document(FIG + "Revsions_round1_submitted/Manuscript_R1_clean.docx")
+old_r1 = {norm(p.text) for p in r1.paragraphs}
+FORCE = ("Vijayachitra Modhukur1", "OÜ Genorama", "Celvia", "Department of Obstetrics", "Nalam", "The present study was funded", "Supplementary Figure S1", "Supplementary Table S1")
 hl = docx.Document(DST)
 n = 0
 for p in hl.paragraphs:
     if norm(p.text) and norm(p.text) not in old:
+        for r in p.runs:
+            r.font.highlight_color = WD_COLOR_INDEX.YELLOW
+        n += 1
+    elif norm(p.text) and p.text.strip().startswith(FORCE) and norm(p.text) not in old_r1:
         for r in p.runs:
             r.font.highlight_color = WD_COLOR_INDEX.YELLOW
         n += 1

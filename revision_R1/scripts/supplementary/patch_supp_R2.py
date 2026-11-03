@@ -82,6 +82,13 @@ panel("S5", "Panel G. Derivation of the sampling correlations. The LDSC cross-tr
 rep(anchor2,add2+anchor2)
 rep('"Panel B. The 16 primary blocks across sampling correlations: rho, 95% CI and FDR (FDR within each run). Blank = not estimable. Stable core = FDR < 0.05 at 0.1724, 0.259, 0.35 and 0.369, and whenever estimable at 0; adjacent blocks form one region."',
     '"Panel B. The 16 primary blocks across sampling correlations: rho, 95% CI and FDR (FDR within each run). Blank = not estimable (no valid P in that run). Stable core = FDR < 0.05 at 0.1724, 0.259, 0.35 and 0.369, and whenever estimable at 0; three of the eight stable blocks (block_0216, block_0666, block_1077) have no estimate without overlap. Adjacent blocks form one region. Alternative correction families are in Panel F."')
+rep('["Estimate outside parameter bound (|rho| > 1.25), P set to missing", 58, 60],','["No valid P (estimate returned as NA: outside |rho| <= 1.25 or not estimable; LAVA does not report which)", 58, 60],')
+rep('f"CS{ca} ({len(ga)} variants)", f"CS{cb} ({len(gb)} variants)"','f"CS{ca} ({len(ga)} variant{\'s\' if len(ga) != 1 else \'\'})", f"CS{cb} ({len(gb)} variant{\'s\' if len(gb) != 1 else \'\'})"')
+rep('["Intercept, fibroids (LDSC, effective N)", 1.0967, "diagonal element of the intercept matrix"]','["Intercept, fibroids (GenomicSEM LDSC, munged-file sample sizes of the earlier configuration)", 1.0967, "diagonal element of the intercept matrix"]')
+rep('["Intercept, endometriosis (LDSC, effective N)", 1.1274, "diagonal element"]','["Intercept, endometriosis (GenomicSEM LDSC, munged-file sample sizes of the earlier configuration)", 1.1274, "diagonal element"]')
+rep('["Cross-trait intercept (LDSC)", 0.1917, "off-diagonal element (SE about 0.009)"]','["Cross-trait intercept (GenomicSEM LDSC, munged-file sample sizes of the earlier configuration)", 0.1917, "off-diagonal element (SE about 0.009); the fit with the Release 9 effective sample sizes has cross-trait intercept 0.1906 and gives a standardised value of 0.1716"]')
+rep("(with the matching .snp.filter.tsv files). GRCh38.","(with the matching .snp.filter.tsv files); in the 141 sets in these files the smallest flagged r2 is 0.251 and the largest unflagged r2 is 0.243. GRCh38.")
+
 a3 = '# ======================================================================= write'
 assert s.count(a3) == 1
 s = s.replace(a3, '_j = [p for p in sheets["S4"] if p[0].startswith("Panel J")]\nsheets["S4"] = [p for p in sheets["S4"] if not p[0].startswith("Panel J")] + _j\n' + a3)

@@ -89,7 +89,7 @@ elig = pd.DataFrame([
     ["Failed during locus processing", 2, 2],
     ["No bivariate estimate (local h2 not estimable for one or both traits)", 2343, 2345],
     ["Reached the bivariate test", 150, 148],
-    ["Estimate outside parameter bound (|rho| > 1.25), P set to missing", 58, 60],
+    ["No valid P (estimate returned as NA: outside |rho| <= 1.25 or not estimable; LAVA does not report which)", 58, 60],
     ["Valid bivariate tests", 92, 88],
     ["FDR-significant blocks (Benjamini-Hochberg over valid tests)", 16, 16],
 ], columns=["Step", "Munged-file case/control counts", "R9 case/control counts (primary)"])
@@ -163,7 +163,7 @@ fm["our_leads_inside_finngen_cs"] = [_inside.get((l, tr), 0) for l, tr in zip(fm
 fm = fm[["locus", "trait", "finngen_cs_in_window", "finngen_good_cs", "finngen_cs_sizes", "finngen_lead_variants", "finngen_lead_gene",
          "finngen_lead_p", "our_original_cs_L10", "converged_L10", "our_leads_inside_finngen_cs"]]
 fm["locus"] = fm["locus"].replace({"WT1": "chr11 (30.2 Mb)"})
-panel("S3", "Panel A. Credible sets per locus: FinnGen R9 published SuSiE (in-sample LD; primary) versus SuSiE with the 1000 Genomes LD reference (L = 10; sensitivity analysis, same run as Panels D and F and Supplementary Figure S2). Only high-purity sets (good_cs) are counted in the text; in the downloaded files good_cs is true exactly when the minimum pairwise r2 within the set is at least 0.25 (|r| >= 0.5). Sets were extracted when their lead variant lay within +/-500 kb of the regional GWAS lead variant. Source files: finngen_R9_CD2_BENIGN_LEIOMYOMA_UTERI.SUSIE.cred.summary.tsv and finngen_R9_N14_ENDOMETRIOSIS.SUSIE.cred.summary.tsv (with the matching .snp.filter.tsv files). GRCh38.", fm.rename(columns={
+panel("S3", "Panel A. Credible sets per locus: FinnGen R9 published SuSiE (in-sample LD; primary) versus SuSiE with the 1000 Genomes LD reference (L = 10; sensitivity analysis, same run as Panels D and F and Supplementary Figure S2). Only high-purity sets (good_cs) are counted in the text; in the downloaded files good_cs is true exactly when the minimum pairwise r2 within the set is at least 0.25 (|r| >= 0.5). Sets were extracted when their lead variant lay within +/-500 kb of the regional GWAS lead variant. Source files: finngen_R9_CD2_BENIGN_LEIOMYOMA_UTERI.SUSIE.cred.summary.tsv and finngen_R9_N14_ENDOMETRIOSIS.SUSIE.cred.summary.tsv (with the matching .snp.filter.tsv files); in the 141 sets in these files the smallest flagged r2 is 0.251 and the largest unflagged r2 is 0.243. GRCh38.", fm.rename(columns={
     "locus": "Locus", "trait": "Trait", "our_original_cs_L10": "Credible sets, 1000G LD (L = 10)",
     "finngen_cs_in_window": "Credible sets, FinnGen in-sample", "finngen_good_cs": "High-purity sets (FinnGen good_cs)",
     "finngen_cs_sizes": "Set sizes", "finngen_lead_variants": "Lead variants", "finngen_lead_gene": "Gene of most severe consequence",
@@ -181,7 +181,7 @@ for lc in mem.locus.unique():
         for (rb, cb), gb in b.groupby(["region", "cs"]):
             s = set(ga.v) & set(gb.v)
             if s:
-                shared.append([lc, f"CS{ca} ({len(ga)} variants)", f"CS{cb} ({len(gb)} variants)", len(s), "; ".join(sorted(s)),
+                shared.append([lc, f"CS{ca} ({len(ga)} variant{'s' if len(ga) != 1 else ''})", f"CS{cb} ({len(gb)} variant{'s' if len(gb) != 1 else ''})", len(s), "; ".join(sorted(s)),
                                round(ga[ga.v.isin(s)].cs_specific_prob.sum(), 3), round(gb[gb.v.isin(s)].cs_specific_prob.sum(), 3)])
 panel("S3", "Panel C. Credible sets shared between the two disorders (FinnGen in-sample). No shared variants at GREB1 or WNT4.",
       pd.DataFrame(shared, columns=["Locus", "Fibroid credible set", "Endometriosis credible set", "Shared variants",
@@ -362,9 +362,9 @@ keep += ["stable: within-run FDR", "stable: fixed family", "stable: fixed family
 st = st[keep].rename(columns={"START": "Start (GRCh37)", "STOP": "Stop (GRCh37)"})
 panel("S5", "Panel F. The 16 primary blocks classified under four correction schemes: FDR within each run (as in the main analysis), a fixed family of the 88 primary tests, the most conservative fixed family of all 148 candidate rows (rows without a valid P assigned P = 1) and the 14 blocks estimable in all five runs (BH within that set). The stable core is eight blocks in five regions with FDR within each run, seven blocks in four regions with the 88-test family (chromosome 11 at 32.1 Mb drops out) and six blocks in four regions with the 148-row family (the fourth ESR1/SYNE1 block, block_1077, also drops out; its FDR is 0.051 at 0.369). Stable = FDR < 0.05 at 0.1724, 0.259, 0.35 and 0.369 and, where estimable, at 0. Blocks not estimable without overlap (block_0216, block_0666, block_1077) were not tested successfully under that assumption; their stability refers to the overlap-aware values only. Eight of the 16 blocks lie outside the common estimable set.", st)
 _info = pd.DataFrame([
-    ["Intercept, fibroids (LDSC, effective N)", 1.0967, "diagonal element of the intercept matrix"],
-    ["Intercept, endometriosis (LDSC, effective N)", 1.1274, "diagonal element"],
-    ["Cross-trait intercept (LDSC)", 0.1917, "off-diagonal element (SE about 0.009)"],
+    ["Intercept, fibroids (GenomicSEM LDSC, munged-file sample sizes of the earlier configuration)", 1.0967, "diagonal element of the intercept matrix"],
+    ["Intercept, endometriosis (GenomicSEM LDSC, munged-file sample sizes of the earlier configuration)", 1.1274, "diagonal element"],
+    ["Cross-trait intercept (GenomicSEM LDSC, munged-file sample sizes of the earlier configuration)", 0.1917, "off-diagonal element (SE about 0.009); the fit with the Release 9 effective sample sizes has cross-trait intercept 0.1906 and gives a standardised value of 0.1716"],
     ["Standardised sampling correlation = 0.1917 / sqrt(1.0967 x 1.1274)", 0.1724, "primary value; approximate delta-method SE about 0.008 from the intercept SEs (95% interval about 0.157 to 0.188), ignoring covariances between the three intercept estimates"],
     ["Count-derived, munged-file totals: 59,264 / sqrt(218,728 x 239,335)", 0.259, "depends on an overlap count that could not be verified"],
     ["Count-derived, Release 9 totals: 59,264 / sqrt(210,870 x 122,652)", 0.369, "same unverified count"],
