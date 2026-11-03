@@ -63,3 +63,17 @@ Scripts contain the absolute paths of the analysis machine; adjust them to your 
   - The conditional coefficient test is attenuated (FDR 0.11 and 0.062).
   - The coefficient test is one-sided (prespecified positive enrichment); two-sided stromal coefficient FDR would be 0.09 (fibroids) and 0.05 (endometriosis) under baseline v1.2, so the conditional result is reported as supportive but sensitive.
   - Adding an all-genes control annotation leaves the primary stromal result unchanged (coefficient z = 2.51 and 2.52, FDR 0.043 and 0.041).
+
+## Second revision (R2) additions
+
+| Output | Script | Supplementary table / figure |
+|---|---|---|
+| `results/lava_R2/LAVA_all148_rows_by_specification_long.csv` (all 148 rows × 5 specifications: raw P, estimate, CI, FDR within run, FDR in a fixed family of 88 tests, reason for missing P) | `scripts/lava/lava_sensitivity_R2.py` (reads `results/lava/res_grid_corr_*.csv` and `LAVA_corrected_N_ov01724_all_bivariate_rows.csv`) | Table S5 Panels D–F |
+| `results/lava_R2/LAVA_stable_core_three_definitions.csv`, `LAVA_common_estimable_set.csv`, `LAVA_failed_locus_processing.csv` | same | Table S5 Panels E–F |
+| `results/sldsc_R2/SLDSC_direction_and_marker_dependence.csv` (one- and two-sided coefficient P and FDR; original and re-derived markers; both baselines) | `scripts/sldsc/sldsc_direction_R2.py` (reads `results/sldsc/SLDSC_original_vs_confident_markers.csv`) | Table S4 Panel H(iv); Figure 4 legend |
+| `results/reannotation/markers_all_cells_reproduction.csv`, `markers_confident_cells.csv` (marker lists) | `scripts/reannotation/reannotate_GSE218044.R` | Table S4 Panel J |
+| `results/magma/{fibroids,endo}_neff.genes.out` — **primary** gene statistics (Release 9 effective sample sizes) | `scripts/magma/magma_effective_n.sh`; Figure 3 by `scripts/figures/figure3_magma_R2.py` | Table S2 Panel A (first columns); Figure 3 |
+| `figures_R2/Figure_3_MAGMA_R2.*`, `Figure_4_SLDSC_R2.*` | `scripts/figures/figure3_magma_R2.py`, `figure4_sldsc_R2.py` | Figures 3 and 4 |
+| Supplementary workbook R2 | `scripts/supplementary/patch_supp_R2.py` then `build_supplementary_R2.py` (patches the R1 builder) | Tables S1–S6 |
+
+Sampling-correlation derivation and its uncertainty: Table S5 Panel G. FinnGen credible-set rule: `good_cs` (in the downloaded files, minimum pairwise r² within the set ≥ 0.25), lead variant within ±500 kb of the regional GWAS lead variant.

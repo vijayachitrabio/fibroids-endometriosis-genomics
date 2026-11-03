@@ -1,0 +1,741 @@
+specification,LOC,CHR,START,STOP,n_snps,K,univ_p_endo,univ_p_uf,h2_endo,h2_uf,rho,rho.lower,rho.upper,p,valid_P,fdr_within_run,fdr_fixed88,fdr_fixed148,reason_no_valid_P
+0,block_0010,1,7711795,8580987,2945,400,0.271736,0.023436,6.99744e-05,0.000265813,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0023,1,21416122,22145629,2865,385,0.000202717,0.000408387,0.000442187,0.000455746,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0024,1,22145630,22740287,2854,382,6.72197e-16,1.99051e-38,0.00110364,0.00216484,1.0,0.85163,1.0,5.16905e-38,True,6.7197649999999994e-37,2.274382e-36,3.825097e-36,
+0,block_0090,1,103148413,103784541,2852,313,0.106093,0.00744293,0.000131828,0.000293432,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0128,1,170193208,171044255,2903,380,0.0980582,0.0114463,0.000150632,0.000299325,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0130,1,172465154,173582511,3237,418,0.456087,0.45764,1.05614e-05,1.10369e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0167,1,216658127,217352165,2754,408,0.246372,0.365901,8.03183e-05,4.20275e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0170,1,220073133,220978151,3347,376,0.391883,0.156864,2.88342e-05,0.000126224,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0188,1,238094456,238704857,3001,353,0.20912,0.189949,8.88104e-05,0.000105855,1.0,-0.86249,1.0,0.236176,True,0.292408380952381,,1.0,
+0,block_0202,2,789196,1376545,2944,349,0.218353,0.166972,8.46619e-05,0.000116378,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0214,2,9960671,10611654,3068,407,0.400534,0.151231,2.73993e-05,0.000134571,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0216,2,11230350,11995765,3181,423,4.29265e-08,6.21958e-09,0.000728982,0.00085451,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0217,2,11995766,12732506,2986,411,0.307322,0.00706213,5.81732e-05,0.000336825,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0228,2,24669225,25895394,3599,405,0.109635,9.44073e-05,0.000147371,0.000525391,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0229,2,25895395,26894102,3138,402,0.0826973,0.00181525,0.000166773,0.000399699,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0231,2,28819511,29627932,2934,385,0.38056,4.26418e-11,3.26841e-05,0.000951804,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0261,2,53852121,54688234,2936,359,0.450299,0.110137,1.1228e-05,0.00015155,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0273,2,67224028,67979828,3293,388,1.09552e-07,0.0318361,0.000676352,0.000243435,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0276,2,70756284,71385813,2872,394,0.0233732,0.131465,0.000241309,0.00014431,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0277,2,71385814,72160302,3066,404,0.434969,0.376293,1.67177e-05,3.81823e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0291,2,85992795,86867032,3266,351,0.129012,0.0411044,0.000125864,0.00021651,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0333,2,142494981,143259780,2886,366,0.12107,0.310178,0.000133118,5.89066e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0368,2,184148656,184866232,2829,360,0.431138,0.00778732,1.67274e-05,0.00031135,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0385,2,207726595,208674588,3261,420,0.109821,0.318343,0.000149926,6.0161e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0468,3,54892587,55616625,3048,412,0.159109,0.26166,0.000119593,8.18743e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0498,3,87411259,88375763,3548,364,0.000279224,0.263579,0.000419532,7.6092e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0520,3,115649910,116498570,3058,382,0.19167,0.341898,9.99095e-05,4.8874e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0524,3,118903054,119759983,2997,374,0.451954,0.042133,1.10374e-05,0.000221732,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0536,3,131373471,132124018,3544,361,0.0855145,0.251274,0.000155975,8.06008e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0547,3,144408822,145211907,3111,363,0.314386,0.379957,5.22352e-05,3.4842e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0556,3,155046424,155928190,3251,348,0.00178489,0.145963,0.000342006,0.000127319,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0557,3,155928191,156795410,3050,364,0.0011252,0.437065,0.000367593,1.65501e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0558,3,156795411,157633700,3031,360,0.187848,0.466635,9.86128e-05,7.23521e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0607,4,8882617,9482867,2456,367,0.141399,0.158475,0.000121888,0.000123834,0.9375,-0.51897,1.0,0.199165,True,0.25891450000000005,,1.0,
+0,block_0609,4,9916157,10370666,2745,289,0.40536,0.31621,2.14009e-05,5.01549e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0631,4,32260118,32746820,2765,328,0.0182951,0.0934198,0.000232923,0.000156668,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0633,4,33640823,34721845,3624,375,0.171308,0.463198,0.000108206,8.53356e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0650,4,53879572,54659778,2970,377,0.254465,1.5323400000000002e-23,7.41319e-05,0.00155694,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0652,4,55681702,57103100,5697,426,1.26765e-13,0.00049921,0.00104264,0.00046912,0.965276,0.64175,1.0,4.37678e-08,True,1.625661142857143e-07,5.502237714285714e-07,9.253763428571428e-07,
+0,block_0665,4,69603369,70516836,4624,343,0.349296,0.000763425,3.99602e-05,0.000407108,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0666,4,70516837,71468300,4320,372,0.0215754,2.6503700000000002e-24,0.000238916,0.00158172,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0672,4,78967716,79880101,3249,379,0.242641,0.131118,7.87638e-05,0.000141763,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0708,4,120563074,121393008,3064,353,0.438328,0.0416631,1.44947e-05,0.000216276,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0757,4,175295843,175959697,2881,382,0.157416,0.133621,0.000115997,0.000140766,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0776,5,598321,1206609,2360,409,0.0150659,5.21269e-16,0.000269274,0.00124794,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0827,5,59868568,60930753,3187,358,0.231327,0.172711,8.07463e-05,0.000114968,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0845,5,84094798,84697850,2780,333,0.331714,0.180453,4.4613e-05,0.000107172,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0876,5,119664174,120371857,3085,352,0.412919,0.0889281,2.17173e-05,0.00016577,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0877,5,120371858,120960737,2959,345,0.106358,0.0106525,0.000138169,0.000289466,1.0,0.13491,1.0,0.00905922,True,0.016824265714285715,0.05694366857142857,0.09576889714285715,
+0,block_0885,5,128067415,128734905,3157,328,0.000282219,0.0193662,0.000399456,0.000251839,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0906,5,156345452,157191081,3394,361,0.460629,0.141587,8.32849e-06,0.000132169,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0944,6,20418021,21295864,3226,383,0.462725,0.417015,8.04917e-06,2.35731e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0951,6,26396201,27261035,2588,289,0.0267258,0.267661,0.000201436,6.61706e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0953,6,28666365,29529755,4438,272,0.0190772,0.406296,0.000211065,2.23697e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0954,6,29529756,29833843,3334,172,0.010581,0.411073,0.000190502,1.61259e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0955,6,29833844,30070717,2295,143,0.000491972,0.150561,0.000260516,7.99703e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0957,6,30715007,31106493,3171,229,0.0127582,0.110598,0.000210676,0.000121036,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0958,6,31106494,31250556,2280,103,0.00596599,0.104451,0.000165483,8.39725e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0959,6,31250557,31320268,1838,96,0.0222311,0.0215869,0.000124591,0.000137261,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0960,6,31320269,31427209,1770,93,0.000809343,0.0269556,0.000204742,0.0001282,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0961,6,31427210,32208901,3452,312,0.00182019,0.00206889,0.000324214,0.000349428,1.0,0.48478,1.0,1.08105e-05,True,3.123033333333333e-05,0.00010570266666666665,0.00017777266666666665,
+0,block_0962,6,32208902,32454577,3062,132,0.021556,0.217754,0.000145725,5.65754e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0963,6,32454578,32539567,18,15,0.00222118,0.0516086,8.48518e-05,4.51585e-05,0.712325,-0.20973,1.0,0.130731,True,0.19267877777777778,0.6521435555555556,1.0,
+0,block_0967,6,32682214,32897998,2547,156,0.0269892,0.168507,0.000149582,7.71212e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0968,6,32897999,33194975,2836,245,0.297984,0.000243314,4.69605e-05,0.000387252,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0990,6,55469138,56200985,3225,361,0.279287,0.170098,6.37708e-05,0.000116771,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0998,6,66445496,67036787,2791,304,0.400266,0.0175803,2.33904e-05,0.000247771,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_0999,6,67036788,67559694,2846,339,0.29689,0.0161557,5.59687e-05,0.000265562,0.960608,-0.46795,1.0,0.184802,True,0.25288694736842104,0.8559250526315789,1.0,
+0,block_1005,6,72290724,73170168,3281,361,0.0588104,0.0217474,0.000179564,0.000257214,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1007,6,74401507,75461313,4718,369,0.000159052,0.000350279,0.000442093,0.000452981,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1020,6,87516323,88499745,3604,365,0.385176,0.361475,3.03716e-05,4.10809e-05,0.626191,-1.0,1.0,0.795076,True,0.795076,,1.0,
+0,block_1040,6,110647843,111363443,2871,353,0.00702681,0.377462,0.000286535,3.51276e-05,0.845745,-0.78758,1.0,0.347049,True,0.37596975000000005,,1.0,
+0,block_1050,6,121087445,121908063,3464,320,0.125065,0.357773,0.000122325,3.94551e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1074,6,151629955,152376499,3123,398,8.18941e-79,3.24713e-17,0.00326715,0.00129455,0.888593,0.75508,1.0,2.73299e-26,True,1.7764435e-25,6.012578e-25,1.0112063000000001e-24,
+0,block_1075,6,152376500,153082361,2929,405,2.68921e-77,2.06874e-123,0.00324195,0.00492628,1.0,0.93924,1.0,2.0669500000000002e-94,True,5.374070000000001e-93,1.818916e-92,3.0590860000000003e-92,
+0,block_1076,6,153082362,153791461,2761,371,9.973060000000001e-28,7.16833e-32,0.0015758,0.00189077,0.96671,0.8363,1.0,3.5484400000000004e-29,True,3.075314666666667e-28,1.0408757333333334e-27,1.7505637333333334e-27,
+0,block_1077,6,153791462,154462010,2840,349,2.07564e-05,2.65437e-09,0.000496889,0.000808026,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1108,7,10481678,11232447,3169,345,0.43951,0.36523,1.39668e-05,3.86416e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1112,7,13213542,13676747,2602,335,0.0407986,0.203564,0.000193844,9.70345e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1129,7,31730555,32460228,3262,397,0.17248,0.370155,0.000110782,3.99438e-05,1.0,-1.0,1.0,0.368081,True,0.38280423999999996,,1.0,
+0,block_1151,7,54086988,54550500,2676,278,0.0807631,0.308858,0.000140441,5.1441e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1160,7,66453994,66914875,2527,299,0.386196,0.456367,2.69637e-05,9.2263e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1193,7,107658604,109095558,5093,410,0.0174413,0.26585,0.000261875,7.99438e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1201,7,119568237,121042050,4464,414,0.132404,8.62771e-09,0.000134624,0.000837064,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1202,7,121042051,121946052,3059,390,0.19285,0.0396054,0.000100435,0.000230289,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1253,8,12947936,13395051,2498,349,0.376091,0.225244,3.23106e-05,8.97343e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1260,8,16988031,17492672,2935,400,0.0218986,0.0891256,0.000246627,0.000176395,1.0,0.08296,1.0,0.00799004,True,0.01598008,0.05408642461538461,0.0909635323076923,
+0,block_1295,8,58675118,59555977,3515,407,0.354196,0.313962,4.21474e-05,6.08246e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1370,9,10469,653661,2760,378,0.065534,6.429029999999999e-39,0.000176875,0.00217481,1.0,0.55271,1.0,1.55789e-07,True,5.063142499999999e-07,1.7136789999999998e-06,2.8820965e-06,
+0,block_1371,9,653662,1103598,2723,396,0.389059,4.52649e-95,3.05359e-05,0.0040666,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1415,9,38822978,43903829,1164,393,0.0654986,4.83854e-05,0.000180319,0.00054322,1.0,0.37807,1.0,0.000248503,True,0.0006461078,0.0021868264000000004,0.0036778444,
+0,block_1464,9,119001228,119890464,3326,405,0.110021,0.290752,0.000147112,6.9528e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1521,10,32457294,33655458,4904,377,0.222547,0.0174629,8.63599e-05,0.000275124,0.627556,-0.61134,1.0,0.300648,True,0.35531127272727275,1.0,1.0,
+0,block_1546,10,65400432,66510387,3643,403,0.438159,0.341978,1.57267e-05,5.02421e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1548,10,67146044,67769822,2881,338,0.19176,0.384382,9.3892e-05,3.21226e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1561,10,81763231,82378048,2749,343,0.400537,0.0856841,2.49338e-05,0.000166281,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1581,10,104206838,106142283,5858,423,0.490214,9.42225e-75,1.95472e-07,0.00351567,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1585,10,109579150,110358382,3635,368,0.430432,0.0160174,1.71477e-05,0.000276708,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1593,10,119528731,120592839,3970,419,0.26413,0.349422,7.45314e-05,4.85634e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1641,11,28577719,29530460,3075,383,0.0590996,0.055219,0.000184533,0.000206523,0.828855,-0.13695,1.0,0.0884037,True,0.1436560125,0.48622035,0.817734225,
+0,block_1642,11,29530461,30570129,3341,388,1.0358099999999999e-20,2.09207e-06,0.00132289,0.000648297,1.0,0.7563,1.0,2.41758e-13,True,1.2571415999999997e-12,4.2549408e-12,7.156036799999999e-12,
+0,block_1644,11,32065772,32830422,3123,381,0.000449558,2.26752e-51,0.000410918,0.00262802,0.955969,0.70167,1.0,3.83347e-12,True,1.6611703333333332e-11,5.622422666666667e-11,9.455892666666667e-11,
+0,block_1660,11,48765367,49386071,2636,314,0.266084,0.0600085,6.36324e-05,0.000182265,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1694,11,87676871,88359287,2773,355,0.0522352,0.196965,0.000185154,0.00010291,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1696,11,89209739,90199932,2571,312,0.402219,0.0899242,2.31973e-05,0.000155444,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1706,11,98929381,99619347,3530,361,0.0751862,0.346943,0.000164295,4.57233e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1709,11,101152832,101881252,3060,351,0.155978,0.0113678,0.00011188,0.000288523,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1712,11,103495636,104875270,4804,405,0.337453,0.16815,4.75324e-05,0.00012476,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1759,12,19532766,20074930,2837,354,0.463693,0.432547,7.35936e-06,1.76857e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1766,12,25990814,26958056,3903,407,0.109198,0.351325,0.000148025,4.71431e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1768,12,27797263,28753585,3265,392,0.460827,0.00134196,8.73694e-06,0.000408613,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1769,12,28753586,29647193,3775,366,0.270357,0.0159647,6.73368e-05,0.000276165,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1774,12,32368906,33076722,3158,362,0.250708,0.00713895,7.39723e-05,0.000316513,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1780,12,41198230,42117736,4010,366,0.283794,0.422838,6.26733e-05,2.11184e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1783,12,43980532,44923825,3446,359,0.0198951,0.0214361,0.000239007,0.000257339,1.0,0.28134,1.0,0.00134895,True,0.0031884272727272724,0.0107916,0.01814950909090909,
+0,block_1786,12,47499604,48227035,3158,388,0.489577,0.223126,2.55516e-07,9.56288e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1789,12,50344347,51769419,3912,385,0.448015,0.0835446,1.23985e-05,0.000177889,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1806,12,71177962,71948185,2874,380,0.469631,0.202868,5.99933e-06,0.000103743,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1843,12,114685671,115439451,3336,421,0.00849271,0.0829601,0.000302346,0.000186441,0.926038,0.11902,1.0,0.0293875,True,0.050938333333333335,0.17240666666666668,0.2899566666666667,
+0,block_1879,13,36579414,37499810,3272,418,0.246398,0.0170427,8.13058e-05,0.000290577,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1882,13,39381744,40091623,3115,370,0.0170737,6.34984e-13,0.000250327,0.00103742,0.66842,0.25022,1.0,0.00234632,True,0.0050836933333333325,0.017206346666666667,0.028937946666666662,
+0,block_1884,13,41003944,42037054,3492,395,0.183351,2.06621e-12,0.000105389,0.00103796,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1885,13,42037055,42950157,3405,373,0.110577,0.000578034,0.000140872,0.000434913,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1886,13,42950158,43931931,3771,426,0.324897,0.449769,5.31132e-05,1.38331e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1893,13,50419897,51554236,3590,399,0.0716678,4.07457e-14,0.000175769,0.00113616,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1903,13,63206536,63973941,3002,349,0.0443337,0.0721002,0.000193059,0.000179673,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1921,13,81724090,82582821,3324,362,0.341299,0.152601,4.36042e-05,0.000126161,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1924,13,85035401,85650680,2651,316,0.0448461,0.379439,0.000183327,3.24765e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1926,13,86321289,87043588,2777,303,0.362221,0.432126,3.37746e-05,1.6259e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1930,13,89764427,90518147,3137,353,0.390684,0.113115,2.82075e-05,0.00014827,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1972,14,40343755,40965849,2880,299,0.117672,0.453021,0.000122249,1.01747e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1975,14,42562551,43321168,3001,355,0.220804,0.179955,8.44399e-05,0.00011092,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_1991,14,59447538,60099482,2919,325,0.388578,0.0606784,2.75517e-05,0.000184654,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2008,14,78374054,79199451,3295,387,0.0609993,0.129779,0.000183485,0.000144091,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2025,14,98885323,99474533,3063,390,0.344655,0.00227203,4.42657e-05,0.000383725,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2034,15,20000205,22799926,1362,407,0.000421651,0.319373,0.000426216,5.87998e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2045,15,34410073,35118927,2489,388,0.201222,0.0807188,9.6522e-05,0.0001811,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2074,15,72058130,73375718,3636,392,0.333892,0.440719,4.78892e-05,1.60942e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2078,15,77897164,78514101,2801,375,0.313616,0.00358896,5.33821e-05,0.000355472,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2156,16,77270666,77739132,2605,348,0.186832,0.228624,9.73772e-05,8.82008e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2208,17,44865833,45883901,3242,367,0.115581,0.205231,0.000136616,0.00010086,0.731239,-0.98877,1.0,0.338019,True,0.37596975000000005,,1.0,
+0,block_2332,19,22729409,23468992,3138,346,0.0157762,0.0856544,0.000246252,0.00016702,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2361,19,53431218,54042240,3316,422,0.139131,0.0513743,0.000131981,0.000221614,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2395,20,24487129,25181038,3024,358,0.39573,0.379715,2.69399e-05,3.46604e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2411,20,47203837,48212975,3694,391,0.335737,0.0936438,4.72218e-05,0.000170685,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2412,20,48212976,49236418,3850,425,0.0217943,0.275723,0.000254225,7.73474e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2414,20,50653621,51533750,3186,384,0.0834265,0.196407,0.000162461,0.000107337,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0,block_2476,22,31904550,32662293,2927,346,0.022653,2.95364e-09,0.000228239,0.000802202,0.368432,-0.11819,1.0,0.133393,True,0.19267877777777778,0.6521435555555556,1.0,
+0.1724,block_0010,1,7711795,8580987,2945,400,0.271736,0.023436,6.99744e-05,0.000265813,0.630731,-0.97783,1.0,0.371832,True,0.6377393846153846,0.6377393846153846,1.0,
+0.1724,block_0023,1,21416122,22145629,2865,385,0.000202717,0.000408387,0.000442187,0.000455746,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0024,1,22145630,22740287,2854,382,6.72197e-16,1.99051e-38,0.00110364,0.00216484,1.0,0.87565,1.0,6.74928e-27,True,2.9696831999999996e-25,2.9696831999999996e-25,4.994467199999999e-25,
+0.1724,block_0090,1,103148413,103784541,2852,313,0.106093,0.00744293,0.000131828,0.000293432,0.156406,-1.0,1.0,0.730047,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_0128,1,170193208,171044255,2903,380,0.0980582,0.0114463,0.000150632,0.000299325,1.0,0.18666,1.0,0.00677154,True,0.03724347,0.03724347,0.06263674500000001,
+0.1724,block_0130,1,172465154,173582511,3237,418,0.456087,0.45764,1.05614e-05,1.10369e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0167,1,216658127,217352165,2754,408,0.246372,0.365901,8.03183e-05,4.20275e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0170,1,220073133,220978151,3347,376,0.391883,0.156864,2.88342e-05,0.000126224,0.312694,-1.0,1.0,0.833121,True,0.902931512195122,0.902931512195122,1.0,
+0.1724,block_0188,1,238094456,238704857,3001,353,0.20912,0.189949,8.88104e-05,0.000105855,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0202,2,789196,1376545,2944,349,0.218353,0.166972,8.46619e-05,0.000116378,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0214,2,9960671,10611654,3068,407,0.400534,0.151231,2.73993e-05,0.000134571,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0216,2,11230350,11995765,3181,423,4.29265e-08,6.21958e-09,0.000728982,0.00085451,1.0,0.76403,1.0,7.57254e-14,True,1.33276704e-12,1.33276704e-12,2.24147184e-12,
+0.1724,block_0217,2,11995766,12732506,2986,411,0.307322,0.00706213,5.81732e-05,0.000336825,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0228,2,24669225,25895394,3599,405,0.109635,9.44073e-05,0.000147371,0.000525391,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0229,2,25895395,26894102,3138,402,0.0826973,0.00181525,0.000166773,0.000399699,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0231,2,28819511,29627932,2934,385,0.38056,4.26418e-11,3.26841e-05,0.000951804,0.943758,-0.14761,1.0,0.124005,True,0.37030399999999997,0.37030399999999997,0.6227839999999999,
+0.1724,block_0261,2,53852121,54688234,2936,359,0.450299,0.110137,1.1228e-05,0.00015155,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0273,2,67224028,67979828,3293,388,1.09552e-07,0.0318361,0.000676352,0.000243435,0.740369,0.27245,1.0,0.00572847,True,0.033607024000000006,0.033607024000000006,0.056520904000000004,
+0.1724,block_0276,2,70756284,71385813,2872,394,0.0233732,0.131465,0.000241309,0.00014431,0.242787,-1.0,1.0,0.640378,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_0277,2,71385814,72160302,3066,404,0.434969,0.376293,1.67177e-05,3.81823e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0291,2,85992795,86867032,3266,351,0.129012,0.0411044,0.000125864,0.00021651,0.678943,-0.51041,1.0,0.220866,True,0.5398946666666666,0.5398946666666666,0.9080046666666668,
+0.1724,block_0333,2,142494981,143259780,2886,366,0.12107,0.310178,0.000133118,5.89066e-05,-0.0906437,-1.0,1.0,0.9286,True,0.9392735632183907,0.9392735632183907,1.0,
+0.1724,block_0368,2,184148656,184866232,2829,360,0.431138,0.00778732,1.67274e-05,0.00031135,0.498468,-1.0,1.0,0.695382,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_0385,2,207726595,208674588,3261,420,0.109821,0.318343,0.000149926,6.0161e-05,0.289433,-1.0,1.0,0.77432,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_0468,3,54892587,55616625,3048,412,0.159109,0.26166,0.000119593,8.18743e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0498,3,87411259,88375763,3548,364,0.000279224,0.263579,0.000419532,7.6092e-05,0.559335,-0.50287,1.0,0.302419,True,0.6336398095238095,0.6336398095238095,1.0,
+0.1724,block_0520,3,115649910,116498570,3058,382,0.19167,0.341898,9.99095e-05,4.8874e-05,0.555448,-1.0,1.0,0.667457,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_0524,3,118903054,119759983,2997,374,0.451954,0.042133,1.10374e-05,0.000221732,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0536,3,131373471,132124018,3544,361,0.0855145,0.251274,0.000155975,8.06008e-05,0.671615,-1.0,1.0,0.403469,True,0.6699107924528303,0.6699107924528303,1.0,
+0.1724,block_0547,3,144408822,145211907,3111,363,0.314386,0.379957,5.22352e-05,3.4842e-05,0.968376,-1.0,1.0,0.632694,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_0556,3,155046424,155928190,3251,348,0.00178489,0.145963,0.000342006,0.000127319,0.726421,-0.15709,1.0,0.107846,True,0.3514980740740741,0.3514980740740741,0.5911558518518518,
+0.1724,block_0557,3,155928191,156795410,3050,364,0.0011252,0.437065,0.000367593,1.65501e-05,-0.371284,-1.0,1.0,0.758125,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_0558,3,156795411,157633700,3031,360,0.187848,0.466635,9.86128e-05,7.23521e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0607,4,8882617,9482867,2456,367,0.141399,0.158475,0.000121888,0.000123834,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0609,4,9916157,10370666,2745,289,0.40536,0.31621,2.14009e-05,5.01549e-05,0.911706,-1.0,1.0,0.699053,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_0631,4,32260118,32746820,2765,328,0.0182951,0.0934198,0.000232923,0.000156668,1.0,0.16634,1.0,0.0101111,True,0.052339811764705875,0.052339811764705875,0.08802604705882353,
+0.1724,block_0633,4,33640823,34721845,3624,375,0.171308,0.463198,0.000108206,8.53356e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0650,4,53879572,54659778,2970,377,0.254465,1.5323400000000002e-23,7.41319e-05,0.00155694,0.498129,-0.15533,1.0,0.158417,True,0.43564675,0.43564675,0.732678625,
+0.1724,block_0652,4,55681702,57103100,5697,426,1.26765e-13,0.00049921,0.00104264,0.00046912,0.506653,0.18444,0.88776,0.00402547,True,0.02724933538461538,0.02724933538461538,0.04582842769230769,
+0.1724,block_0665,4,69603369,70516836,4624,343,0.349296,0.000763425,3.99602e-05,0.000407108,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0666,4,70516837,71468300,4320,372,0.0215754,2.65037e-24,0.000238916,0.00158172,1.0,0.65371,1.0,3.83106e-09,True,5.6188879999999996e-08,5.6188879999999996e-08,9.449947999999999e-08,
+0.1724,block_0672,4,78967716,79880101,3249,379,0.242641,0.131118,7.87638e-05,0.000141763,0.764431,-1.0,1.0,0.376846,True,0.6377393846153846,0.6377393846153846,1.0,
+0.1724,block_0708,4,120563074,121393008,3064,353,0.438328,0.0416631,1.44947e-05,0.000216276,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0757,4,175295843,175959697,2881,382,0.157416,0.133621,0.000115997,0.000140766,0.773443,-1.0,1.0,0.287325,True,0.632115,0.632115,1.0,
+0.1724,block_0776,5,598321,1206609,2360,409,0.0150659,5.21269e-16,0.000269274,0.00124794,0.963266,0.59539,1.0,4.74442e-06,True,4.1750896e-05,4.1750896e-05,7.021741600000001e-05,
+0.1724,block_0827,5,59868568,60930753,3187,358,0.231327,0.172711,8.07463e-05,0.000114968,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0845,5,84094798,84697850,2780,333,0.331714,0.180453,4.4613e-05,0.000107172,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0876,5,119664174,120371857,3085,352,0.412919,0.0889281,2.17173e-05,0.00016577,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0877,5,120371858,120960737,2959,345,0.106358,0.0106525,0.000138169,0.000289466,-0.0978349,-1.0,0.92198,0.832413,True,0.902931512195122,0.902931512195122,1.0,
+0.1724,block_0885,5,128067415,128734905,3157,328,0.000282219,0.0193662,0.000399456,0.000251839,0.543566,-0.08007,1.0,0.0751676,True,0.27561453333333336,0.27561453333333336,0.4635335333333333,
+0.1724,block_0906,5,156345452,157191081,3394,361,0.460629,0.141587,8.32849e-06,0.000132169,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0944,6,20418021,21295864,3226,383,0.462725,0.417015,8.04917e-06,2.35731e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0951,6,26396201,27261035,2588,289,0.0267258,0.267661,0.000201436,6.61706e-05,1.0,-0.41954,1.0,0.0991521,True,0.3355917230769231,0.3355917230769231,0.5644042615384616,
+0.1724,block_0953,6,28666365,29529755,4438,272,0.0190772,0.406296,0.000211065,2.23697e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0954,6,29529756,29833843,3334,172,0.010581,0.411073,0.000190502,1.61259e-05,-0.0684162,-1.0,1.0,0.953793,True,0.953793,0.953793,1.0,
+0.1724,block_0955,6,29833844,30070717,2295,143,0.000491972,0.150561,0.000260516,7.99703e-05,0.856286,0.05033,1.0,0.0602192,True,0.2408768,0.2408768,0.4051109818181818,
+0.1724,block_0957,6,30715007,31106493,3171,229,0.0127582,0.110598,0.000210676,0.000121036,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0958,6,31106494,31250556,2280,103,0.00596599,0.104451,0.000165483,8.39725e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0959,6,31250557,31320268,1838,96,0.0222311,0.0215869,0.000124591,0.000137261,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0960,6,31320269,31427209,1770,93,0.000809343,0.0269556,0.000204742,0.0001282,0.998899,0.43175,1.0,0.00555316,True,0.033607024000000006,0.033607024000000006,0.056520904000000004,
+0.1724,block_0961,6,31427210,32208901,3452,312,0.00182019,0.00206889,0.000324214,0.000349428,0.548013,-0.02341,1.0,0.0525037,True,0.22001550476190476,0.22001550476190476,0.3700260761904762,
+0.1724,block_0962,6,32208902,32454577,3062,132,0.021556,0.217754,0.000145725,5.65754e-05,1.0,-0.23092,1.0,0.0751063,True,0.27561453333333336,0.27561453333333336,0.4635335333333333,
+0.1724,block_0963,6,32454578,32539567,18,15,0.00222118,0.0516086,8.48518e-05,4.51585e-05,0.529748,-0.6128,1.0,0.259817,True,0.5862537435897436,0.5862537435897436,0.9859722051282052,
+0.1724,block_0967,6,32682214,32897998,2547,156,0.0269892,0.168507,0.000149582,7.71212e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0968,6,32897999,33194975,2836,245,0.297984,0.000243314,4.69605e-05,0.000387252,0.606088,-0.58376,1.0,0.314173,True,0.6377393846153846,0.6377393846153846,1.0,
+0.1724,block_0990,6,55469138,56200985,3225,361,0.279287,0.170098,6.37708e-05,0.000116771,1.0,-1.0,1.0,0.230589,True,0.5484278918918919,0.5484278918918919,0.9223560000000001,
+0.1724,block_0998,6,66445496,67036787,2791,304,0.400266,0.0175803,2.33904e-05,0.000247771,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_0999,6,67036788,67559694,2846,339,0.29689,0.0161557,5.59687e-05,0.000265562,-1.0,-1.0,0.37901,0.122581,True,0.37030399999999997,0.37030399999999997,0.6227839999999999,
+0.1724,block_1005,6,72290724,73170168,3281,361,0.0588104,0.0217474,0.000179564,0.000257214,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1007,6,74401507,75461313,4718,369,0.000159052,0.000350279,0.000442093,0.000452981,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1020,6,87516323,88499745,3604,365,0.385176,0.361475,3.03716e-05,4.10809e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1040,6,110647843,111363443,2871,353,0.00702681,0.377462,0.000286535,3.51276e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1050,6,121087445,121908063,3464,320,0.125065,0.357773,0.000122325,3.94551e-05,-0.369403,-1.0,1.0,0.758629,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_1074,6,151629955,152376499,3123,398,8.18941e-79,3.24713e-17,0.00326715,0.00129455,0.743103,0.61596,0.87903,1.0138e-18,True,2.23036e-17,2.23036e-17,3.7510599999999995e-17,
+0.1724,block_1075,6,152376500,153082361,2929,405,2.68921e-77,2.06874e-123,0.00324195,0.00492628,0.944227,0.88802,1.0,9.81011e-77,True,8.632896800000001e-75,8.632896800000001e-75,1.45189628e-74,
+0.1724,block_1076,6,153082362,153791461,2761,371,9.97306e-28,7.16833e-32,0.0015758,0.00189077,0.805038,0.67819,0.93765,1.03233e-19,True,3.0281680000000004e-18,3.0281680000000004e-18,5.092828e-18,
+0.1724,block_1077,6,153791462,154462010,2840,349,2.07564e-05,2.65437e-09,0.000496889,0.000808026,1.0,0.73061,1.0,2.29577e-08,True,2.8861108571428574e-07,2.8861108571428574e-07,4.853913714285714e-07,
+0.1724,block_1108,7,10481678,11232447,3169,345,0.43951,0.36523,1.39668e-05,3.86416e-05,0.496897,-1.0,1.0,0.89022,True,0.9326114285714285,0.9326114285714285,1.0,
+0.1724,block_1112,7,13213542,13676747,2602,335,0.0407986,0.203564,0.000193844,9.70345e-05,-0.0599242,-1.0,1.0,0.926047,True,0.9392735632183907,0.9392735632183907,1.0,
+0.1724,block_1129,7,31730555,32460228,3262,397,0.17248,0.370155,0.000110782,3.99438e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1151,7,54086988,54550500,2676,278,0.0807631,0.308858,0.000140441,5.1441e-05,0.114584,-1.0,1.0,0.902345,True,0.9341924705882352,0.9341924705882352,1.0,
+0.1724,block_1160,7,66453994,66914875,2527,299,0.386196,0.456367,2.69637e-05,9.2263e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1193,7,107658604,109095558,5093,410,0.0174413,0.26585,0.000261875,7.99438e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1201,7,119568237,121042050,4464,414,0.132404,8.62771e-09,0.000134624,0.000837064,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1202,7,121042051,121946052,3059,390,0.19285,0.0396054,0.000100435,0.000230289,0.571717,-0.82596,1.0,0.361984,True,0.6377393846153846,0.6377393846153846,1.0,
+0.1724,block_1253,8,12947936,13395051,2498,349,0.376091,0.225244,3.23106e-05,8.97343e-05,-0.56863,-1.0,1.0,0.721305,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_1260,8,16988031,17492672,2935,400,0.0218986,0.0891256,0.000246627,0.000176395,-0.202828,-1.0,0.81522,0.667462,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_1295,8,58675118,59555977,3515,407,0.354196,0.313962,4.21474e-05,6.08246e-05,0.362614,-1.0,1.0,0.841368,True,0.902931512195122,0.902931512195122,1.0,
+0.1724,block_1370,9,10469,653661,2760,378,0.065534,6.429029999999999e-39,0.000176875,0.00217481,0.665395,0.27907,1.0,0.00182828,True,0.01462624,0.01462624,0.024598676363636364,
+0.1724,block_1371,9,653662,1103598,2723,396,0.389059,4.52649e-95,3.05359e-05,0.0040666,1.0,0.12993,1.0,0.0180477,True,0.08358934736842105,0.08358934736842105,0.14058208421052631,
+0.1724,block_1415,9,38822978,43903829,1164,393,0.0654986,4.83854e-05,0.000180319,0.00054322,0.267158,-0.56157,1.0,0.420114,True,0.6846302222222221,0.6846302222222221,1.0,
+0.1724,block_1464,9,119001228,119890464,3326,405,0.110021,0.290752,0.000147112,6.9528e-05,0.222337,-1.0,1.0,0.811794,True,0.902931512195122,0.902931512195122,1.0,
+0.1724,block_1521,10,32457294,33655458,4904,377,0.222547,0.0174629,8.63599e-05,0.000275124,-1.0,-1.0,0.19636,0.0476602,True,0.20970488,0.20970488,0.35268548,
+0.1724,block_1546,10,65400432,66510387,3643,403,0.438159,0.341978,1.57267e-05,5.02421e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1548,10,67146044,67769822,2881,338,0.19176,0.384382,9.3892e-05,3.21226e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1561,10,81763231,82378048,2749,343,0.400537,0.0856841,2.49338e-05,0.000166281,-0.562252,-1.0,1.0,0.676626,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_1581,10,104206838,106142283,5858,423,0.490214,9.42225e-75,1.95472e-07,0.00351567,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1585,10,109579150,110358382,3635,368,0.430432,0.0160174,1.71477e-05,0.000276708,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1593,10,119528731,120592839,3970,419,0.26413,0.349422,7.45314e-05,4.85634e-05,0.627016,-1.0,1.0,0.686941,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_1641,11,28577719,29530460,3075,383,0.0590996,0.055219,0.000184533,0.000206523,-0.649151,-1.0,0.30579,0.186969,True,0.49858399999999997,0.49858399999999997,0.8385276363636364,
+0.1724,block_1642,11,29530461,30570129,3341,388,1.0358099999999999e-20,2.09207e-06,0.00132289,0.000648297,0.716595,0.49004,1.0,3.48502e-07,True,3.833522e-06,3.833522e-06,6.4472869999999995e-06,
+0.1724,block_1644,11,32065772,32830422,3123,381,0.000449558,2.26752e-51,0.000410918,0.00262802,0.68013,0.44466,1.0,1.08042e-06,True,1.0564106666666665e-05,1.0564106666666665e-05,1.7766906666666667e-05,
+0.1724,block_1660,11,48765367,49386071,2636,314,0.266084,0.0600085,6.36324e-05,0.000182265,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1694,11,87676871,88359287,2773,355,0.0522352,0.196965,0.000185154,0.00010291,0.23033,-1.0,1.0,0.725914,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_1696,11,89209739,90199932,2571,312,0.402219,0.0899242,2.31973e-05,0.000155444,0.4097,-1.0,1.0,0.766585,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_1706,11,98929381,99619347,3530,361,0.0751862,0.346943,0.000164295,4.57233e-05,0.486482,-1.0,1.0,0.63753,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_1709,11,101152832,101881252,3060,351,0.155978,0.0113678,0.00011188,0.000288523,-0.181562,-1.0,0.94175,0.725218,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_1712,11,103495636,104875270,4804,405,0.337453,0.16815,4.75324e-05,0.00012476,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1759,12,19532766,20074930,2837,354,0.463693,0.432547,7.35936e-06,1.76857e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1766,12,25990814,26958056,3903,407,0.109198,0.351325,0.000148025,4.71431e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1768,12,27797263,28753585,3265,392,0.460827,0.00134196,8.73694e-06,0.000408613,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1769,12,28753586,29647193,3775,366,0.270357,0.0159647,6.73368e-05,0.000276165,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1774,12,32368906,33076722,3158,362,0.250708,0.00713895,7.39723e-05,0.000316513,1.0,-0.10025,1.0,0.0923811,True,0.325181472,0.325181472,0.546896112,
+0.1724,block_1780,12,41198230,42117736,4010,366,0.283794,0.422838,6.26733e-05,2.11184e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1783,12,43980532,44923825,3446,359,0.0198951,0.0214361,0.000239007,0.000257339,0.144895,-1.0,1.0,0.707933,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_1786,12,47499604,48227035,3158,388,0.489577,0.223126,2.55516e-07,9.56288e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1789,12,50344347,51769419,3912,385,0.448015,0.0835446,1.23985e-05,0.000177889,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1806,12,71177962,71948185,2874,380,0.469631,0.202868,5.99933e-06,0.000103743,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1843,12,114685671,115439451,3336,421,0.00849271,0.0829601,0.000302346,0.000186441,-0.409748,-1.0,0.4274,0.339533,True,0.6377393846153846,0.6377393846153846,1.0,
+0.1724,block_1879,13,36579414,37499810,3272,418,0.246398,0.0170427,8.13058e-05,0.000290577,0.151143,-1.0,1.0,0.814258,True,0.902931512195122,0.902931512195122,1.0,
+0.1724,block_1882,13,39381744,40091623,3115,370,0.0170737,6.34984e-13,0.000250327,0.00103742,0.121688,-0.4182,0.60827,0.580399,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_1884,13,41003944,42037054,3492,395,0.183351,2.06621e-12,0.000105389,0.00103796,0.493446,-0.15747,1.0,0.145899,True,0.41416490322580646,0.41416490322580646,0.696550064516129,
+0.1724,block_1885,13,42037055,42950157,3405,373,0.110577,0.000578034,0.000140872,0.000434913,0.951106,0.23471,1.0,0.0178049,True,0.08358934736842105,0.08358934736842105,0.14058208421052631,
+0.1724,block_1886,13,42950158,43931931,3771,426,0.324897,0.449769,5.31132e-05,1.38331e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1893,13,50419897,51554236,3590,399,0.0716678,4.07457e-14,0.000175769,0.00113616,0.76413,0.31193,1.0,0.00330348,True,0.02422552,0.02422552,0.04074292,
+0.1724,block_1903,13,63206536,63973941,3002,349,0.0443337,0.0721002,0.000193059,0.000179673,0.089604,-1.0,1.0,0.856032,True,0.9076001927710843,0.9076001927710843,1.0,
+0.1724,block_1921,13,81724090,82582821,3324,362,0.341299,0.152601,4.36042e-05,0.000126161,-0.470193,-1.0,1.0,0.693067,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_1924,13,85035401,85650680,2651,316,0.0448461,0.379439,0.000183327,3.24765e-05,0.686282,-1.0,1.0,0.531343,True,0.8501488,0.8501488,1.0,
+0.1724,block_1926,13,86321289,87043588,2777,303,0.362221,0.432126,3.37746e-05,1.6259e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1930,13,89764427,90518147,3137,353,0.390684,0.113115,2.82075e-05,0.00014827,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1972,14,40343755,40965849,2880,299,0.117672,0.453021,0.000122249,1.01747e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_1975,14,42562551,43321168,3001,355,0.220804,0.179955,8.44399e-05,0.00011092,0.883368,-1.0,1.0,0.333055,True,0.6377393846153846,0.6377393846153846,1.0,
+0.1724,block_1991,14,59447538,60099482,2919,325,0.388578,0.0606784,2.75517e-05,0.000184654,-1.0,-1.0,1.0,0.375286,True,0.6377393846153846,0.6377393846153846,1.0,
+0.1724,block_2008,14,78374054,79199451,3295,387,0.0609993,0.129779,0.000183485,0.000144091,-0.541958,-1.0,0.64262,0.35356,True,0.6377393846153846,0.6377393846153846,1.0,
+0.1724,block_2025,14,98885323,99474533,3063,390,0.344655,0.00227203,4.42657e-05,0.000383725,-0.950073,-1.0,0.39752,0.203081,True,0.5106036571428572,0.5106036571428572,0.8587425142857144,
+0.1724,block_2034,15,20000205,22799926,1362,407,0.000421651,0.319373,0.000426216,5.87998e-05,0.822875,-0.3473,1.0,0.19671,True,0.5091317647058823,0.5091317647058823,0.8562670588235294,
+0.1724,block_2045,15,34410073,35118927,2489,388,0.201222,0.0807188,9.6522e-05,0.0001811,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_2074,15,72058130,73375718,3636,392,0.333892,0.440719,4.78892e-05,1.60942e-05,1.0,-1.0,1.0,0.753001,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_2078,15,77897164,78514101,2801,375,0.313616,0.00358896,5.33821e-05,0.000355472,0.637363,-0.72217,1.0,0.357033,True,0.6377393846153846,0.6377393846153846,1.0,
+0.1724,block_2156,16,77270666,77739132,2605,348,0.186832,0.228624,9.73772e-05,8.82008e-05,0.320816,-1.0,1.0,0.733739,True,0.8849371428571428,0.8849371428571428,1.0,
+0.1724,block_2208,17,44865833,45883901,3242,367,0.115581,0.205231,0.000136616,0.00010086,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_2332,19,22729409,23468992,3138,346,0.0157762,0.0856544,0.000246252,0.00016702,0.699296,-0.21584,1.0,0.12624,True,0.37030399999999997,0.37030399999999997,0.6227839999999999,
+0.1724,block_2361,19,53431218,54042240,3316,422,0.139131,0.0513743,0.000131981,0.000221614,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_2395,20,24487129,25181038,3024,358,0.39573,0.379715,2.69399e-05,3.46604e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_2411,20,47203837,48212975,3694,391,0.335737,0.0936438,4.72218e-05,0.000170685,1.0,-1.0,1.0,0.298666,True,0.6336398095238095,0.6336398095238095,1.0,
+0.1724,block_2412,20,48212976,49236418,3850,425,0.0217943,0.275723,0.000254225,7.73474e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.1724,block_2414,20,50653621,51533750,3186,384,0.0834265,0.196407,0.000162461,0.000107337,0.803777,-0.84511,1.0,0.255643,True,0.5862537435897436,0.5862537435897436,0.9859722051282052,
+0.1724,block_2476,22,31904550,32662293,2927,346,0.022653,2.95364e-09,0.000228239,0.000802202,-0.240543,-1.0,0.24257,0.330606,True,0.6377393846153846,0.6377393846153846,1.0,
+0.259,block_0010,1,7711795,8580987,2945,400,0.271736,0.023436,6.99744e-05,0.000265813,-0.479195,-1.0,0.76832,0.503621,True,0.8216974210526317,1.0,1.0,
+0.259,block_0023,1,21416122,22145629,2865,385,0.000202717,0.000408387,0.000442187,0.000455746,0.958004,0.58795,1.0,8.95958e-05,True,0.0007886442272727272,,0.0012550467272727272,
+0.259,block_0024,1,22145630,22740287,2854,382,6.72197e-16,1.99051e-38,0.00110364,0.00216484,0.9622,0.84668,1.0,1.93323e-20,True,8.9895195e-19,8.506211999999999e-19,1.4305901999999999e-18,
+0.259,block_0090,1,103148413,103784541,2852,313,0.106093,0.00744293,0.000131828,0.000293432,-0.445818,-1.0,0.4154,0.332189,True,0.6715995,0.8248633684210526,1.0,
+0.259,block_0128,1,170193208,171044255,2903,380,0.0980582,0.0114463,0.000150632,0.000299325,0.564892,-0.48778,1.0,0.222523,True,0.5912754,0.7721152592592593,0.9409544000000001,
+0.259,block_0130,1,172465154,173582511,3237,418,0.456087,0.45764,1.05614e-05,1.10369e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0167,1,216658127,217352165,2754,408,0.246372,0.365901,8.03183e-05,4.20275e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0170,1,220073133,220978151,3347,376,0.391883,0.156864,2.88342e-05,0.000126224,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0188,1,238094456,238704857,3001,353,0.20912,0.189949,8.88104e-05,0.000105855,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0202,2,789196,1376545,2944,349,0.218353,0.166972,8.46619e-05,0.000116378,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0214,2,9960671,10611654,3068,407,0.400534,0.151231,2.73993e-05,0.000134571,-0.0979403,-1.0,1.0,0.949937,True,0.9602624021739131,,1.0,
+0.259,block_0216,2,11230350,11995765,3181,423,4.29265e-08,6.21958e-09,0.000728982,0.00085451,1.0,0.78083,1.0,4.89913e-10,True,9.1123818e-09,8.622468800000002e-09,1.45014248e-08,
+0.259,block_0217,2,11995766,12732506,2986,411,0.307322,0.00706213,5.81732e-05,0.000336825,0.772915,-0.56381,1.0,0.279707,True,0.6290127333333333,,1.0,
+0.259,block_0228,2,24669225,25895394,3599,405,0.109635,9.44073e-05,0.000147371,0.000525391,0.903773,0.26678,1.0,0.0172424,True,0.09432607058823529,,0.15011030588235294,
+0.259,block_0229,2,25895395,26894102,3138,402,0.0826973,0.00181525,0.000166773,0.000399699,0.984137,0.31687,1.0,0.0139479,True,0.08107216874999999,,0.12901807499999998,
+0.259,block_0231,2,28819511,29627932,2934,385,0.38056,4.26418e-11,3.26841e-05,0.000951804,0.117969,-1.0,1.0,0.849043,True,0.9342823255813952,1.0,1.0,
+0.259,block_0261,2,53852121,54688234,2936,359,0.450299,0.110137,1.1228e-05,0.00015155,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0273,2,67224028,67979828,3293,388,1.09552e-07,0.0318361,0.000676352,0.000243435,0.378611,-0.21344,1.0,0.161038,True,0.47064684375,0.647772,0.748986375,
+0.259,block_0276,2,70756284,71385813,2872,394,0.0233732,0.131465,0.000241309,0.00014431,-0.556204,-1.0,0.43255,0.292675,True,0.6290127333333333,0.7877578823529411,1.0,
+0.259,block_0277,2,71385814,72160302,3066,404,0.434969,0.376293,1.67177e-05,3.81823e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0291,2,85992795,86867032,3266,351,0.129012,0.0411044,0.000125864,0.00021651,-0.125709,-1.0,1.0,0.822803,True,0.9342823255813952,1.0,1.0,
+0.259,block_0333,2,142494981,143259780,2886,366,0.12107,0.310178,0.000133118,5.89066e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0368,2,184148656,184866232,2829,360,0.431138,0.00778732,1.67274e-05,0.00031135,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0385,2,207726595,208674588,3261,420,0.109821,0.318343,0.000149926,6.0161e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0468,3,54892587,55616625,3048,412,0.159109,0.26166,0.000119593,8.18743e-05,0.306529,-1.0,1.0,0.752896,True,0.9093419220779221,,1.0,
+0.259,block_0498,3,87411259,88375763,3548,364,0.000279224,0.263579,0.000419532,7.6092e-05,-0.211579,-1.0,0.76521,0.699839,True,0.9039587083333332,1.0,1.0,
+0.259,block_0520,3,115649910,116498570,3058,382,0.19167,0.341898,9.99095e-05,4.8874e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0524,3,118903054,119759983,2997,374,0.451954,0.042133,1.10374e-05,0.000221732,-0.352647,-1.0,1.0,0.850632,True,0.9342823255813952,,1.0,
+0.259,block_0536,3,131373471,132124018,3544,361,0.0855145,0.251274,0.000155975,8.06008e-05,-0.546877,-1.0,0.94832,0.502833,True,0.8216974210526317,1.0,1.0,
+0.259,block_0547,3,144408822,145211907,3111,363,0.314386,0.379957,5.22352e-05,3.4842e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0556,3,155046424,155928190,3251,348,0.00178489,0.145963,0.000342006,0.000127319,0.0953513,-1.0,1.0,0.835041,True,0.9342823255813952,1.0,1.0,
+0.259,block_0557,3,155928191,156795410,3050,364,0.0011252,0.437065,0.000367593,1.65501e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0558,3,156795411,157633700,3031,360,0.187848,0.466635,9.86128e-05,7.23521e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0607,4,8882617,9482867,2456,367,0.141399,0.158475,0.000121888,0.000123834,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0609,4,9916157,10370666,2745,289,0.40536,0.31621,2.14009e-05,5.01549e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0631,4,32260118,32746820,2765,328,0.0182951,0.0934198,0.000232923,0.000156668,0.571777,-0.6363,1.0,0.234137,True,0.5954488378378379,0.7721152592592593,0.9475959999999999,
+0.259,block_0633,4,33640823,34721845,3624,375,0.171308,0.463198,0.000108206,8.53356e-06,0.0464297,,,0.987536,True,0.987536,,1.0,
+0.259,block_0650,4,53879572,54659778,2970,377,0.254465,1.5323400000000002e-23,7.41319e-05,0.00155694,0.0784543,-0.85163,0.8815,0.825139,True,0.9342823255813952,1.0,1.0,
+0.259,block_0652,4,55681702,57103100,5697,426,1.26765e-13,0.00049921,0.00104264,0.00046912,0.276277,-0.09539,0.60675,0.119286,True,0.3825378620689655,0.5524825263157895,0.6087699310344827,
+0.259,block_0665,4,69603369,70516836,4624,343,0.349296,0.000763425,3.99602e-05,0.000407108,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0666,4,70516837,71468300,4320,372,0.0215754,2.6503700000000002e-24,0.000238916,0.00158172,0.972176,0.64147,1.0,2.20478e-06,True,3.417409e-05,3.233677333333333e-05,5.438457333333333e-05,
+0.259,block_0672,4,78967716,79880101,3249,379,0.242641,0.131118,7.87638e-05,0.000141763,-0.592979,-1.0,1.0,0.500219,True,0.8216974210526317,1.0,1.0,
+0.259,block_0708,4,120563074,121393008,3064,353,0.438328,0.0416631,1.44947e-05,0.000216276,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0757,4,175295843,175959697,2881,382,0.157416,0.133621,0.000115997,0.000140766,-0.357917,-1.0,1.0,0.627711,True,0.8508933913043478,1.0,1.0,
+0.259,block_0776,5,598321,1206609,2360,409,0.0150659,5.21269e-16,0.000269274,0.00124794,0.696419,0.35284,1.0,0.000964284,True,0.0068983393846153845,0.0084856992,0.010978002461538463,
+0.259,block_0827,5,59868568,60930753,3187,358,0.231327,0.172711,8.07463e-05,0.000114968,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0845,5,84094798,84697850,2780,333,0.331714,0.180453,4.4613e-05,0.000107172,0.220466,-1.0,1.0,0.859771,True,0.9342823255813952,,1.0,
+0.259,block_0876,5,119664174,120371857,3085,352,0.412919,0.0889281,2.17173e-05,0.00016577,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0877,5,120371858,120960737,2959,345,0.106358,0.0106525,0.000138169,0.000289466,-0.750645,-1.0,0.14503,0.110835,True,0.3825378620689655,0.54186,0.6087699310344827,
+0.259,block_0885,5,128067415,128734905,3157,328,0.000282219,0.0193662,0.000399456,0.000251839,0.152273,-0.77309,0.76331,0.620018,True,0.8508933913043478,1.0,1.0,
+0.259,block_0906,5,156345452,157191081,3394,361,0.460629,0.141587,8.32849e-06,0.000132169,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0944,6,20418021,21295864,3226,383,0.462725,0.417015,8.04917e-06,2.35731e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0951,6,26396201,27261035,2588,289,0.0267258,0.267661,0.000201436,6.61706e-05,0.236577,-1.0,1.0,0.745544,True,0.9093419220779221,1.0,1.0,
+0.259,block_0953,6,28666365,29529755,4438,272,0.0190772,0.406296,0.000211065,2.23697e-05,0.202012,-1.0,1.0,0.86396,True,0.9342823255813952,,1.0,
+0.259,block_0954,6,29529756,29833843,3334,172,0.010581,0.411073,0.000190502,1.61259e-05,-1.0,-1.0,0.87309,0.301387,True,0.6290127333333333,0.7877578823529411,1.0,
+0.259,block_0955,6,29833844,30070717,2295,143,0.000491972,0.150561,0.000260516,7.99703e-05,0.481361,-0.55991,1.0,0.294737,True,0.6290127333333333,0.7877578823529411,1.0,
+0.259,block_0957,6,30715007,31106493,3171,229,0.0127582,0.110598,0.000210676,0.000121036,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_0958,6,31106494,31250556,2280,103,0.00596599,0.104451,0.000165483,8.39725e-05,1.0,0.26085,1.0,0.0331025,True,0.153926625,,0.2449585,
+0.259,block_0959,6,31250557,31320268,1838,96,0.0222311,0.0215869,0.000124591,0.000137261,1.0,0.32929,1.0,0.0121859,True,0.08094919285714286,,0.12882237142857142,
+0.259,block_0960,6,31320269,31427209,1770,93,0.000809343,0.0269556,0.000204742,0.0001282,0.781665,0.15657,1.0,0.0298314,True,0.14601685263157896,0.2019356307692308,0.2323709052631579,
+0.259,block_0961,6,31427210,32208901,3452,312,0.00182019,0.00206889,0.000324214,0.000349428,0.197278,-0.53754,0.74645,0.490859,True,0.8216974210526317,1.0,1.0,
+0.259,block_0962,6,32208902,32454577,3062,132,0.021556,0.217754,0.000145725,5.65754e-05,0.60776,-1.0,1.0,0.356191,True,0.6760359795918367,0.8248633684210526,1.0,
+0.259,block_0963,6,32454578,32539567,18,15,0.00222118,0.0516086,8.48518e-05,4.51585e-05,0.438036,-0.89695,1.0,0.350803,True,0.6760359795918367,0.8248633684210526,1.0,
+0.259,block_0967,6,32682214,32897998,2547,156,0.0269892,0.168507,0.000149582,7.71212e-05,0.947138,-0.18958,1.0,0.115231,True,0.3825378620689655,,0.6087699310344827,
+0.259,block_0968,6,32897999,33194975,2836,245,0.297984,0.000243314,4.69605e-05,0.000387252,-0.0814123,-1.0,1.0,0.894009,True,0.9380982333333334,1.0,1.0,
+0.259,block_0990,6,55469138,56200985,3225,361,0.279287,0.170098,6.37708e-05,0.000116771,-0.352384,-1.0,1.0,0.735798,True,0.9093419220779221,1.0,1.0,
+0.259,block_0998,6,66445496,67036787,2791,304,0.400266,0.0175803,2.33904e-05,0.000247771,0.553524,-1.0,1.0,0.62249,True,0.8508933913043478,,1.0,
+0.259,block_0999,6,67036788,67559694,2846,339,0.29689,0.0161557,5.59687e-05,0.000265562,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1005,6,72290724,73170168,3281,361,0.0588104,0.0217474,0.000179564,0.000257214,0.827571,-0.00146,1.0,0.064654,True,0.26142704347826085,,0.4160344347826087,
+0.259,block_1007,6,74401507,75461313,4718,369,0.000159052,0.000350279,0.000442093,0.000452981,1.0,0.66001,1.0,5.41111e-06,True,7.189046142857144e-05,,0.0001144063257142857,
+0.259,block_1020,6,87516323,88499745,3604,365,0.385176,0.361475,3.03716e-05,4.10809e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1040,6,110647843,111363443,2871,353,0.00702681,0.377462,0.000286535,3.51276e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1050,6,121087445,121908063,3464,320,0.125065,0.357773,0.000122325,3.94551e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1074,6,151629955,152376499,3123,398,8.18941e-79,3.24713e-17,0.00326715,0.00129455,0.670021,0.54674,0.79679,1.52669e-15,True,4.7327389999999995e-14,4.4782906666666667e-14,7.531670666666667e-14,
+0.259,block_1075,6,152376500,153082361,2929,405,2.68921e-77,2.06874e-123,0.00324195,0.00492628,0.906026,0.85127,0.96074,1.75817e-74,True,1.6350981e-72,1.5471896e-72,2.6020916e-72,
+0.259,block_1076,6,153082362,153791461,2761,371,9.973060000000001e-28,7.16833e-32,0.0015758,0.00189077,0.723827,0.59551,0.85072,1.39582e-14,True,3.2452815e-13,3.070804e-13,5.164534e-13,
+0.259,block_1077,6,153791462,154462010,2840,349,2.07564e-05,2.65437e-09,0.000496889,0.000808026,0.806989,0.53645,1.0,8.61537e-06,True,0.00010015367625,0.00010830750857142857,0.000159384345,
+0.259,block_1108,7,10481678,11232447,3169,345,0.43951,0.36523,1.39668e-05,3.86416e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1112,7,13213542,13676747,2602,335,0.0407986,0.203564,0.000193844,9.70345e-05,-0.984317,-1.0,0.27243,0.133472,True,0.4137632,0.5872768,0.6584618666666667,
+0.259,block_1129,7,31730555,32460228,3262,397,0.17248,0.370155,0.000110782,3.99438e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1151,7,54086988,54550500,2676,278,0.0807631,0.308858,0.000140441,5.1441e-05,-1.0,-1.0,0.70035,0.236899,True,0.5954488378378379,0.7721152592592593,0.9475959999999999,
+0.259,block_1160,7,66453994,66914875,2527,299,0.386196,0.456367,2.69637e-05,9.2263e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1193,7,107658604,109095558,5093,410,0.0174413,0.26585,0.000261875,7.99438e-05,0.439799,-1.0,1.0,0.522215,True,0.8292314,,1.0,
+0.259,block_1201,7,119568237,121042050,4464,414,0.132404,8.62771e-09,0.000134624,0.000837064,1.0,0.44997,1.0,0.00077032,True,0.00596998,,0.009500613333333333,
+0.259,block_1202,7,121042051,121946052,3059,390,0.19285,0.0396054,0.000100435,0.000230289,-0.398746,-1.0,0.75461,0.530227,True,0.8292314,1.0,1.0,
+0.259,block_1253,8,12947936,13395051,2498,349,0.376091,0.225244,3.23106e-05,8.97343e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1260,8,16988031,17492672,2935,400,0.0218986,0.0891256,0.000246627,0.000176395,-0.928549,-1.0,0.0247,0.053326,True,0.22542354545454543,0.31284586666666664,0.3587385454545454,
+0.259,block_1295,8,58675118,59555977,3515,407,0.354196,0.313962,4.21474e-05,6.08246e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1370,9,10469,653661,2760,378,0.065534,6.429029999999999e-39,0.000176875,0.00217481,0.434984,0.04297,1.0,0.0409379,True,0.18129641428571427,0.2573239428571429,0.2885147238095238,
+0.259,block_1371,9,653662,1103598,2723,396,0.389059,4.52649e-95,3.05359e-05,0.0040666,0.629149,-0.10007,1.0,0.161943,True,0.47064684375,0.647772,0.748986375,
+0.259,block_1415,9,38822978,43903829,1164,393,0.0654986,4.83854e-05,0.000180319,0.00054322,-0.207949,-1.0,0.41841,0.534988,True,0.8292314,1.0,1.0,
+0.259,block_1464,9,119001228,119890464,3326,405,0.110021,0.290752,0.000147112,6.9528e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1521,10,32457294,33655458,4904,377,0.222547,0.0174629,8.63599e-05,0.000275124,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1546,10,65400432,66510387,3643,403,0.438159,0.341978,1.57267e-05,5.02421e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1548,10,67146044,67769822,2881,338,0.19176,0.384382,9.3892e-05,3.21226e-05,-0.557891,-1.0,1.0,0.722497,True,0.9093419220779221,,1.0,
+0.259,block_1561,10,81763231,82378048,2749,343,0.400537,0.0856841,2.49338e-05,0.000166281,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1581,10,104206838,106142283,5858,423,0.490214,9.42225e-75,1.95472e-07,0.00351567,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1585,10,109579150,110358382,3635,368,0.430432,0.0160174,1.71477e-05,0.000276708,-0.651192,-1.0,1.0,0.631308,True,0.8508933913043478,,1.0,
+0.259,block_1593,10,119528731,120592839,3970,419,0.26413,0.349422,7.45314e-05,4.85634e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1641,11,28577719,29530460,3075,383,0.0590996,0.055219,0.000184533,0.000206523,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1642,11,29530461,30570129,3341,388,1.0358099999999999e-20,2.09207e-06,0.00132289,0.000648297,0.558171,0.31984,0.8029,7.44389e-05,True,0.0007692019666666667,0.0008188279,0.0012241063555555555,
+0.259,block_1644,11,32065772,32830422,3123,381,0.000449558,2.26752e-51,0.000410918,0.00262802,0.54157,0.3028,0.86435,9.32805e-05,True,0.0007886442272727272,0.000912076,0.0012550467272727272,
+0.259,block_1660,11,48765367,49386071,2636,314,0.266084,0.0600085,6.36324e-05,0.000182265,0.611437,-1.0,1.0,0.445071,True,0.7959923653846153,,1.0,
+0.259,block_1694,11,87676871,88359287,2773,355,0.0522352,0.196965,0.000185154,0.00010291,-0.742943,-1.0,0.47141,0.265698,True,0.6290127333333333,0.7877578823529411,1.0,
+0.259,block_1696,11,89209739,90199932,2571,312,0.402219,0.0899242,2.31973e-05,0.000155444,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1706,11,98929381,99619347,3530,361,0.0751862,0.346943,0.000164295,4.57233e-05,-1.0,-1.0,0.79588,0.299704,True,0.6290127333333333,0.7877578823529411,1.0,
+0.259,block_1709,11,101152832,101881252,3060,351,0.155978,0.0113678,0.00011188,0.000288523,-0.920858,-1.0,0.09988,0.0789168,True,0.3058026,0.4340424,0.48665359999999996,
+0.259,block_1712,11,103495636,104875270,4804,405,0.337453,0.16815,4.75324e-05,0.00012476,0.173027,-1.0,1.0,0.888067,True,0.9380982333333334,,1.0,
+0.259,block_1759,12,19532766,20074930,2837,354,0.463693,0.432547,7.35936e-06,1.76857e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1766,12,25990814,26958056,3903,407,0.109198,0.351325,0.000148025,4.71431e-05,-0.525556,-1.0,1.0,0.646135,True,0.8584365,,1.0,
+0.259,block_1768,12,27797263,28753585,3265,392,0.460827,0.00134196,8.73694e-06,0.000408613,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1769,12,28753586,29647193,3775,366,0.270357,0.0159647,6.73368e-05,0.000276165,1.0,-0.27519,1.0,0.111148,True,0.3825378620689655,,0.6087699310344827,
+0.259,block_1774,12,32368906,33076722,3158,362,0.250708,0.00713895,7.39723e-05,0.000316513,0.134987,-1.0,1.0,0.827633,True,0.9342823255813952,1.0,1.0,
+0.259,block_1780,12,41198230,42117736,4010,366,0.283794,0.422838,6.26733e-05,2.11184e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1783,12,43980532,44923825,3446,359,0.0198951,0.0214361,0.000239007,0.000257339,-0.402868,-1.0,0.32252,0.304361,True,0.6290127333333333,0.7877578823529411,1.0,
+0.259,block_1786,12,47499604,48227035,3158,388,0.489577,0.223126,2.55516e-07,9.56288e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1789,12,50344347,51769419,3912,385,0.448015,0.0835446,1.23985e-05,0.000177889,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1806,12,71177962,71948185,2874,380,0.469631,0.202868,5.99933e-06,0.000103743,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1843,12,114685671,115439451,3336,421,0.00849271,0.0829601,0.000302346,0.000186441,-1.0,-1.0,-0.11589,0.0136732,True,0.08107216874999999,0.10938559999999999,0.12901807499999998,
+0.259,block_1879,13,36579414,37499810,3272,418,0.246398,0.0170427,8.13058e-05,0.000290577,-0.877984,-1.0,0.33601,0.179606,True,0.5061623636363636,0.6871881739130434,0.805505696969697,
+0.259,block_1882,13,39381744,40091623,3115,370,0.0170737,6.34984e-13,0.000250327,0.00103742,-0.152946,-0.92931,0.27014,0.493884,True,0.8216974210526317,1.0,1.0,
+0.259,block_1884,13,41003944,42037054,3492,395,0.183351,2.06621e-12,0.000105389,0.00103796,0.0416688,-0.94715,0.79411,0.90298,True,0.9380982333333334,1.0,1.0,
+0.259,block_1885,13,42037055,42950157,3405,373,0.110577,0.000578034,0.000140872,0.000434913,0.380897,-0.66491,1.0,0.347453,True,0.6760359795918367,0.8248633684210526,1.0,
+0.259,block_1886,13,42950158,43931931,3771,426,0.324897,0.449769,5.31132e-05,1.38331e-05,-0.236918,-1.0,1.0,0.945898,True,0.9602624021739131,,1.0,
+0.259,block_1893,13,50419897,51554236,3590,399,0.0716678,4.07457e-14,0.000175769,0.00113616,0.426406,-0.09191,1.0,0.103344,True,0.3825378620689655,0.5349571764705883,0.6087699310344827,
+0.259,block_1903,13,63206536,63973941,3002,349,0.0443337,0.0721002,0.000193059,0.000179673,-0.619521,-1.0,0.31683,0.216936,True,0.5912754,0.7721152592592593,0.9409544000000001,
+0.259,block_1921,13,81724090,82582821,3324,362,0.341299,0.152601,4.36042e-05,0.000126161,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1924,13,85035401,85650680,2651,316,0.0448461,0.379439,0.000183327,3.24765e-05,-0.86363,-1.0,0.96501,0.436592,True,0.7959923653846153,0.9851306666666667,1.0,
+0.259,block_1926,13,86321289,87043588,2777,303,0.362221,0.432126,3.37746e-05,1.6259e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1930,13,89764427,90518147,3137,353,0.390684,0.113115,2.82075e-05,0.00014827,-0.748531,-1.0,1.0,0.586386,True,0.838983046153846,,1.0,
+0.259,block_1972,14,40343755,40965849,2880,299,0.117672,0.453021,0.000122249,1.01747e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_1975,14,42562551,43321168,3001,355,0.220804,0.179955,8.44399e-05,0.00011092,-0.504894,-1.0,1.0,0.585962,True,0.838983046153846,1.0,1.0,
+0.259,block_1991,14,59447538,60099482,2919,325,0.388578,0.0606784,2.75517e-05,0.000184654,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_2008,14,78374054,79199451,3295,387,0.0609993,0.129779,0.000183485,0.000144091,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_2025,14,98885323,99474533,3063,390,0.344655,0.00227203,4.42657e-05,0.000383725,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_2034,15,20000205,22799926,1362,407,0.000421651,0.319373,0.000426216,5.87998e-05,-0.149986,-1.0,1.0,0.816821,True,0.9342823255813952,1.0,1.0,
+0.259,block_2045,15,34410073,35118927,2489,388,0.201222,0.0807188,9.6522e-05,0.0001811,0.621843,-1.0,1.0,0.387237,True,0.72026082,,1.0,
+0.259,block_2074,15,72058130,73375718,3636,392,0.333892,0.440719,4.78892e-05,1.60942e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_2078,15,77897164,78514101,2801,375,0.313616,0.00358896,5.33821e-05,0.000355472,-0.392802,-1.0,0.86643,0.575769,True,0.838983046153846,1.0,1.0,
+0.259,block_2156,16,77270666,77739132,2605,348,0.186832,0.228624,9.73772e-05,8.82008e-05,-1.0,-1.0,0.74623,0.250822,True,0.6138538421052632,0.7877578823529411,0.9768856842105264,
+0.259,block_2208,17,44865833,45883901,3242,367,0.115581,0.205231,0.000136616,0.00010086,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_2332,19,22729409,23468992,3138,346,0.0157762,0.0856544,0.000246252,0.00016702,0.0536776,-1.0,1.0,0.907837,True,0.9380982333333334,1.0,1.0,
+0.259,block_2361,19,53431218,54042240,3316,422,0.139131,0.0513743,0.000131981,0.000221614,0.343305,-1.0,1.0,0.559438,True,0.838983046153846,,1.0,
+0.259,block_2395,20,24487129,25181038,3024,358,0.39573,0.379715,2.69399e-05,3.46604e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.259,block_2411,20,47203837,48212975,3694,391,0.335737,0.0936438,4.72218e-05,0.000170685,-0.574798,-1.0,1.0,0.584331,True,0.838983046153846,1.0,1.0,
+0.259,block_2412,20,48212976,49236418,3850,425,0.0217943,0.275723,0.000254225,7.73474e-05,0.230309,-1.0,1.0,0.748009,True,0.9093419220779221,,1.0,
+0.259,block_2414,20,50653621,51533750,3186,384,0.0834265,0.196407,0.000162461,0.000107337,-0.296714,-1.0,1.0,0.679081,True,0.8895004647887325,1.0,1.0,
+0.259,block_2476,22,31904550,32662293,2927,346,0.022653,2.95364e-09,0.000228239,0.000802202,-0.546443,-1.0,-0.04869,0.029278,True,0.14601685263157896,0.2019356307692308,0.2323709052631579,
+0.35,block_0010,1,7711795,8580987,2945,400,0.271736,0.023436,6.99744e-05,0.000265813,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0023,1,21416122,22145629,2865,385,0.000202717,0.000408387,0.000442187,0.000455746,0.617055,0.18902,1.0,0.0119809,True,0.06090290833333333,,0.1477644333333333,
+0.35,block_0024,1,22145630,22740287,2854,382,6.72197e-16,1.99051e-38,0.00110364,0.00216484,0.864067,0.74964,0.98951,2.98529e-17,True,9.1051345e-16,1.3135276000000001e-15,2.2091146e-15,
+0.35,block_0090,1,103148413,103784541,2852,313,0.106093,0.00744293,0.000131828,0.000293432,-1.0,-1.0,-0.0559,0.021602,True,0.094123,0.15841466666666668,0.228364,
+0.35,block_0128,1,170193208,171044255,2903,380,0.0980582,0.0114463,0.000150632,0.000299325,-0.146722,-1.0,0.7031,0.756036,True,0.870154641509434,1.0,1.0,
+0.35,block_0130,1,172465154,173582511,3237,418,0.456087,0.45764,1.05614e-05,1.10369e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0167,1,216658127,217352165,2754,408,0.246372,0.365901,8.03183e-05,4.20275e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0170,1,220073133,220978151,3347,376,0.391883,0.156864,2.88342e-05,0.000126224,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0188,1,238094456,238704857,3001,353,0.20912,0.189949,8.88104e-05,0.000105855,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0202,2,789196,1376545,2944,349,0.218353,0.166972,8.46619e-05,0.000116378,-0.0633446,-1.0,1.0,0.94498,True,0.9809348999999999,,1.0,
+0.35,block_0214,2,9960671,10611654,3068,407,0.400534,0.151231,2.73993e-05,0.000134571,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0216,2,11230350,11995765,3181,423,4.29265e-08,6.21958e-09,0.000728982,0.00085451,0.816862,0.59541,1.0,8.4357e-07,True,1.0291553999999999e-05,1.4846831999999999e-05,2.4969672e-05,
+0.35,block_0217,2,11995766,12732506,2986,411,0.307322,0.00706213,5.81732e-05,0.000336825,-0.394648,-1.0,0.81935,0.589637,True,0.7580825833333334,,1.0,
+0.35,block_0228,2,24669225,25895394,3599,405,0.109635,9.44073e-05,0.000147371,0.000525391,0.325078,-0.66616,1.0,0.397493,True,0.606176825,,1.0,
+0.35,block_0229,2,25895395,26894102,3138,402,0.0826973,0.00181525,0.000166773,0.000399699,0.365035,-0.75633,1.0,0.369234,True,0.5828737692307693,,1.0,
+0.35,block_0231,2,28819511,29627932,2934,385,0.38056,4.26418e-11,3.26841e-05,0.000951804,-0.749778,-1.0,0.29321,0.234967,True,0.44790584375000003,0.8270838400000001,1.0,
+0.35,block_0261,2,53852121,54688234,2936,359,0.450299,0.110137,1.1228e-05,0.00015155,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0273,2,67224028,67979828,3293,388,1.09552e-07,0.0318361,0.000676352,0.000243435,-0.00152845,,,0.995549,True,0.995549,1.0,1.0,
+0.35,block_0276,2,70756284,71385813,2872,394,0.0233732,0.131465,0.000241309,0.00014431,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0277,2,71385814,72160302,3066,404,0.434969,0.376293,1.67177e-05,3.81823e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0291,2,85992795,86867032,3266,351,0.129012,0.0411044,0.000125864,0.00021651,-0.971245,-1.0,0.12958,0.0899885,True,0.2495135681818182,0.43994377777777777,0.6053771818181818,
+0.35,block_0333,2,142494981,143259780,2886,366,0.12107,0.310178,0.000133118,5.89066e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0368,2,184148656,184866232,2829,360,0.431138,0.00778732,1.67274e-05,0.00031135,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0385,2,207726595,208674588,3261,420,0.109821,0.318343,0.000149926,6.0161e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0468,3,54892587,55616625,3048,412,0.159109,0.26166,0.000119593,8.18743e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0498,3,87411259,88375763,3548,364,0.000279224,0.263579,0.000419532,7.6092e-05,-1.0,-1.0,0.08832,0.0668891,True,0.212165625,0.36789005,0.5147625,
+0.35,block_0520,3,115649910,116498570,3058,382,0.19167,0.341898,9.99095e-05,4.8874e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0524,3,118903054,119759983,2997,374,0.451954,0.042133,1.10374e-05,0.000221732,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0536,3,131373471,132124018,3544,361,0.0855145,0.251274,0.000155975,8.06008e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0547,3,144408822,145211907,3111,363,0.314386,0.379957,5.22352e-05,3.4842e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0556,3,155046424,155928190,3251,348,0.00178489,0.145963,0.000342006,0.000127319,-0.567782,-1.0,0.28227,0.226873,True,0.44642751612903225,0.8270838400000001,1.0,
+0.35,block_0557,3,155928191,156795410,3050,364,0.0011252,0.437065,0.000367593,1.65501e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0558,3,156795411,157633700,3031,360,0.187848,0.466635,9.86128e-05,7.23521e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0607,4,8882617,9482867,2456,367,0.141399,0.158475,0.000121888,0.000123834,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0609,4,9916157,10370666,2745,289,0.40536,0.31621,2.14009e-05,5.01549e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0631,4,32260118,32746820,2765,328,0.0182951,0.0934198,0.000232923,0.000156668,-0.111004,-1.0,0.74818,0.820681,True,0.9102098363636363,1.0,1.0,
+0.35,block_0633,4,33640823,34721845,3624,375,0.171308,0.463198,0.000108206,8.53356e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0650,4,53879572,54659778,2970,377,0.254465,1.5323400000000002e-23,7.41319e-05,0.00155694,-0.362543,-1.0,0.28579,0.314053,True,0.5473495142857143,1.0,1.0,
+0.35,block_0652,4,55681702,57103100,5697,426,1.26765e-13,0.00049921,0.00104264,0.00046912,0.0341971,-0.42431,0.35381,0.849621,True,0.9121907894736843,1.0,1.0,
+0.35,block_0665,4,69603369,70516836,4624,343,0.349296,0.000763425,3.99602e-05,0.000407108,0.320486,-1.0,1.0,0.671497,True,0.8359452448979592,,1.0,
+0.35,block_0666,4,70516837,71468300,4320,372,0.0215754,2.6503700000000002e-24,0.000238916,0.00158172,0.731714,0.4121,1.0,0.00039637,True,0.004029761666666667,0.005813426666666666,0.009777126666666667,
+0.35,block_0672,4,78967716,79880101,3249,379,0.242641,0.131118,7.87638e-05,0.000141763,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0708,4,120563074,121393008,3064,353,0.438328,0.0416631,1.44947e-05,0.000216276,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0757,4,175295843,175959697,2881,382,0.157416,0.133621,0.000115997,0.000140766,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0776,5,598321,1206609,2360,409,0.0150659,5.21269e-16,0.000269274,0.00124794,0.416013,0.01392,0.90787,0.0490954,True,0.1864741294117647,0.30488010666666665,0.45242903529411765,
+0.35,block_0827,5,59868568,60930753,3187,358,0.231327,0.172711,8.07463e-05,0.000114968,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0845,5,84094798,84697850,2780,333,0.331714,0.180453,4.4613e-05,0.000107172,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0876,5,119664174,120371857,3085,352,0.412919,0.0889281,2.17173e-05,0.00016577,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0877,5,120371858,120960737,2959,345,0.106358,0.0106525,0.000138169,0.000289466,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0885,5,128067415,128734905,3157,328,0.000282219,0.0193662,0.000399456,0.000251839,-0.2589,-1.0,0.30825,0.409432,True,0.6091549268292683,1.0,1.0,
+0.35,block_0906,5,156345452,157191081,3394,361,0.460629,0.141587,8.32849e-06,0.000132169,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0944,6,20418021,21295864,3226,383,0.462725,0.417015,8.04917e-06,2.35731e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0951,6,26396201,27261035,2588,289,0.0267258,0.267661,0.000201436,6.61706e-05,-0.758888,-1.0,0.51951,0.30723,True,0.5473495142857143,1.0,1.0,
+0.35,block_0953,6,28666365,29529755,4438,272,0.0190772,0.406296,0.000211065,2.23697e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0954,6,29529756,29833843,3334,172,0.010581,0.411073,0.000190502,1.61259e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0955,6,29833844,30070717,2295,143,0.000491972,0.150561,0.000260516,7.99703e-05,0.087386,-1.0,1.0,0.852375,True,0.9121907894736843,1.0,1.0,
+0.35,block_0957,6,30715007,31106493,3171,229,0.0127582,0.110598,0.000210676,0.000121036,0.70784,-0.34051,1.0,0.157097,True,0.3992882083333333,,0.9687648333333332,
+0.35,block_0958,6,31106494,31250556,2280,103,0.00596599,0.104451,0.000165483,8.39725e-05,0.678144,-0.38229,1.0,0.164099,True,0.40040155999999993,,0.97146608,
+0.35,block_0959,6,31250557,31320268,1838,96,0.0222311,0.0215869,0.000124591,0.000137261,0.78106,0.01069,1.0,0.0695625,True,0.212165625,,0.5147625,
+0.35,block_0960,6,31320269,31427209,1770,93,0.000809343,0.0269556,0.000204742,0.0001282,0.553395,-0.2157,1.0,0.12734,True,0.33772782608695656,0.5897852631578948,0.8194052173913045,
+0.35,block_0961,6,31427210,32208901,3452,312,0.00182019,0.00206889,0.000324214,0.000349428,-0.171276,-1.0,0.34355,0.557203,True,0.7388996304347827,1.0,1.0,
+0.35,block_0962,6,32208902,32454577,3062,132,0.021556,0.217754,0.000145725,5.65754e-05,0.0296141,-1.0,1.0,0.964854,True,0.9809348999999999,1.0,1.0,
+0.35,block_0963,6,32454578,32539567,18,15,0.00222118,0.0516086,8.48518e-05,4.51585e-05,0.341664,-1.0,1.0,0.47235,True,0.6700779069767442,1.0,1.0,
+0.35,block_0967,6,32682214,32897998,2547,156,0.0269892,0.168507,0.000149582,7.71212e-05,0.369524,-1.0,1.0,0.545196,True,0.7388996304347827,,1.0,
+0.35,block_0968,6,32897999,33194975,2836,245,0.297984,0.000243314,4.69605e-05,0.000387252,-0.803844,-1.0,0.27784,0.197275,True,0.426817,0.811652,1.0,
+0.35,block_0990,6,55469138,56200985,3225,361,0.279287,0.170098,6.37708e-05,0.000116771,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_0998,6,66445496,67036787,2791,304,0.400266,0.0175803,2.33904e-05,0.000247771,-1.0,-1.0,0.75394,0.367265,True,0.5828737692307693,,1.0,
+0.35,block_0999,6,67036788,67559694,2846,339,0.29689,0.0161557,5.59687e-05,0.000265562,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1005,6,72290724,73170168,3281,361,0.0588104,0.0217474,0.000179564,0.000257214,0.159621,-1.0,1.0,0.726457,True,0.8645248461538462,,1.0,
+0.35,block_1007,6,74401507,75461313,4718,369,0.000159052,0.000350279,0.000442093,0.000452981,0.786606,0.42616,1.0,0.0012898,True,0.008741977777777778,,0.021210044444444447,
+0.35,block_1020,6,87516323,88499745,3604,365,0.385176,0.361475,3.03716e-05,4.10809e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1040,6,110647843,111363443,2871,353,0.00702681,0.377462,0.000286535,3.51276e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1050,6,121087445,121908063,3464,320,0.125065,0.357773,0.000122325,3.94551e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1074,6,151629955,152376499,3123,398,8.18941e-79,3.24713e-17,0.00326715,0.00129455,0.593225,0.46643,0.71516,5.52324e-12,True,8.422941e-11,1.2151128e-10,2.0435988000000001e-10,
+0.35,block_1075,6,152376500,153082361,2929,405,2.68921e-77,2.06874e-123,0.00324195,0.00492628,0.865883,0.80941,0.91884,1.77056e-68,True,1.0800416e-66,1.5580928e-66,2.6204287999999997e-66,
+0.35,block_1076,6,153082362,153791461,2761,371,9.973060000000001e-28,7.16833e-32,0.0015758,0.00189077,0.63849,0.50729,0.75949,2.6339e-12,True,5.3555966666666665e-11,7.726106666666666e-11,1.2993906666666666e-10,
+0.35,block_1077,6,153791462,154462010,2840,349,2.07564e-05,2.65437e-09,0.000496889,0.000808026,0.588068,0.28983,0.87597,0.00116316,True,0.008741977777777778,0.01279476,0.021210044444444447,
+0.35,block_1108,7,10481678,11232447,3169,345,0.43951,0.36523,1.39668e-05,3.86416e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1112,7,13213542,13676747,2602,335,0.0407986,0.203564,0.000193844,9.70345e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1129,7,31730555,32460228,3262,397,0.17248,0.370155,0.000110782,3.99438e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1151,7,54086988,54550500,2676,278,0.0807631,0.308858,0.000140441,5.1441e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1160,7,66453994,66914875,2527,299,0.386196,0.456367,2.69637e-05,9.2263e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1193,7,107658604,109095558,5093,410,0.0174413,0.26585,0.000261875,7.99438e-05,-0.687029,-1.0,0.50767,0.326542,True,0.5533072777777778,,1.0,
+0.35,block_1201,7,119568237,121042050,4464,414,0.132404,8.62771e-09,0.000134624,0.000837064,0.637724,0.0501,1.0,0.0600629,True,0.20354649444444445,,0.4938505111111111,
+0.35,block_1202,7,121042051,121946052,3059,390,0.19285,0.0396054,0.000100435,0.000230289,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1253,8,12947936,13395051,2498,349,0.376091,0.225244,3.23106e-05,8.97343e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1260,8,16988031,17492672,2935,400,0.0218986,0.0891256,0.000246627,0.000176395,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1295,8,58675118,59555977,3515,407,0.354196,0.313962,4.21474e-05,6.08246e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1370,9,10469,653661,2760,378,0.065534,6.429029999999999e-39,0.000176875,0.00217481,0.192867,-0.31236,0.71869,0.372657,True,0.5828737692307693,1.0,1.0,
+0.35,block_1371,9,653662,1103598,2723,396,0.389059,4.52649e-95,3.05359e-05,0.0040666,0.183112,-0.54334,1.0,0.686029,True,0.83695538,1.0,1.0,
+0.35,block_1415,9,38822978,43903829,1164,393,0.0654986,4.83854e-05,0.000180319,0.00054322,-0.707194,-1.0,-0.0099,0.0386668,True,0.15724498666666667,0.2617444923076923,0.3815124266666667,
+0.35,block_1464,9,119001228,119890464,3326,405,0.110021,0.290752,0.000147112,6.9528e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1521,10,32457294,33655458,4904,377,0.222547,0.0174629,8.63599e-05,0.000275124,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1546,10,65400432,66510387,3643,403,0.438159,0.341978,1.57267e-05,5.02421e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1548,10,67146044,67769822,2881,338,0.19176,0.384382,9.3892e-05,3.21226e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1561,10,81763231,82378048,2749,343,0.400537,0.0856841,2.49338e-05,0.000166281,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1581,10,104206838,106142283,5858,423,0.490214,9.42225e-75,1.95472e-07,0.00351567,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1585,10,109579150,110358382,3635,368,0.430432,0.0160174,1.71477e-05,0.000276708,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1593,10,119528731,120592839,3970,419,0.26413,0.349422,7.45314e-05,4.85634e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1641,11,28577719,29530460,3075,383,0.0590996,0.055219,0.000184533,0.000206523,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1642,11,29530461,30570129,3341,388,1.0358099999999999e-20,2.09207e-06,0.00132289,0.000648297,0.391698,0.13992,0.62369,0.00580654,True,0.03219990363636363,0.051097552000000004,0.07812435636363636,
+0.35,block_1644,11,32065772,32830422,3123,381,0.000449558,2.26752e-51,0.000410918,0.00262802,0.39597,0.14187,0.66368,0.00456214,True,0.027829054000000002,0.04460759111111111,0.067519672,
+0.35,block_1660,11,48765367,49386071,2636,314,0.266084,0.0600085,6.36324e-05,0.000182265,-0.54807,-1.0,0.89014,0.501576,True,0.6953667272727273,,1.0,
+0.35,block_1694,11,87676871,88359287,2773,355,0.0522352,0.196965,0.000185154,0.00010291,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1696,11,89209739,90199932,2571,312,0.402219,0.0899242,2.31973e-05,0.000155444,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1706,11,98929381,99619347,3530,361,0.0751862,0.346943,0.000164295,4.57233e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1709,11,101152832,101881252,3060,351,0.155978,0.0113678,0.00011188,0.000288523,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1712,11,103495636,104875270,4804,405,0.337453,0.16815,4.75324e-05,0.00012476,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1759,12,19532766,20074930,2837,354,0.463693,0.432547,7.35936e-06,1.76857e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1766,12,25990814,26958056,3903,407,0.109198,0.351325,0.000148025,4.71431e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1768,12,27797263,28753585,3265,392,0.460827,0.00134196,8.73694e-06,0.000408613,-0.564597,-1.0,1.0,0.736972,True,0.8645248461538462,,1.0,
+0.35,block_1769,12,28753586,29647193,3775,366,0.270357,0.0159647,6.73368e-05,0.000276165,0.036038,-1.0,1.0,0.959254,True,0.9809348999999999,,1.0,
+0.35,block_1774,12,32368906,33076722,3158,362,0.250708,0.00713895,7.39723e-05,0.000316513,-0.805779,-1.0,0.30025,0.202913,True,0.426817,0.811652,1.0,
+0.35,block_1780,12,41198230,42117736,4010,366,0.283794,0.422838,6.26733e-05,2.11184e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1783,12,43980532,44923825,3446,359,0.0198951,0.0214361,0.000239007,0.000257339,-0.978463,-1.0,-0.1488,0.0146747,True,0.06885820769230769,0.1173976,0.1670658153846154,
+0.35,block_1786,12,47499604,48227035,3158,388,0.489577,0.223126,2.55516e-07,9.56288e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1789,12,50344347,51769419,3912,385,0.448015,0.0835446,1.23985e-05,0.000177889,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1806,12,71177962,71948185,2874,380,0.469631,0.202868,5.99933e-06,0.000103743,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1843,12,114685671,115439451,3336,421,0.00849271,0.0829601,0.000302346,0.000186441,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1879,13,36579414,37499810,3272,418,0.246398,0.0170427,8.13058e-05,0.000290577,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1882,13,39381744,40091623,3115,370,0.0170737,6.34984e-13,0.000250327,0.00103742,-0.441534,-1.0,0.00125,0.0519682,True,0.1864741294117647,0.30488010666666665,0.45242903529411765,
+0.35,block_1884,13,41003944,42037054,3492,395,0.183351,2.06621e-12,0.000105389,0.00103796,-0.433063,-1.0,0.21847,0.214892,True,0.43694706666666666,0.8221954782608695,1.0,
+0.35,block_1885,13,42037055,42950157,3405,373,0.110577,0.000578034,0.000140872,0.000434913,-0.218284,-1.0,0.50674,0.596524,True,0.7580825833333334,1.0,1.0,
+0.35,block_1886,13,42950158,43931931,3771,426,0.324897,0.449769,5.31132e-05,1.38331e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1893,13,50419897,51554236,3590,399,0.0716678,4.07457e-14,0.000175769,0.00113616,0.071522,-0.7488,0.59583,0.78786,True,0.8899900000000001,1.0,1.0,
+0.35,block_1903,13,63206536,63973941,3002,349,0.0443337,0.0721002,0.000193059,0.000179673,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1921,13,81724090,82582821,3324,362,0.341299,0.152601,4.36042e-05,0.000126161,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1924,13,85035401,85650680,2651,316,0.0448461,0.379439,0.000183327,3.24765e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1926,13,86321289,87043588,2777,303,0.362221,0.432126,3.37746e-05,1.6259e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1930,13,89764427,90518147,3137,353,0.390684,0.113115,2.82075e-05,0.00014827,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1972,14,40343755,40965849,2880,299,0.117672,0.453021,0.000122249,1.01747e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1975,14,42562551,43321168,3001,355,0.220804,0.179955,8.44399e-05,0.00011092,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_1991,14,59447538,60099482,2919,325,0.388578,0.0606784,2.75517e-05,0.000184654,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_2008,14,78374054,79199451,3295,387,0.0609993,0.129779,0.000183485,0.000144091,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_2025,14,98885323,99474533,3063,390,0.344655,0.00227203,4.42657e-05,0.000383725,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_2034,15,20000205,22799926,1362,407,0.000421651,0.319373,0.000426216,5.87998e-05,-1.0,-1.0,0.24527,0.0747625,True,0.2171672619047619,0.38700588235294114,0.526897619047619,
+0.35,block_2045,15,34410073,35118927,2489,388,0.201222,0.0807188,9.6522e-05,0.0001811,-0.545199,-1.0,0.77088,0.458514,True,0.665937,,1.0,
+0.35,block_2074,15,72058130,73375718,3636,392,0.333892,0.440719,4.78892e-05,1.60942e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_2078,15,77897164,78514101,2801,375,0.313616,0.00358896,5.33821e-05,0.000355472,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_2156,16,77270666,77739132,2605,348,0.186832,0.228624,9.73772e-05,8.82008e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_2208,17,44865833,45883901,3242,367,0.115581,0.205231,0.000136616,0.00010086,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_2332,19,22729409,23468992,3138,346,0.0157762,0.0856544,0.000246252,0.00016702,-0.624744,-1.0,0.24181,0.187417,True,0.4234235925925926,0.811652,1.0,
+0.35,block_2361,19,53431218,54042240,3316,422,0.139131,0.0513743,0.000131981,0.000221614,-0.637921,-1.0,0.43404,0.288605,True,0.5334819696969697,,1.0,
+0.35,block_2395,20,24487129,25181038,3024,358,0.39573,0.379715,2.69399e-05,3.46604e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_2411,20,47203837,48212975,3694,391,0.335737,0.0936438,4.72218e-05,0.000170685,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_2412,20,48212976,49236418,3850,425,0.0217943,0.275723,0.000254225,7.73474e-05,-0.97493,-1.0,0.32938,0.184525,True,0.4234235925925926,,1.0,
+0.35,block_2414,20,50653621,51533750,3186,384,0.0834265,0.196407,0.000162461,0.000107337,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.35,block_2476,22,31904550,32662293,2927,346,0.022653,2.95364e-09,0.000228239,0.000802202,-0.867886,-1.0,-0.31666,0.000731755,True,0.006376722142857142,0.009199205714285714,0.015471391428571428,
+0.369,block_0010,1,7711795,8580987,2945,400,0.271736,0.023436,6.99744e-05,0.000265813,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0023,1,21416122,22145629,2865,385,0.000202717,0.000408387,0.000442187,0.000455746,0.547741,0.09366,0.95389,0.0265511,True,0.10443432666666667,,0.26197085333333336,
+0.369,block_0024,1,22145630,22740287,2854,382,6.72197e-16,1.99051e-38,0.00110364,0.00216484,0.844116,0.72702,0.96764,3.76149e-17,True,1.1096395500000001e-15,1.6550556000000001e-15,2.7835026000000003e-15,
+0.369,block_0090,1,103148413,103784541,2852,313,0.106093,0.00744293,0.000131828,0.000293432,-1.0,-1.0,-0.03418,0.0105824,True,0.051626815384615395,0.0834196,0.12950455384615386,
+0.369,block_0128,1,170193208,171044255,2903,380,0.0980582,0.0114463,0.000150632,0.000299325,-0.291391,-1.0,0.53721,0.540717,True,0.7089400666666666,1.0,1.0,
+0.369,block_0130,1,172465154,173582511,3237,418,0.456087,0.45764,1.05614e-05,1.10369e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0167,1,216658127,217352165,2754,408,0.246372,0.365901,8.03183e-05,4.20275e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0170,1,220073133,220978151,3347,376,0.391883,0.156864,2.88342e-05,0.000126224,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0188,1,238094456,238704857,3001,353,0.20912,0.189949,8.88104e-05,0.000105855,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0202,2,789196,1376545,2944,349,0.218353,0.166972,8.46619e-05,0.000116378,-0.347608,-1.0,1.0,0.705612,True,0.83262216,,1.0,
+0.369,block_0214,2,9960671,10611654,3068,407,0.400534,0.151231,2.73993e-05,0.000134571,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0216,2,11230350,11995765,3181,423,4.29265e-08,6.21958e-09,0.000728982,0.00085451,0.773561,0.55027,1.0,2.68964e-06,True,3.1737751999999995e-05,4.7337664e-05,7.961334399999999e-05,
+0.369,block_0217,2,11995766,12732506,2986,411,0.307322,0.00706213,5.81732e-05,0.000336825,-0.632009,-1.0,0.56169,0.389948,True,0.5873184499999999,,1.0,
+0.369,block_0228,2,24669225,25895394,3599,405,0.109635,9.44073e-05,0.000147371,0.000525391,0.207431,-1.0,0.97094,0.592119,True,0.7432983191489362,,1.0,
+0.369,block_0229,2,25895395,26894102,3138,402,0.0826973,0.00181525,0.000166773,0.000399699,0.239174,-1.0,1.0,0.559372,True,0.7174553913043478,,1.0,
+0.369,block_0231,2,28819511,29627932,2934,385,0.38056,4.26418e-11,3.26841e-05,0.000951804,-0.926188,-1.0,0.2077,0.140429,True,0.2959039642857143,0.5372935652173912,0.7422675714285714,
+0.369,block_0261,2,53852121,54688234,2936,359,0.450299,0.110137,1.1228e-05,0.00015155,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0273,2,67224028,67979828,3293,388,1.09552e-07,0.0318361,0.000676352,0.000243435,-0.0788095,-1.0,0.40603,0.775311,True,0.8969284117647058,1.0,1.0,
+0.369,block_0276,2,70756284,71385813,2872,394,0.0233732,0.131465,0.000241309,0.00014431,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0277,2,71385814,72160302,3066,404,0.434969,0.376293,1.67177e-05,3.81823e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0291,2,85992795,86867032,3266,351,0.129012,0.0411044,0.000125864,0.00021651,-1.0,-1.0,0.0878,0.0473016,True,0.15504413333333333,0.2601588,0.38892426666666663,
+0.369,block_0333,2,142494981,143259780,2886,366,0.12107,0.310178,0.000133118,5.89066e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0368,2,184148656,184866232,2829,360,0.431138,0.00778732,1.67274e-05,0.00031135,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0385,2,207726595,208674588,3261,420,0.109821,0.318343,0.000149926,6.0161e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0468,3,54892587,55616625,3048,412,0.159109,0.26166,0.000119593,8.18743e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0498,3,87411259,88375763,3548,364,0.000279224,0.263579,0.000419532,7.6092e-05,-1.0,-1.0,0.09114,0.0346782,True,0.12035375294117646,0.20344543999999998,0.3019043294117647,
+0.369,block_0520,3,115649910,116498570,3058,382,0.19167,0.341898,9.99095e-05,4.8874e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0524,3,118903054,119759983,2997,374,0.451954,0.042133,1.10374e-05,0.000221732,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0536,3,131373471,132124018,3544,361,0.0855145,0.251274,0.000155975,8.06008e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0547,3,144408822,145211907,3111,363,0.314386,0.379957,5.22352e-05,3.4842e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0556,3,155046424,155928190,3251,348,0.00178489,0.145963,0.000342006,0.000127319,-0.702595,-1.0,0.19179,0.134761,True,0.29447774074074073,0.5372935652173912,0.7386899259259259,
+0.369,block_0557,3,155928191,156795410,3050,364,0.0011252,0.437065,0.000367593,1.65501e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0558,3,156795411,157633700,3031,360,0.187848,0.466635,9.86128e-05,7.23521e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0607,4,8882617,9482867,2456,367,0.141399,0.158475,0.000121888,0.000123834,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0609,4,9916157,10370666,2745,289,0.40536,0.31621,2.14009e-05,5.01549e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0631,4,32260118,32746820,2765,328,0.0182951,0.0934198,0.000232923,0.000156668,-0.249811,-1.0,0.60771,0.610895,True,0.7508917708333334,1.0,1.0,
+0.369,block_0633,4,33640823,34721845,3624,375,0.171308,0.463198,0.000108206,8.53356e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0650,4,53879572,54659778,2970,377,0.254465,1.5323400000000002e-23,7.41319e-05,0.00155694,-0.452197,-1.0,0.20687,0.21196,True,0.37135120588235293,0.7174030769230769,0.9315250588235293,
+0.369,block_0652,4,55681702,57103100,5697,426,1.26765e-13,0.00049921,0.00104264,0.00046912,-0.0150171,-0.5063,0.30016,0.933584,True,0.9835974285714285,1.0,1.0,
+0.369,block_0665,4,69603369,70516836,4624,343,0.349296,0.000763425,3.99602e-05,0.000407108,0.103092,-1.0,1.0,0.891568,True,0.9612054727272727,,1.0,
+0.369,block_0666,4,70516837,71468300,4320,372,0.0215754,2.6503700000000002e-24,0.000238916,0.00158172,0.682828,0.35828,1.0,0.000963536,True,0.008121232,0.012113024,0.020371904,
+0.369,block_0672,4,78967716,79880101,3249,379,0.242641,0.131118,7.87638e-05,0.000141763,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0708,4,120563074,121393008,3064,353,0.438328,0.0416631,1.44947e-05,0.000216276,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0757,4,175295843,175959697,2881,382,0.157416,0.133621,0.000115997,0.000140766,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0776,5,598321,1206609,2360,409,0.0150659,5.21269e-16,0.000269274,0.00124794,0.359007,-0.07525,0.79814,0.0921353,True,0.2758418571428572,0.4769356705882353,0.6919422857142857,
+0.369,block_0827,5,59868568,60930753,3187,358,0.231327,0.172711,8.07463e-05,0.000114968,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0845,5,84094798,84697850,2780,333,0.331714,0.180453,4.4613e-05,0.000107172,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0876,5,119664174,120371857,3085,352,0.412919,0.0889281,2.17173e-05,0.00016577,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0877,5,120371858,120960737,2959,345,0.106358,0.0106525,0.000138169,0.000289466,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0885,5,128067415,128734905,3157,328,0.000282219,0.0193662,0.000399456,0.000251839,-0.34249,-1.0,0.22008,0.275685,True,0.45181708333333337,0.8985288888888889,1.0,
+0.369,block_0906,5,156345452,157191081,3394,361,0.460629,0.141587,8.32849e-06,0.000132169,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0944,6,20418021,21295864,3226,383,0.462725,0.417015,8.04917e-06,2.35731e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0951,6,26396201,27261035,2588,289,0.0267258,0.267661,0.000201436,6.61706e-05,-0.961263,-1.0,0.35539,0.198332,True,0.36567462500000003,0.6981286400000001,0.9172855000000001,
+0.369,block_0953,6,28666365,29529755,4438,272,0.0190772,0.406296,0.000211065,2.23697e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0954,6,29529756,29833843,3334,172,0.010581,0.411073,0.000190502,1.61259e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0955,6,29833844,30070717,2295,143,0.000491972,0.150561,0.000260516,7.99703e-05,0.00729219,,,0.987624,True,0.998123,1.0,1.0,
+0.369,block_0957,6,30715007,31106493,3171,229,0.0127582,0.110598,0.000210676,0.000121036,0.591904,-0.65168,1.0,0.238503,True,0.4020479142857143,,1.0,
+0.369,block_0958,6,31106494,31250556,2280,103,0.00596599,0.104451,0.000165483,8.39725e-05,0.607503,-0.56937,1.0,0.213999,True,0.37135120588235293,,0.9315250588235293,
+0.369,block_0959,6,31250557,31320268,1838,96,0.0222311,0.0215869,0.000124591,0.000137261,0.721711,-0.09657,1.0,0.0961427,True,0.2758418571428572,,0.6919422857142857,
+0.369,block_0960,6,31320269,31427209,1770,93,0.000809343,0.0269556,0.000204742,0.0001282,0.506988,-0.31953,1.0,0.164176,True,0.3267675666666667,0.6019786666666667,0.8196881333333332,
+0.369,block_0961,6,31427210,32208901,3452,312,0.00182019,0.00206889,0.000324214,0.000349428,-0.246202,-1.0,0.27229,0.398182,True,0.5873184499999999,1.0,1.0,
+0.369,block_0962,6,32208902,32454577,3062,132,0.021556,0.217754,0.000145725,5.65754e-05,-0.087921,-1.0,1.0,0.896039,True,0.9612054727272727,1.0,1.0,
+0.369,block_0963,6,32454578,32539567,18,15,0.00222118,0.0516086,8.48518e-05,4.51585e-05,0.322072,-1.0,1.0,0.500553,True,0.6945935909090909,1.0,1.0,
+0.369,block_0967,6,32682214,32897998,2547,156,0.0269892,0.168507,0.000149582,7.71212e-05,0.252097,-1.0,1.0,0.682319,True,0.8215677755102041,,1.0,
+0.369,block_0968,6,32897999,33194975,2836,245,0.297984,0.000243314,4.69605e-05,0.000387252,-0.950712,-1.0,0.201,0.128592,True,0.29372696153846156,0.5372935652173912,0.7368066153846153,
+0.369,block_0990,6,55469138,56200985,3225,361,0.279287,0.170098,6.37708e-05,0.000116771,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0998,6,66445496,67036787,2791,304,0.400266,0.0175803,2.33904e-05,0.000247771,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_0999,6,67036788,67559694,2846,339,0.29689,0.0161557,5.59687e-05,0.000265562,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1005,6,72290724,73170168,3281,361,0.0588104,0.0217474,0.000179564,0.000257214,0.0238295,-1.0,0.83429,0.9585,True,0.9921315789473685,,1.0,
+0.369,block_1007,6,74401507,75461313,4718,369,0.000159052,0.000350279,0.000442093,0.000452981,0.719963,0.35002,1.0,0.00340589,True,0.02232750111111111,,0.05600796888888889,
+0.369,block_1020,6,87516323,88499745,3604,365,0.385176,0.361475,3.03716e-05,4.10809e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1040,6,110647843,111363443,2871,353,0.00702681,0.377462,0.000286535,3.51276e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1050,6,121087445,121908063,3464,320,0.125065,0.357773,0.000122325,3.94551e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1074,6,151629955,152376499,3123,398,8.18941e-79,3.24713e-17,0.00326715,0.00129455,0.577613,0.45176,0.70047,9.70587e-12,True,1.559429e-10,2.3259279999999998e-10,3.9117879999999997e-10,
+0.369,block_1075,6,152376500,153082361,2929,405,2.68921e-77,2.06874e-123,0.00324195,0.00492628,0.857723,0.80447,0.91063,1.3514300000000001e-67,True,7.973437e-66,1.1892584e-65,2.0001164e-65,
+0.369,block_1076,6,153082362,153791461,2761,371,9.973060000000001e-28,7.16833e-32,0.0015758,0.00189077,0.621141,0.49042,0.7414,1.05724e-11,True,1.559429e-10,2.3259279999999998e-10,3.9117879999999997e-10,
+0.369,block_1077,6,153791462,154462010,2840,349,2.07564e-05,2.65437e-09,0.000496889,0.000808026,0.543563,0.24735,0.82314,0.0027431,True,0.0202303625,0.030174100000000002,0.050747350000000004,
+0.369,block_1108,7,10481678,11232447,3169,345,0.43951,0.36523,1.39668e-05,3.86416e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1112,7,13213542,13676747,2602,335,0.0407986,0.203564,0.000193844,9.70345e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1129,7,31730555,32460228,3262,397,0.17248,0.370155,0.000110782,3.99438e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1151,7,54086988,54550500,2676,278,0.0807631,0.308858,0.000140441,5.1441e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1160,7,66453994,66914875,2527,299,0.386196,0.456367,2.69637e-05,9.2263e-06,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1193,7,107658604,109095558,5093,410,0.0174413,0.26585,0.000261875,7.99438e-05,-0.91611,-1.0,0.3266,0.193392,True,0.36567462500000003,,0.9172855000000001,
+0.369,block_1201,7,119568237,121042050,4464,414,0.132404,8.62771e-09,0.000134624,0.000837064,0.538054,-0.10456,1.0,0.114188,True,0.28582795833333335,,0.7169921666666667,
+0.369,block_1202,7,121042051,121946052,3059,390,0.19285,0.0396054,0.000100435,0.000230289,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1253,8,12947936,13395051,2498,349,0.376091,0.225244,3.23106e-05,8.97343e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1260,8,16988031,17492672,2935,400,0.0218986,0.0891256,0.000246627,0.000176395,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1295,8,58675118,59555977,3515,407,0.354196,0.313962,4.21474e-05,6.08246e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1370,9,10469,653661,2760,378,0.065534,6.429029999999999e-39,0.000176875,0.00217481,0.143646,-0.38515,0.64771,0.510769,True,0.6945935909090909,1.0,1.0,
+0.369,block_1371,9,653662,1103598,2723,396,0.389059,4.52649e-95,3.05359e-05,0.0040666,0.0924342,-0.7244,0.90788,0.839309,True,0.9343251132075471,1.0,1.0,
+0.369,block_1415,9,38822978,43903829,1164,393,0.0654986,4.83854e-05,0.000180319,0.00054322,-0.808689,-1.0,-0.10303,0.0200941,True,0.08468227857142858,0.13602160000000002,0.21242334285714287,
+0.369,block_1464,9,119001228,119890464,3326,405,0.110021,0.290752,0.000147112,6.9528e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1521,10,32457294,33655458,4904,377,0.222547,0.0174629,8.63599e-05,0.000275124,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1546,10,65400432,66510387,3643,403,0.438159,0.341978,1.57267e-05,5.02421e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1548,10,67146044,67769822,2881,338,0.19176,0.384382,9.3892e-05,3.21226e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1561,10,81763231,82378048,2749,343,0.400537,0.0856841,2.49338e-05,0.000166281,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1581,10,104206838,106142283,5858,423,0.490214,9.42225e-75,1.95472e-07,0.00351567,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1585,10,109579150,110358382,3635,368,0.430432,0.0160174,1.71477e-05,0.000276708,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1593,10,119528731,120592839,3970,419,0.26413,0.349422,7.45314e-05,4.85634e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1641,11,28577719,29530460,3075,383,0.0590996,0.055219,0.000184533,0.000206523,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1642,11,29530461,30570129,3341,388,1.0358099999999999e-20,2.09207e-06,0.00132289,0.000648297,0.357855,0.08729,0.58775,0.0113754,True,0.051626815384615395,0.0834196,0.12950455384615386,
+0.369,block_1644,11,32065772,32830422,3123,381,0.000449558,2.26752e-51,0.000410918,0.00262802,0.36637,0.11572,0.62312,0.00853983,True,0.045804542727272725,0.07515050399999999,0.11489953090909091,
+0.369,block_1660,11,48765367,49386071,2636,314,0.266084,0.0600085,6.36324e-05,0.000182265,-0.783794,-1.0,0.60057,0.340693,True,0.5289707105263158,,1.0,
+0.369,block_1694,11,87676871,88359287,2773,355,0.0522352,0.196965,0.000185154,0.00010291,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1696,11,89209739,90199932,2571,312,0.402219,0.0899242,2.31973e-05,0.000155444,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1706,11,98929381,99619347,3530,361,0.0751862,0.346943,0.000164295,4.57233e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1709,11,101152832,101881252,3060,351,0.155978,0.0113678,0.00011188,0.000288523,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1712,11,103495636,104875270,4804,405,0.337453,0.16815,4.75324e-05,0.00012476,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1759,12,19532766,20074930,2837,354,0.463693,0.432547,7.35936e-06,1.76857e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1766,12,25990814,26958056,3903,407,0.109198,0.351325,0.000148025,4.71431e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1768,12,27797263,28753585,3265,392,0.460827,0.00134196,8.73694e-06,0.000408613,-1.0,-1.0,0.8704,0.518002,True,0.6945935909090909,,1.0,
+0.369,block_1769,12,28753586,29647193,3775,366,0.270357,0.0159647,6.73368e-05,0.000276165,-0.180939,-1.0,0.996,0.799775,True,0.9074370192307692,,1.0,
+0.369,block_1774,12,32368906,33076722,3158,362,0.250708,0.00713895,7.39723e-05,0.000316513,-0.997034,-1.0,0.17831,0.116269,True,0.28582795833333335,0.5372935652173912,0.7169921666666667,
+0.369,block_1780,12,41198230,42117736,4010,366,0.283794,0.422838,6.26733e-05,2.11184e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1783,12,43980532,44923825,3446,359,0.0198951,0.0214361,0.000239007,0.000257339,-1.0,-1.0,-0.16524,0.00664719,True,0.039218420999999996,0.06499474666666666,0.098378412,
+0.369,block_1786,12,47499604,48227035,3158,388,0.489577,0.223126,2.55516e-07,9.56288e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1789,12,50344347,51769419,3912,385,0.448015,0.0835446,1.23985e-05,0.000177889,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1806,12,71177962,71948185,2874,380,0.469631,0.202868,5.99933e-06,0.000103743,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1843,12,114685671,115439451,3336,421,0.00849271,0.0829601,0.000302346,0.000186441,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1879,13,36579414,37499810,3272,418,0.246398,0.0170427,8.13058e-05,0.000290577,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1882,13,39381744,40091623,3115,370,0.0170737,6.34984e-13,0.000250327,0.00103742,-0.500204,-1.0,-0.04152,0.0285142,True,0.1051461125,0.17923211428571428,0.26375635,
+0.369,block_1884,13,41003944,42037054,3492,395,0.183351,2.06621e-12,0.000105389,0.00103796,-0.529574,-1.0,0.1299,0.129439,True,0.29372696153846156,0.5372935652173912,0.7368066153846153,
+0.369,block_1885,13,42037055,42950157,3405,373,0.110577,0.000578034,0.000140872,0.000434913,-0.340095,-1.0,0.39009,0.410844,True,0.5912145365853658,1.0,1.0,
+0.369,block_1886,13,42950158,43931931,3771,426,0.324897,0.449769,5.31132e-05,1.38331e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1893,13,50419897,51554236,3590,399,0.0716678,4.07457e-14,0.000175769,0.00113616,-0.000624662,,,0.998123,True,0.998123,1.0,1.0,
+0.369,block_1903,13,63206536,63973941,3002,349,0.0443337,0.0721002,0.000193059,0.000179673,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1921,13,81724090,82582821,3324,362,0.341299,0.152601,4.36042e-05,0.000126161,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1924,13,85035401,85650680,2651,316,0.0448461,0.379439,0.000183327,3.24765e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1926,13,86321289,87043588,2777,303,0.362221,0.432126,3.37746e-05,1.6259e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1930,13,89764427,90518147,3137,353,0.390684,0.113115,2.82075e-05,0.00014827,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1972,14,40343755,40965849,2880,299,0.117672,0.453021,0.000122249,1.01747e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1975,14,42562551,43321168,3001,355,0.220804,0.179955,8.44399e-05,0.00011092,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_1991,14,59447538,60099482,2919,325,0.388578,0.0606784,2.75517e-05,0.000184654,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_2008,14,78374054,79199451,3295,387,0.0609993,0.129779,0.000183485,0.000144091,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_2025,14,98885323,99474533,3063,390,0.344655,0.00227203,4.42657e-05,0.000383725,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_2034,15,20000205,22799926,1362,407,0.000421651,0.319373,0.000426216,5.87998e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_2045,15,34410073,35118927,2489,388,0.201222,0.0807188,9.6522e-05,0.0001811,-0.782455,-1.0,0.4927,0.291892,True,0.46544940540540536,,1.0,
+0.369,block_2074,15,72058130,73375718,3636,392,0.333892,0.440719,4.78892e-05,1.60942e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_2078,15,77897164,78514101,2801,375,0.313616,0.00358896,5.33821e-05,0.000355472,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_2156,16,77270666,77739132,2605,348,0.186832,0.228624,9.73772e-05,8.82008e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_2208,17,44865833,45883901,3242,367,0.115581,0.205231,0.000136616,0.00010086,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_2332,19,22729409,23468992,3138,346,0.0157762,0.0856544,0.000246252,0.00016702,-0.762665,-1.0,0.14858,0.109333,True,0.28582795833333335,0.5345168888888889,0.7169921666666667,
+0.369,block_2361,19,53431218,54042240,3316,422,0.139131,0.0513743,0.000131981,0.000221614,-0.837401,-1.0,0.27396,0.166153,True,0.3267675666666667,,0.8196881333333332,
+0.369,block_2395,20,24487129,25181038,3024,358,0.39573,0.379715,2.69399e-05,3.46604e-05,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_2411,20,47203837,48212975,3694,391,0.335737,0.0936438,4.72218e-05,0.000170685,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_2412,20,48212976,49236418,3850,425,0.0217943,0.275723,0.000254225,7.73474e-05,-1.0,-1.0,0.32238,0.098181,True,0.2758418571428572,,0.6919422857142857,
+0.369,block_2414,20,50653621,51533750,3186,384,0.0834265,0.196407,0.000162461,0.000107337,,,,,False,,,,bivariate estimate returned as NA (outside |rho| <= 1.25 bound or not estimable; LAVA does not report which)
+0.369,block_2476,22,31904550,32662293,2927,346,0.022653,2.95364e-09,0.000228239,0.000802202,-0.933234,-1.0,-0.36883,0.000274023,True,0.0026945595,0.004019004,0.006759233999999999,
