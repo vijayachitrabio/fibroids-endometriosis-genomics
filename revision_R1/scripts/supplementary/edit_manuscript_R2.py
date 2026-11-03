@@ -82,7 +82,7 @@ edit("Local genetic correlation was estimated with LAVA",
      "Complete results, including the raw P values, estimates and reasons for missing P values for all 148 rows in each specification, are provided in Supplementary Tables S1 and S5.")
 edit("Gene-level association analysis was performed",
      "MAGMA was also run with the Release 9 effective sample sizes.",
-     "The primary analysis, which supplies the gene statistics in Figure 3 and Supplementary Table S2, used the Release 9 effective sample sizes (output files fibroids_neff.genes.out and endo_neff.genes.out in the code repository). An earlier run with the constant sample sizes of the munged files gave the same significant genes and is reported as a sensitivity analysis.")
+     "The primary analysis, which supplies the gene statistics in Figure 3 and Supplementary Table S2, used the Release 9 effective sample sizes. An earlier run with the constant sample sizes of the munged files gave the same significant genes and is reported as a sensitivity analysis.")
 edit("Publicly available single-cell RNA-seq data were used",
      "The coefficient test was one-sided because the hypothesis, as in that framework, was prespecified as positive enrichment; two-sided values are also reported (Supplementary Table S4).",
      "The coefficient test was one-sided, testing positive enrichment as in that framework; we have no record that this direction was fixed before the results were examined, and it was not specified in a registered analysis plan, so two-sided values are also reported (Supplementary Table S4).")
@@ -160,7 +160,8 @@ edit("Uterine fibroids and endometriosis share a moderate component",
 # ---------------------------------------------------------------- Availability, supplementary list
 edit("Analysis code and project documentation",
      "is archived at Zenodo (https://doi.org/10.5281/zenodo.23692773). ",
-     "is archived at Zenodo (https://doi.org/10.5281/zenodo.23692773). The second-round analyses (LAVA results for every specification, the comparison of marker sets and test directions in S-LDSC, and the MAGMA run with effective sample sizes) are in the directory revision_R1 of release v1.0-R2 [Zenodo DOI to be inserted on archiving]; its README maps every supplementary table and figure to the input files, scripts and output files that produced it. ")
+     "is archived at Zenodo (https://doi.org/10.5281/zenodo.23912805). The second-round analyses (LAVA results for every specification, the comparison of marker sets and test directions in S-LDSC, and the MAGMA run with effective sample sizes) are included in the same release. ")
+edit("Analysis code and project documentation", "the version used for this article (release v1.0-R1.5)", "the version used for this article (release v1.0-R2)")
 edit("Supplementary Table S2 Complete MAGMA",
      "effective-sample-size sensitivity results and the LAVA blocks overlapping the ten shared genes.",
      "the first-run results with the munged-file sample sizes (sensitivity) and the LAVA blocks overlapping the ten shared genes. The primary gene statistics use the Release 9 effective sample sizes.")
