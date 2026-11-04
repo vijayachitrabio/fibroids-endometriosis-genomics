@@ -70,7 +70,7 @@ edit("Figure 1. Integrated", "of which eight (five regions) were robust to the a
 # ---------------------------------------------------------------- Methods
 edit("FinnGen Release 9 GWAS summary statistics were obtained",
      "MAGMA used the munged-file sample sizes, and repeating it with the effective sample sizes gave the same significant genes (Supplementary Tables S1 and S2).",
-     "MAGMA used the effective sample sizes in the primary analysis; an earlier run with the munged-file sample sizes gave the same significant genes and is reported as a sensitivity analysis (Supplementary Tables S1 and S2).")
+     "MAGMA used the effective sample sizes (see Gene-level association).")
 edit("Local genetic correlation was estimated with LAVA",
      "within the range of values tested in the sensitivity analysis.",
      "within the range of values tested in the sensitivity analysis. The cross-trait intercept reflects the covariance of the Z-score errors induced by participants shared between the two GWAS: shared cases and shared controls raise it, and participants who are cases in one study and controls in the other lower it. Dividing it by the square root of the product of the two intercepts gives the correlation of the sampling errors that LAVA requires. The intercept also absorbs other shared confounding, so the value is a model-based approximation of the overlap and not a count. Its estimation error is small (standard error of the standardised value about 0.008) relative to the differences between the values examined (Supplementary Table S5, Panel G).")
@@ -82,7 +82,7 @@ edit("Local genetic correlation was estimated with LAVA",
      "Complete results, including the raw P values, estimates and missing-result flags for all 148 rows in each specification, are provided in Supplementary Tables S1 and S5.")
 edit("Gene-level association analysis was performed",
      "MAGMA was also run with the Release 9 effective sample sizes.",
-     "The primary analysis, which supplies the gene statistics in Figure 3 and Supplementary Table S2, used the Release 9 effective sample sizes. An earlier run with the constant sample sizes of the munged files gave the same significant genes and is reported as a sensitivity analysis.")
+     "The primary analysis, which supplies the gene statistics in Figure 3 and Supplementary Table S2, used the Release 9 effective sample sizes. An earlier run with the constant sample sizes of the munged files is reported as a sensitivity analysis (Supplementary Tables S1 and S2).")
 edit("Publicly available single-cell RNA-seq data were used",
      "The coefficient test was one-sided because the hypothesis, as in that framework, was prespecified as positive enrichment; two-sided values are also reported (Supplementary Table S4).",
      "The coefficient test was one-sided, testing positive enrichment as in that framework; we have no record that this direction was fixed before the results were examined, and it was not specified in a registered analysis plan, so two-sided values are also reported (Supplementary Table S4).")
@@ -261,7 +261,7 @@ for p in hl.paragraphs:
         for r in p.runs:
             r.font.highlight_color = WD_COLOR_INDEX.YELLOW
         n += 1
-    elif norm(p.text) and p.text.strip().startswith(FORCE) and norm(p.text) not in old_r1:
+    elif norm(p.text) and p.text.strip().startswith(FORCE) and (norm(p.text) not in old_r1 or p.text.startswith('Nalam')):
         for r in p.runs:
             r.font.highlight_color = WD_COLOR_INDEX.YELLOW
         n += 1

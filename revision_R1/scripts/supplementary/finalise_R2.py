@@ -44,6 +44,8 @@ for ws in wb:
         for c in row:
             if isinstance(c.value, str) and c.value in rs and ws.title.startswith("Table S3"):
                 c.value = rs[c.value]
+            elif isinstance(c.value, float) and ws.title != "Index" and abs(c.value) >= 1000:
+                c.number_format = "#,##0"
             elif isinstance(c.value, float) and ws.title != "Index" and c.value != 0 and abs(c.value) >= 1e-3:
                 c.number_format = "0.000"
 p = wb.properties
