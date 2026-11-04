@@ -62,6 +62,10 @@ edit("Uterine fibroids (uterine leiomyoma) and endometriosis", "Uterine fibroids
 edit("We conducted a comparative genetic epidemiologic study", "genetic epidemiologic study", "genetic epidemiological study")
 edit("Methods: We analysed", "and Sum of Single Effects (SuSiE) fine-mapping was compared between the disorders.", "and Sum of Single Effects (SuSiE) fine-mapping compared the disorders.")
 edit("Results: The genome-wide", "three could not be tested without overlap.", "three were untestable without overlap.")
+edit("Results: The genome-wide", "Of 88 testable blocks", "Of 88 blocks with valid P values")
+edit("Results: The genome-wide", "after Bonferroni correction, ten of them in both.", "after Bonferroni correction, ten in both.")
+edit("Results: The genome-wide", "16 showed significant local genetic correlation after", "16 showed significant local correlation after")
+edit("Results: The genome-wide", "three were untestable without overlap.", "three were untestable without overlap.".replace("three were untestable", "three untestable"))
 # ---------------------------------------------------------------- Figure 1 caption
 edit("Figure 1: Integrated", "Figure 1: Integrated", "Figure 1. Integrated")
 edit("Figure 1. Integrated", "of which eight (five regions) were robust to the assumed sample overlap",
@@ -217,6 +221,18 @@ for h in ["Gene-level association", "MAGMA identifies genes significant in both 
 for p in list(doc.paragraphs):
     if p.text and not p.text.strip() and "\t" in p.text:
         p._p.getparent().remove(p._p)
+# keep each figure caption on one page with its figure, and widen the first column of Table 1
+for _i, _p in enumerate(doc.paragraphs):
+    if _p._p.xpath(".//pic:pic"):
+        _p.paragraph_format.keep_with_next = True
+        doc.paragraphs[_i + 1].paragraph_format.keep_together = True
+_t = doc.tables[0]
+_w = [2800, 3153, 1474, 1587]
+for _g, _x in zip(_t._tbl.tblGrid.findall(qn("w:gridCol")), _w):
+    _g.set(qn("w:w"), str(_x))
+for _row in _t.rows:
+    for _c, _x in zip(_row.cells, _w):
+        _c.width = docx.shared.Emu(_x * 635)
 # ---------------------------------------------------------------- gene symbols in italics
 GENES = ["ESR1", "SYNE1", "WNT4", "GREB1", "WT1", "DNM3", "EFR3B", "VIP", "LDLRAD2", "PLEKHM3", "ARL14EP"]
 GENE_RE = re.compile(r"(?<![A-Za-z0-9_])(" + "|".join(GENES) + r")(?![A-Za-z0-9_])")
