@@ -65,7 +65,8 @@ edit("Results: The genome-wide", "three could not be tested without overlap.", "
 edit("Results: The genome-wide", "Of 88 testable blocks", "Of 88 blocks with valid P values")
 edit("Results: The genome-wide", "after Bonferroni correction, ten of them in both.", "after Bonferroni correction, ten in both.")
 edit("Results: The genome-wide", "16 showed significant local genetic correlation after", "16 showed significant local correlation after")
-edit("Results: The genome-wide", "three were untestable without overlap.", "three lacked no-overlap estimates.")
+edit("Results: The genome-wide", "three were untestable without overlap.", "three lacked valid no-overlap estimates.")
+edit("Results: The genome-wide", "(four regions under fixed correction families)", "(four regions under fixed families)")
 # ---------------------------------------------------------------- Figure 1 caption
 edit("Figure 1: Integrated", "Figure 1: Integrated", "Figure 1. Integrated")
 edit("Figure 1. Integrated", "of which eight (five regions) were robust to the assumed sample overlap",
@@ -227,7 +228,7 @@ for _i, _p in enumerate(doc.paragraphs):
         _p.paragraph_format.keep_with_next = True
         doc.paragraphs[_i + 1].paragraph_format.keep_together = True
 _t = doc.tables[0]
-_w = [3250, 2500, 1250, 2014]
+_w = [3800, 2050, 1150, 2014]
 for _g, _x in zip(_t._tbl.tblGrid.findall(qn("w:gridCol")), _w):
     _g.set(qn("w:w"), str(_x))
 for _row in _t.rows:
