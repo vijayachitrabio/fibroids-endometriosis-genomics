@@ -65,7 +65,7 @@ edit("Results: The genome-wide", "three could not be tested without overlap.", "
 edit("Results: The genome-wide", "Of 88 testable blocks", "Of 88 blocks with valid P values")
 edit("Results: The genome-wide", "after Bonferroni correction, ten of them in both.", "after Bonferroni correction, ten in both.")
 edit("Results: The genome-wide", "16 showed significant local genetic correlation after", "16 showed significant local correlation after")
-edit("Results: The genome-wide", "three were untestable without overlap.", "three were untestable without overlap.".replace("three were untestable", "three untestable"))
+edit("Results: The genome-wide", "three were untestable without overlap.", "three lacked no-overlap estimates.")
 # ---------------------------------------------------------------- Figure 1 caption
 edit("Figure 1: Integrated", "Figure 1: Integrated", "Figure 1. Integrated")
 edit("Figure 1. Integrated", "of which eight (five regions) were robust to the assumed sample overlap",
@@ -227,12 +227,23 @@ for _i, _p in enumerate(doc.paragraphs):
         _p.paragraph_format.keep_with_next = True
         doc.paragraphs[_i + 1].paragraph_format.keep_together = True
 _t = doc.tables[0]
-_w = [2800, 3153, 1474, 1587]
+_w = [3250, 2500, 1250, 2014]
 for _g, _x in zip(_t._tbl.tblGrid.findall(qn("w:gridCol")), _w):
     _g.set(qn("w:w"), str(_x))
 for _row in _t.rows:
     for _c, _x in zip(_row.cells, _w):
         _c.width = docx.shared.Emu(_x * 635)
+for _row in _t.rows:
+    _c = _row.cells[3]
+    if "https://finngen.gitbook.io" in _c.text:
+        _p = _c.paragraphs[0]
+        _rpr = _p.runs[0]._r.find(qn("w:rPr")) if _p.runs else None
+        for _ch in list(_p._p):
+            if _ch.tag != qn("w:pPr"):
+                _p._p.remove(_ch)
+        _run = _p.add_run("FinnGen Release 9 [20]; FinnGen data portal (see Availability of data and materials)")
+        if _rpr is not None:
+            _run._r.insert(0, copy.deepcopy(_rpr))
 # ---------------------------------------------------------------- gene symbols in italics
 GENES = ["ESR1", "SYNE1", "WNT4", "GREB1", "WT1", "DNM3", "EFR3B", "VIP", "LDLRAD2", "PLEKHM3", "ARL14EP"]
 GENE_RE = re.compile(r"(?<![A-Za-z0-9_])(" + "|".join(GENES) + r")(?![A-Za-z0-9_])")
