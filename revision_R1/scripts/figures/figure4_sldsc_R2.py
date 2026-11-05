@@ -57,7 +57,7 @@ axes[0].set_yticklabels(order)
 axes[1].set_yticks(y)
 axes[1].set_yticklabels([])
 axes[0].set_xlim(0, None)
-axes[1].text(0.99, 0.02, "* FDR < 0.05, one-sided test, original markers", transform=axes[1].transAxes,
+axes[1].text(0.99, 0.02, "* FDR < 0.05, one-sided test, primary markers", transform=axes[1].transAxes,
              ha="right", fontsize=8.4, color="black")
 axes[0].text(0.99, 0.02, "* FDR < 0.05 (enrichment test); bars ± SE", transform=axes[0].transAxes,
              ha="right", fontsize=8.4, color="black")
